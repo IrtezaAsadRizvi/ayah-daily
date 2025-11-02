@@ -1,0 +1,16 @@
+{
+    "Header": {
+        "select_language": "Select Language",
+        "toggle_darkmode": "Toggle Darkmode"
+    },
+    "Display": {
+        "ayah": "ayah",
+        "continue_reading": "Continue reading",
+        "read_tafsir": "Read Tafsir",
+        "choose_reciter": "Choose reciter"
+    },
+    "Footer": {
+        "copyright": "All rights reserved",
+        "support": "Support Us"
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "daily-ayah",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n css,next \"npm:dev:css\" \"npm:dev:next\"",
+    "dev:next": "next dev",
+    "dev:css": "cross-env CHOKIDAR_USEPOLLING=1 TAILWIND_MODE=watch tailwindcss -i ./app/globals.css -o ./public/styles.css --watch",
+    "build:css": "tailwindcss -i ./app/globals.css -o ./public/styles.css --minify",
+    "copy:vendor": "mkdir -p public/vendor && cp node_modules/react-tooltip/dist/react-tooltip.css public/vendor/react-tooltip.css || true",
+    "build:assets": "npm run build:css && npm run copy:vendor",
+    "prebuild": "npm run build:assets",
+    "build": "next build && next export",
+    "postexport": "node scripts/defang-css-links.mjs",
+    "deploy": "npm run prebuild && npm run build && npm run postexport && firebase deploy",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.9.0",
+    "@types/node": "20.4.5",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "lucide-react": "^0.545.0",
+    "next": "13.4.12",
+    "next-intl": "^2.19.0",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^9.2.0",
+    "react-tooltip": "^5.29.1",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "fast-glob": "^3.3.3",
+    "magic-string": "^0.30.19"
+  }
+}

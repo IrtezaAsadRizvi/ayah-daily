@@ -1,0 +1,16 @@
+{
+    "Header": {
+        "select_language": "ভাষা নির্বাচন করুন",
+        "toggle_darkmode": "ডার্ক মোড টগল করুন"
+    },
+    "Display": {
+        "ayah": "আয়াত",
+        "continue_reading": "পুরোটা পড়ুন",
+        "read_tafsir": "তাফসির পড়ুন",
+        "choose_reciter": "পাঠক"
+    },
+    "Footer": {
+        "copyright": "সর্বস্বত্ব সংরক্ষিত",
+        "support": "সাপোর্ট করুন"
+    }
+}

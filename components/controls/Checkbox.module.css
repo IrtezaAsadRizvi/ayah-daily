@@ -1,0 +1,118 @@
+.wrapper43 {
+  display: inline-block;
+}
+
+/* hide native */
+.input {
+  display: none;
+  visibility: hidden;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0,0,0);
+}
+
+/* hover ripple bg behind the box */
+.check::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.check:hover::before { opacity: 1; }
+
+/* the animated box + tick */
+.icon {
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 2.2;
+  transform: translate3d(0,0,0);
+  transition: all .2s ease;
+}
+
+.check:hover .icon { stroke: #9261fb; }
+
+.icon path { stroke-dasharray: 60; stroke-dashoffset: 0; stroke-width: 1.9; }
+.icon polyline { stroke-dasharray: 22; stroke-dashoffset: 66; stroke-width: 2.6; }
+
+/* when checked */
+.input:checked + .check .icon { stroke: #9261fb; }
+.input:checked + .check .icon path {
+  stroke-dashoffset: 60;
+  transition: all .3s linear;
+}
+.input:checked + .check .icon polyline {
+  stroke-dashoffset: 42;
+  transition: all .2s linear;
+  transition-delay: .15s;
+}
+
+/* keyboard focus ring (only when focus-visible) */
+.input:focus-visible + .check::after {
+  content: "";
+  position: absolute;
+  inset: -4px -6px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 3px rgba(66,133,244,.45);
+}
+
+/* optional dark tweak – adjust stroke color a bit */
+:global(.dark) .check .icon { stroke: #9aa3af; }
+:global(.dark) .input:checked + .check .icon { stroke: #c666fc; }
+
+/* …existing styles… */
+
+.check::before {
+  /* optional: make the hover ripple a bit larger to match the bigger box */
+  width: 54px;   /* was 48 */
+  height: 54px;  /* was 48 */
+}
+
+.icon {
+  width: 22px;   /* was 18px -> 1.2x */
+  height: 22px;  /* was 18px -> 1.2x */
+  /* keep remaining rules the same */
+}
+
+/* scale the tick only */
+.tick {
+  transform-box: fill-box;      /* ensure transform uses its own bounds */
+  transform-origin: 50% 50%;
+  transform: scale(1.4);        /* 1.4x tick */
+}
+
+/* keep the box path animation */
+.icon path { stroke-dasharray: 60; stroke-dashoffset: 0; }
+
+/* tick animation values ~1.4x of old (22/66 -> 31/92; 42 -> 59) */
+.icon polyline { stroke-dasharray: 31; stroke-dashoffset: 92; }
+
+.input:checked + .check .icon path {
+  stroke-dashoffset: 60;
+  transition: all .3s linear;
+}
+.input:checked + .check .icon polyline {
+  stroke-dashoffset: 59;         /* was 42 */
+  transition: all .2s linear;
+  transition-delay: .15s;
+}
+
