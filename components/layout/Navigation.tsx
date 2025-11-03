@@ -1,6 +1,7 @@
 // components/layout/Navigation.tsx
 import LanguageSwitch from "../taskbar/LanguageSwitch";
 import DarkModeSwitch from "../taskbar/DarkModeSwitch";
+import VerseHistory from "../taskbar/VerseHistory";
 import Logo from "../common/Logo";
 
 const Navigation: React.FC = () => {
@@ -11,6 +12,7 @@ const Navigation: React.FC = () => {
           <Logo />
         </div>
         <div className="flex">
+          <VerseHistory/>
           <LanguageSwitch />
           <DarkModeSwitch />
         </div>

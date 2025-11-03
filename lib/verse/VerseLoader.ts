@@ -1,37 +1,44 @@
 // lib/verse/VerseLoader.ts
 export type ReciterAudio = {
-  reciter?: string;
-  url?: string;
-  originalUrl?: string;
+    reciter?: string;
+    url?: string;
+    originalUrl?: string;
 };
 
 export type VerseResponse = {
-  // required
-  surahName: string;
-  english: string;
+    // required
+    surahName: string;
+    english: string;
 
-  // optional (based on sample payload)
-  surahNameArabic?: string;
-  surahNameArabicLong?: string;
-  surahNameTranslation?: string;
-  revelationPlace?: string;
-  totalAyah?: number;
-  surahNo?: number;
-  ayahNo?: number;
-  audio?: Record<string, ReciterAudio>;
-  arabic1?: string;
-  arabic2?: string;
-  bengali?: string;
-  urdu?: string;
+    // optional (based on sample payload)
+    surahNameArabic?: string;
+    surahNameArabicLong?: string;
+    surahNameTranslation?: string;
+    revelationPlace?: string;
+    totalAyah?: number;
+    surahNo?: number;
+    ayahNo?: number;
+    audio?: Record<string, ReciterAudio>;
+    arabic1?: string;
+    arabic2?: string;
+    bengali?: string;
+    urdu?: string;
 
-  // future-proofing for any unexpected fields
-  [key: string]: unknown;
+    // future-proofing for any unexpected fields
+    [key: string]: unknown;
 };
 
 export type VergeOfDay = {
     surah: number;
     ayah: number;
     data: VerseResponse;
+};
+
+// New viewed entry format
+export type ViewedEntry = {
+    surah: string; // keep as string to match requested format
+    verse: string; // keep as string to match requested format
+    date: string;  // ISO with local offset, e.g. "2025-11-03T21:36:00+06:00"
 };
 
 const BASE_URL = "https://quranapi.pages.dev/api/";
@@ -51,13 +58,32 @@ const AYAH_COUNTS: number[] = [
 ];
 
 // Storage keys
-const KEY_VERGE_OF_DAY = "verge_of_the_day";          // "s/a" e.g., "2/7"
+const KEY_VERGE_OF_DAY = "verge_of_the_day";           // "s/a" e.g., "2/7"
 const KEY_VERGE_OF_DAY_DATE = "verge_of_the_day_date"; // "YYYY-MM-DD"
-const KEY_VERGE_VIEWED = "verge_viewed";              // object like {"1":"7,11","35":"5"}
+const KEY_VERGE_VIEWED = "verge_viewed";               // NEW: JSON array of ViewedEntry
 
 // Helpers
 const isBrowser = typeof window !== "undefined";
 const todayStr = () => new Date().toISOString().slice(0, 10);
+
+// Build a local ISO string with timezone offset like 2025-11-03T21:36:00+06:00
+function localIsoWithOffset(d = new Date()): string {
+    const pad = (n: number) => String(n).padStart(2, "0");
+    const year = d.getFullYear();
+    const month = pad(d.getMonth() + 1);
+    const day = pad(d.getDate());
+    const hours = pad(d.getHours());
+    const minutes = pad(d.getMinutes());
+    const seconds = pad(d.getSeconds());
+
+    const tzMin = -d.getTimezoneOffset(); // minutes east of UTC
+    const sign = tzMin >= 0 ? "+" : "-";
+    const abs = Math.abs(tzMin);
+    const offH = pad(Math.floor(abs / 60));
+    const offM = pad(abs % 60);
+
+    return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}${sign}${offH}:${offM}`;
+}
 
 function randInt(min: number, max: number) {
     // inclusive
@@ -73,25 +99,69 @@ function parseSuraAyah(value: string | null): { surah: number; ayah: number } | 
     return { surah: s, ayah: a };
 }
 
-function getViewedMap(): Record<string, string> {
-    if (!isBrowser) return {};
+/**
+ * Migration helper:
+ * - Old format: {"27":"79","30":"46"} (comma-separated lists possible)
+ * - New format: [{ surah:"27", verse:"79", date:"..." }, ...]
+ */
+function migrateOldViewedFormat(raw: any): ViewedEntry[] | null {
+    if (!raw || typeof raw !== "object" || Array.isArray(raw)) return null;
+    const entries: ViewedEntry[] = [];
+    const now = localIsoWithOffset();
+    for (const [surahStr, versesStr] of Object.entries(raw as Record<string, string>)) {
+        if (typeof versesStr !== "string") continue;
+        const verses = versesStr.split(",").map((v) => v.trim()).filter(Boolean);
+        for (const verse of verses) {
+            entries.push({ surah: surahStr, verse, date: now });
+        }
+    }
+    return entries;
+}
+
+/**
+ * Read viewed list (new format).
+ * - If old format is detected, migrate and rewrite to storage.
+ */
+function getViewedList(): ViewedEntry[] {
+    if (!isBrowser) return [];
     try {
         const raw = localStorage.getItem(KEY_VERGE_VIEWED);
-        if (!raw) return {};
-        const obj = JSON.parse(raw);
-        if (obj && typeof obj === "object") return obj as Record<string, string>;
-        return {};
+        if (!raw) return [];
+
+        const parsed = JSON.parse(raw);
+
+        // Already new format (array of objects with surah/verse/date)
+        if (Array.isArray(parsed)) {
+            // Validate minimal shape
+            const valid = parsed.filter(
+                (e) => e && typeof e.surah === "string" && typeof e.verse === "string" && typeof e.date === "string"
+            );
+            // In case of garbage, return only valid ones
+            return valid;
+        }
+
+        // Old object format -> migrate
+        const migrated = migrateOldViewedFormat(parsed);
+        if (migrated) {
+            localStorage.setItem(KEY_VERGE_VIEWED, JSON.stringify(migrated));
+            return migrated;
+        }
+
+        return [];
     } catch {
-        return {};
+        return [];
     }
 }
 
-function wasViewed(viewed: Record<string, string>, surah: number, ayah: number): boolean {
-    const list = viewed[String(surah)];
-    if (!list) return false;
-    // list like "7,11"
-    const set = new Set(list.split(",").filter(Boolean).map((n) => parseInt(n, 10)));
-    return set.has(ayah);
+function saveViewedList(list: ViewedEntry[]) {
+    if (!isBrowser) return;
+    localStorage.setItem(KEY_VERGE_VIEWED, JSON.stringify(list));
+}
+
+function wasViewed(viewed: ViewedEntry[], surah: number, ayah: number): boolean {
+    const s = String(surah);
+    const v = String(ayah);
+    return viewed.some((e) => e.surah === s && e.verse === v);
 }
 
 function setVergeOfDay(surah: number, ayah: number) {
@@ -101,10 +171,10 @@ function setVergeOfDay(surah: number, ayah: number) {
 }
 
 /**
- * Pick a (surah, ayah) pair that is NOT in verge_viewed (if possible).
+ * Pick a (surah, ayah) pair that is NOT in viewed list (if possible).
  * If everything ends up viewed for a surah we try multiple attempts and then fall back.
  */
-function pickFreshSuraAyah(viewed: Record<string, string>): { surah: number; ayah: number } {
+function pickFreshSuraAyah(viewed: ViewedEntry[]): { surah: number; ayah: number } {
     const MAX_ATTEMPTS = 500; // ample tries to avoid viewed ones
     for (let i = 0; i < MAX_ATTEMPTS; i++) {
         const surah = randInt(1, SURAH_COUNT);
@@ -156,7 +226,7 @@ export async function loadVergeOfToday(): Promise<VergeOfDay> {
     }
 
     // New day or missing pair: pick a new one, avoiding viewed
-    const viewed = getViewedMap();
+    const viewed = getViewedList();
     const { surah, ayah } = pickFreshSuraAyah(viewed);
     setVergeOfDay(surah, ayah);
 
@@ -166,16 +236,26 @@ export async function loadVergeOfToday(): Promise<VergeOfDay> {
 
 /**
  * Mark a verse as viewed in 'verge_viewed'
- * - Format: {"1":"7,11","35":"5"}
+ * - New format: [{ surah:"27", verse:"79", date:"2025-11-03T21:36:00+06:00" }]
+ * - Prevent duplicates.
  */
 export function markViewed(surah: number, ayah: number) {
     if (!isBrowser) return;
-    const viewed = getViewedMap();
-    const key = String(surah);
-    const current = new Set(
-        (viewed[key]?.split(",") ?? []).filter(Boolean).map((n) => parseInt(n, 10))
-    );
-    current.add(ayah);
-    viewed[key] = Array.from(current).sort((a, b) => a - b).join(",");
-    localStorage.setItem(KEY_VERGE_VIEWED, JSON.stringify(viewed));
+    const list = getViewedList();
+
+    const s = String(surah);
+    const v = String(ayah);
+    const existsIdx = list.findIndex((e) => e.surah === s && e.verse === v);
+
+    if (existsIdx >= 0) {
+        // Already exists: optionally refresh date (or keep original; here we keep original)
+        // If you prefer updating date on re-view, uncomment:
+        // list[existsIdx].date = localIsoWithOffset();
+        saveViewedList(list);
+        return;
+    }
+
+    const entry: ViewedEntry = { surah: s, verse: v, date: localIsoWithOffset() };
+    list.push(entry);
+    saveViewedList(list);
 }

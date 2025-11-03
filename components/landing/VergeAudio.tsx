@@ -129,7 +129,7 @@ const VergeAudio = () => {
             <button
                 type="button"
                 onClick={handlePlayPause}
-                className="rounded-xl inline-flex items-center gap-2"
+                className="rounded-full inline-flex items-center gap-2"
             >
                 {isPlaying
                     ? <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none"><circle cx="28" cy="28" r="27" stroke="currentColor" strokeWidth="2" /><path fill="currentColor" d="M21 36h4.571V20H21zm9.143-16v16h4.571V20z" /></svg>

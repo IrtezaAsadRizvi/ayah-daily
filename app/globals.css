@@ -44,8 +44,7 @@
 
   /* Body text + stacking context for overlay */
   body {
-    color: var(--text-light);
-    transition: color 300ms ease-in-out;
+    color: var(--text-light);    
     position: relative; /* create stacking context for ::before */
   }
 
