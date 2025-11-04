@@ -4,7 +4,7 @@ export default function Head() {
         "@type": "Organization",
         name: "One Verse Daily",
         url: "https://ayah-daily.web.app",
-        logo: "https://ayah-daily.web.app/propassword_logo_512x512.png",
+        logo: "https://ayah-daily.web.app/favicon.ico",
         sameAs: [
             "https://github.com/IrtezaAsadRizvi"
         ]

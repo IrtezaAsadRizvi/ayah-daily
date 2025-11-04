@@ -259,3 +259,7 @@ export function markViewed(surah: number, ayah: number) {
     list.push(entry);
     saveViewedList(list);
 }
+
+export async function fetchVerseDirect(surah: number, ayah: number) {
+  return fetchVerse(surah, ayah); // uses the internal fetcher, no localStorage writes
+}

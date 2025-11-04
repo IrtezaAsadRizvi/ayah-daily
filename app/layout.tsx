@@ -1,4 +1,5 @@
 // app/layout.tsx
+import type { Metadata } from "next";
 import { ReactNode } from "react";
 import "./globals.css";
 import "react-tooltip/dist/react-tooltip.css";
@@ -12,12 +13,36 @@ import Footer from "@/components/layout/Footer";
 export const dynamic = "force-static";
 export const revalidate = false;
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://ayah-daily.web.app"),
   title: "Ayah Daily - One Quran verse a day",
   description: "One Quran verse a day — simple and beautiful.",
   alternates: { canonical: "/", languages: { en: "/", bn: "/bn", "x-default": "/" } },
   robots: { index: true, follow: true },
+
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Ayah Daily",
+    title: "Ayah Daily - One Quran verse a day",
+    description: "One Quran verse a day — simple and beautiful.",
+    images: [
+      {
+        url: "https://ayah-daily.web.app/ayah_daily_og.png",
+        width: 1200,
+        height: 630,
+        alt: "Ayah Daily - One Quran verse a day",
+      },
+    ],
+    locale: "en_US",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Ayah Daily - One Quran verse a day",
+    description: "One Quran verse a day — simple and beautiful.",
+    images: ["https://ayah-daily.web.app/ayah_daily_og.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
