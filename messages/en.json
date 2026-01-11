@@ -1,11 +1,14 @@
 {
     "Header": {
         "select_language": "Select Language",
-        "toggle_darkmode": "Toggle Darkmode"
+        "toggle_darkmode": "Toggle Darkmode",
+        "history": "Recent verses"
     },
     "Display": {
         "title": "Ayah Daily",
         "ayah": "ayah",
+        "play_audio": "Play audio",
+        "pause_audio": "Pause audio",
         "continue_reading": "Continue reading",
         "read_tafsir": "Read Tafsir",
         "choose_reciter": "Choose reciter"

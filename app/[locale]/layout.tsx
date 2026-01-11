@@ -1,9 +1,7 @@
 // app/[locale]/layout.tsx
 import { ReactNode } from "react";
 import { notFound } from "next/navigation";
-
-const LOCALES = ["en", "bn"] as const;
-type Locale = (typeof LOCALES)[number];
+import { LOCALES, type Locale } from "@/lib/i18n/locales";
 
 export function generateStaticParams(): Array<{ locale: Locale }> {
   return LOCALES.map((l) => ({ locale: l }));

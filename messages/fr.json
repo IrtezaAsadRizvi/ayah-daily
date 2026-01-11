@@ -1,0 +1,20 @@
+{
+    "Header": {
+        "select_language": "Choisir la langue",
+        "toggle_darkmode": "Basculer le mode sombre",
+        "history": "Versets récents"
+    },
+    "Display": {
+        "title": "Verset quotidien",
+        "ayah": "verset",
+        "play_audio": "Lire l'audio",
+        "pause_audio": "Mettre l'audio en pause",
+        "continue_reading": "Continuer la lecture",
+        "read_tafsir": "Lire le tafsir",
+        "choose_reciter": "Choisir le récitateur"
+    },
+    "Footer": {
+        "copyright": "Tous droits réservés",
+        "support": "Soutenez-nous"
+    }
+}

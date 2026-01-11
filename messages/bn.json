@@ -1,11 +1,14 @@
 {
     "Header": {
         "select_language": "ভাষা নির্বাচন করুন",
-        "toggle_darkmode": "ডার্ক মোড টগল করুন"
+        "toggle_darkmode": "ডার্ক মোড টগল করুন",
+        "history": "সাম্প্রতিক আয়াত"
     },
     "Display": {
         "title": "আয়াহ ডেইলি",
         "ayah": "আয়াত",
+        "play_audio": "অডিও চালান",
+        "pause_audio": "অডিও বিরতি দিন",
         "continue_reading": "পুরোটা পড়ুন",
         "read_tafsir": "তাফসির পড়ুন",
         "choose_reciter": "পাঠক"

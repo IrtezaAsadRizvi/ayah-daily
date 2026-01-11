@@ -1,0 +1,20 @@
+{
+    "Header": {
+        "select_language": "اختر اللغة",
+        "toggle_darkmode": "تبديل الوضع الداكن",
+        "history": "الآيات الأخيرة"
+    },
+    "Display": {
+        "title": "آية يومية",
+        "ayah": "آية",
+        "play_audio": "تشغيل الصوت",
+        "pause_audio": "إيقاف الصوت مؤقتًا",
+        "continue_reading": "أكمل القراءة",
+        "read_tafsir": "اقرأ التفسير",
+        "choose_reciter": "اختر القارئ"
+    },
+    "Footer": {
+        "copyright": "جميع الحقوق محفوظة",
+        "support": "ادعمنا"
+    }
+}

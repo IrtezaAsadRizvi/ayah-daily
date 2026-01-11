@@ -1,0 +1,20 @@
+{
+    "Header": {
+        "select_language": "Seleccionar idioma",
+        "toggle_darkmode": "Alternar modo oscuro",
+        "history": "Versículos recientes"
+    },
+    "Display": {
+        "title": "Versículo diario",
+        "ayah": "versículo",
+        "play_audio": "Reproducir audio",
+        "pause_audio": "Pausar audio",
+        "continue_reading": "Seguir leyendo",
+        "read_tafsir": "Leer tafsir",
+        "choose_reciter": "Elegir recitador"
+    },
+    "Footer": {
+        "copyright": "Todos los derechos reservados",
+        "support": "Apóyanos"
+    }
+}

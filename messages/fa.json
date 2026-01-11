@@ -1,0 +1,20 @@
+{
+    "Header": {
+        "select_language": "انتخاب زبان",
+        "toggle_darkmode": "حالت تاریک را تغییر دهید",
+        "history": "آیات اخیر"
+    },
+    "Display": {
+        "title": "آیه روزانه",
+        "ayah": "آیه",
+        "play_audio": "پخش صدا",
+        "pause_audio": "توقف صدا",
+        "continue_reading": "ادامه مطالعه",
+        "read_tafsir": "تفسیر را بخوانید",
+        "choose_reciter": "قاری را انتخاب کنید"
+    },
+    "Footer": {
+        "copyright": "تمام حقوق محفوظ است",
+        "support": "از ما حمایت کنید"
+    }
+}

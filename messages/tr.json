@@ -1,0 +1,20 @@
+{
+    "Header": {
+        "select_language": "Dil seçin",
+        "toggle_darkmode": "Karanlık modu değiştir",
+        "history": "Son ayetler"
+    },
+    "Display": {
+        "title": "Günün Ayeti",
+        "ayah": "ayet",
+        "play_audio": "Sesi oynat",
+        "pause_audio": "Sesi duraklat",
+        "continue_reading": "Okumaya devam et",
+        "read_tafsir": "Tefsiri oku",
+        "choose_reciter": "Kari seç"
+    },
+    "Footer": {
+        "copyright": "Tüm hakları saklıdır",
+        "support": "Bizi destekleyin"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "Header": {
+        "select_language": "زبان منتخب کریں",
+        "toggle_darkmode": "ڈارک موڈ ٹوگل کریں",
+        "history": "حالیہ آیات"
+    },
+    "Display": {
+        "title": "روزانہ آیت",
+        "ayah": "آیت",
+        "play_audio": "آڈیو چلائیں",
+        "pause_audio": "آڈیو روکیں",
+        "continue_reading": "پڑھنا جاری رکھیں",
+        "read_tafsir": "تفسیر پڑھیں",
+        "choose_reciter": "قاری منتخب کریں"
+    },
+    "Footer": {
+        "copyright": "جملہ حقوق محفوظ ہیں",
+        "support": "ہمیں سپورٹ کریں"
+    }
+}

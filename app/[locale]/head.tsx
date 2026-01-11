@@ -1,11 +1,6 @@
+import { LOCALES, normalizeLocale } from "@/lib/i18n/locales";
+
 const SITE_URL = "https://ayah-daily.web.app";
-const SUPPORTED_LOCALES = ["en", "bn"] as const;
-
-type Locale = (typeof SUPPORTED_LOCALES)[number];
-
-function normalizeLocale(value: string | undefined): Locale {
-  return SUPPORTED_LOCALES.includes(value as Locale) ? (value as Locale) : "en";
-}
 
 export default function Head({ params }: { params: { locale: string } }) {
   const locale = normalizeLocale(params.locale);
@@ -46,6 +41,16 @@ export default function Head({ params }: { params: { locale: string } }) {
 
   return (
     <>
+      <link rel="canonical" href={pageUrl} />
+      {LOCALES.map((l) => (
+        <link
+          key={l}
+          rel="alternate"
+          hrefLang={l}
+          href={`${SITE_URL}/${l}`}
+        />
+      ))}
+      <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}/en`} />
       <meta
         name="google-site-verification"
         content="p21olxSwB19NCND1OiQ9My_xGGfGAO9cbjxow4SGhic"

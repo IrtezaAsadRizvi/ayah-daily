@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import VergeDisplay from "@/components/landing/VergeDisplay";
 import VergeActions from "@/components/landing/VergeActions";
 import { getServerVerseOfDay } from "@/lib/verse/VerseServer";
+import { LOCALES } from "@/lib/i18n/locales";
 
 const SITE_URL = "https://ayah-daily.web.app";
 
@@ -12,8 +13,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_URL}/en`,
     languages: {
-      en: `${SITE_URL}/en`,
-      bn: `${SITE_URL}/bn`,
+      ...Object.fromEntries(LOCALES.map((l) => [l, `${SITE_URL}/${l}`])),
       "x-default": `${SITE_URL}/en`,
     },
   },

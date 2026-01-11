@@ -33,7 +33,7 @@ const VergeAudio = () => {
         if (typeof window === "undefined") return;
         if (!audioRef.current) {
             const el = new Audio();
-            el.preload = "metadata";
+            el.preload = "none";
             el.crossOrigin = "anonymous";
             audioRef.current = el;
         }
@@ -45,11 +45,10 @@ const VergeAudio = () => {
         setCurrentIndex(0);
 
         const el = audioRef.current;
-        const first = audioList[0];
         if (el) {
             el.pause();
-            el.src = first?.url || "";
-            try { el.load(); } catch { }
+            el.preload = "none";
+            el.src = "";
         }
     }, [audioList.map((i) => i.url).join("|")]);
 
@@ -83,6 +82,7 @@ const VergeAudio = () => {
         const el = audioRef.current;
         if (!el || !hasAudio) return;
         try {
+            el.preload = "auto";
             el.load();
             await el.play();
             setIsPlaying(true);
@@ -130,6 +130,7 @@ const VergeAudio = () => {
                 type="button"
                 onClick={handlePlayPause}
                 className="rounded-full inline-flex items-center gap-2"
+                aria-label={isPlaying ? t("pause_audio") : t("play_audio")}
             >
                 {isPlaying
                     ? <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none"><circle cx="28" cy="28" r="27" stroke="currentColor" strokeWidth="2" /><path fill="currentColor" d="M21 36h4.571V20H21zm9.143-16v16h4.571V20z" /></svg>

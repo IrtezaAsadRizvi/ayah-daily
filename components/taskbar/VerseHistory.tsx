@@ -44,6 +44,7 @@ async function fetchSurahs(): Promise<SurahMeta[]> {
 
 const VerseHistory = () => {
   const t = useTranslations("Display");
+  const tHeader = useTranslations("Header");
   const dispatch = useDispatch();
 
   const loadItemsOnOpen = useCallback(async (): Promise<DropdownItem[]> => {
@@ -147,6 +148,8 @@ const VerseHistory = () => {
     <div className="inline-flex">
       <Dropdown
         title={<BookOpenText />}
+        tooltip={tHeader("history")}
+        ariaLabel={tHeader("history")}
         loadItemsOnOpen={loadItemsOnOpen}
         renderItem={renderItem}
         onSelect={handleSelect}

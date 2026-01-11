@@ -1,0 +1,20 @@
+{
+    "Header": {
+        "select_language": "Pilih bahasa",
+        "toggle_darkmode": "Alihkan mode gelap",
+        "history": "Ayat terbaru"
+    },
+    "Display": {
+        "title": "Ayat Harian",
+        "ayah": "ayat",
+        "play_audio": "Putar audio",
+        "pause_audio": "Jeda audio",
+        "continue_reading": "Lanjutkan membaca",
+        "read_tafsir": "Baca tafsir",
+        "choose_reciter": "Pilih qari"
+    },
+    "Footer": {
+        "copyright": "Hak cipta dilindungi",
+        "support": "Dukung kami"
+    }
+}

@@ -13,6 +13,7 @@ export type DropdownItem<T extends string = string> = {
 type DropdownProps<T extends string = string> = {
   title?: React.ReactNode | (() => React.ReactNode);
   tooltip?: string | null;
+  ariaLabel?: string | null;
   items?: DropdownItem<T>[]; // no default []
   loadItemsOnOpen?: () => Promise<DropdownItem<T>[]>;
   renderItem?: (item: DropdownItem<T>, index: number) => React.ReactNode;
@@ -26,6 +27,7 @@ type DropdownProps<T extends string = string> = {
 function Dropdown<T extends string = string>({
   title = null,
   tooltip = null,
+  ariaLabel = null,
   items, // <-- no default
   loadItemsOnOpen,
   renderItem,
@@ -105,7 +107,7 @@ function Dropdown<T extends string = string>({
       <button
         type="button"
         className="icon-button"
-        aria-label={tooltip ?? undefined}
+        aria-label={ariaLabel ?? tooltip ?? "Open menu"}
         data-tooltip-id="dropdown-tooltip"
         data-tooltip-content={tooltip ?? undefined}
         onClick={() => setIsOpen((v) => !v)}

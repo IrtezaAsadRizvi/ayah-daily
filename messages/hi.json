@@ -1,0 +1,20 @@
+{
+    "Header": {
+        "select_language": "भाषा चुनें",
+        "toggle_darkmode": "डार्क मोड टॉगल करें",
+        "history": "हाल की आयतें"
+    },
+    "Display": {
+        "title": "दैनिक आयत",
+        "ayah": "आयत",
+        "play_audio": "ऑडियो चलाएं",
+        "pause_audio": "ऑडियो रोकें",
+        "continue_reading": "पढ़ना जारी रखें",
+        "read_tafsir": "तफ़सीर पढ़ें",
+        "choose_reciter": "क़ारी चुनें"
+    },
+    "Footer": {
+        "copyright": "सभी अधिकार सुरक्षित",
+        "support": "हमें समर्थन करें"
+    }
+}
