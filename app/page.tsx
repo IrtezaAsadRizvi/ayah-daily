@@ -4,12 +4,11 @@ import VergeDisplay from "@/components/landing/VergeDisplay";
 import VergeActions from "@/components/landing/VergeActions";
 import { getServerVerseOfDay } from "@/lib/verse/VerseServer";
 import { LOCALES } from "@/lib/i18n/locales";
-
-const SITE_URL = "https://ayah-daily.web.app";
+import { META_COPY, SITE_URL } from "@/lib/i18n/meta";
 
 export const metadata: Metadata = {
-  title: "Ayah Daily - One Quran verse a day",
-  description: "One Quran verse a day — simple and beautiful.",
+  title: META_COPY.en.title,
+  description: META_COPY.en.description,
   alternates: {
     canonical: `${SITE_URL}/en`,
     languages: {
@@ -21,8 +20,8 @@ export const metadata: Metadata = {
     type: "website",
     url: `${SITE_URL}/en`,
     siteName: "Ayah Daily",
-    title: "Ayah Daily - One Quran verse a day",
-    description: "One Quran verse a day — simple and beautiful.",
+    title: META_COPY.en.title,
+    description: META_COPY.en.description,
     images: [
       {
         url: `${SITE_URL}/ayah_daily_og.png`,
@@ -35,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ayah Daily - One Quran verse a day",
-    description: "One Quran verse a day — simple and beautiful.",
+    title: META_COPY.en.title,
+    description: META_COPY.en.description,
     images: [`${SITE_URL}/ayah_daily_og.png`],
   },
 };

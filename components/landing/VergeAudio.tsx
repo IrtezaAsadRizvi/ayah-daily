@@ -29,6 +29,8 @@ const VergeAudio = () => {
     const audioRef = useRef<HTMLAudioElement | null>(null);
     const wrapperRef = useRef<HTMLDivElement | null>(null);
 
+    const audioKey = useMemo(() => audioList.map((i) => i.url).join("|"), [audioList]);
+
     useEffect(() => {
         if (typeof window === "undefined") return;
         if (!audioRef.current) {
@@ -50,7 +52,7 @@ const VergeAudio = () => {
             el.preload = "none";
             el.src = "";
         }
-    }, [audioList.map((i) => i.url).join("|")]);
+    }, [audioKey]);
 
     useEffect(() => {
         const el = audioRef.current;

@@ -127,7 +127,7 @@ function Dropdown<T extends string = string>({
         >
           {internalItems.length === 0 ? (
             emptyContent ? (
-              <li className="px-4 py-2 text-sm opacity-70" aria-disabled>
+              <li className="px-4 py-2 text-sm opacity-70">
                 {emptyContent}
               </li>
             ) : null

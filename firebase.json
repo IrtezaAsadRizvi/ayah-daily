@@ -11,6 +11,8 @@
     },
     "cleanUrls": true,    
     "redirects": [
+      { "source": "http://ayah-daily.web.app/**", "destination": "https://ayah-daily.web.app/:splat", "type": 301 },
+      { "source": "https://www.ayah-daily.web.app/**", "destination": "https://ayah-daily.web.app/:splat", "type": 301 },
       { "source": "/en", "destination": "/", "type": 301 },
       { "source": "/en/", "destination": "/", "type": 301 }
     ],

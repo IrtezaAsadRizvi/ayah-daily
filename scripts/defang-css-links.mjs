@@ -19,6 +19,12 @@ await Promise.all(files.map(async (file) => {
 (function(){var ls=document.querySelectorAll('link[data-defanged]');ls.forEach(function(l){l.addEventListener('load',function(){l.media='all'})});})();
 </script></head>`)
   }
+  // Ensure analytics script is present in final static HTML
+  if (!html.includes('analytics.ahrefs.com/analytics.js')) {
+    html = html.replace('</head>', `
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="X1UXlwET7usTWzPvkpBIAw" async></script>
+</head>`)
+  }
   await fs.writeFile(file, html)
 }))
 console.log('Defanged CSS links in', files.length, 'HTML files.')
