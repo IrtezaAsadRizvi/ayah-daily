@@ -7,22 +7,19 @@ import "react-tooltip/dist/react-tooltip.css";
 import { poppins, spectral, notoArabic } from "@/lib/fonts";
 import StoreProvider from "@/state/StoreProvider";
 import ClientIntlProvider from "@/components/i18n/ClientIntlProvider";
+import LocaleHtmlLang from "@/components/i18n/LocaleHtmlLang";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
-
-export const dynamic = "force-static";
-export const revalidate = false;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ayah-daily.web.app"),
   title: "Ayah Daily - One Quran verse a day",
   description: "One Quran verse a day — simple and beautiful.",
-  alternates: { canonical: "/", languages: { en: "/", bn: "/bn", "x-default": "/" } },
   robots: { index: true, follow: true },
+  verification: { google: "p21olxSwB19NCND1OiQ9My_xGGfGAO9cbjxow4SGhic" },
 
   openGraph: {
     type: "website",
-    url: "/",
     siteName: "Ayah Daily",
     title: "Ayah Daily - One Quran verse a day",
     description: "One Quran verse a day — simple and beautiful.",
@@ -53,6 +50,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${poppins.variable} ${spectral.variable} ${notoArabic.variable} ${poppins.className}`}
     >
       <body suppressHydrationWarning>
+        <LocaleHtmlLang />
         <StoreProvider>
           <ClientIntlProvider>
             <main className="h-[100dvh] w-[100dvw] flex flex-col">

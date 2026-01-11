@@ -21,8 +21,8 @@ function getFromStorage(): { surah?: number; ayah?: number } {
 
 export default function VergeInfo() {
     const t = useTranslations("Display");
-    // verse is stored at state.verse.verse
-    const verse = useSelector((s: any) => s?.verse?.verse);
+    // verse is stored at state.verse.data
+    const verse = useSelector((s: any) => s?.verse?.data);
 
     const { surah, ayah } = useMemo(() => {
         const fromLS = getFromStorage();

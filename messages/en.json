@@ -4,6 +4,7 @@
         "toggle_darkmode": "Toggle Darkmode"
     },
     "Display": {
+        "title": "Ayah Daily",
         "ayah": "ayah",
         "continue_reading": "Continue reading",
         "read_tafsir": "Read Tafsir",

@@ -14,14 +14,24 @@ type ReadyState = { status: "ready"; surah: number; ayah: number; data: VerseRes
 type ErrorState = { status: "error"; message: string };
 type State = LoadingState | ReadyState | ErrorState;
 
-export default function VergeDisplay() {
+type VergeDisplayProps = {
+  initial?: { surah: number; ayah: number; data: VerseResponse } | null;
+};
+
+export default function VergeDisplay({ initial }: VergeDisplayProps) {
   const t = useTranslations("Display");
   const locale = useLocale();
   const dispatch = useAppDispatch();
-  const [state, setState] = useState<State>({ status: "idle" });
+  const [state, setState] = useState<State>(
+    initial ? { status: "ready", surah: initial.surah, ayah: initial.ayah, data: initial.data } : { status: "idle" }
+  );
 
   // Verse selected elsewhere (e.g., from history dropdown) lives in Redux
   const storeVerse = useAppSelector((s) => s.verse.data);
+
+  useEffect(() => {
+    if (initial?.data) dispatch(setVerse(initial.data));
+  }, [dispatch, initial?.data]);
 
   // On mount: load today's verge (persisted pair), mark as viewed once
   useEffect(() => {
@@ -29,7 +39,7 @@ export default function VergeDisplay() {
 
     (async () => {
       try {
-        setState({ status: "loading" });
+        if (!initial) setState({ status: "loading" });
         const { surah, ayah, data } = await loadVergeOfToday();
         if (cancelled) return;
 
@@ -49,7 +59,7 @@ export default function VergeDisplay() {
     return () => {
       cancelled = true;
     };
-  }, [dispatch]);
+  }, [dispatch, initial]);
 
   // If Redux verse changes (e.g., user clicked a history item), show it on-screen only
   useEffect(() => {
@@ -89,6 +99,10 @@ export default function VergeDisplay() {
 
   return (
     <section className="space-y-2 text-center flex-grow flex justify-center items-center flex-col max-w-4xl p-4">
+      <h1 className="font-semibold font-spectral text-3xl sm:text-4xl !mb-2">
+        {t("title")}
+      </h1>
+
       {data.surahNameTranslation && (
         <p className="text-slate-600 dark:text-slate-400 font-medium">{data.surahNameTranslation}</p>
       )}

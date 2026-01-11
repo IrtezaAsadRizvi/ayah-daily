@@ -8,7 +8,7 @@ type AudioItem = { key: string; reciter?: string; url?: string };
 
 const VergeAudio = () => {
     const t = useTranslations("Display");
-    const verse = useSelector((s: any) => s?.verse?.verse);
+    const verse = useSelector((s: any) => s?.verse?.data);
 
     const audioList: AudioItem[] = useMemo(() => {
         const src = verse?.audio ?? {};
