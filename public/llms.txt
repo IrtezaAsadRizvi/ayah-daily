@@ -1,0 +1,19 @@
+# Ayah Daily (One Verse Daily)
+Ayah Daily provides a daily Quran verse with simple reading, Quran tilawat, and
+Quran education for Islamic education and reflection.
+
+Primary URLs:
+- https://ayah-daily.web.app/
+- https://ayah-daily.web.app/en
+- https://ayah-daily.web.app/bn
+- https://ayah-daily.web.app/ar
+- https://ayah-daily.web.app/ur
+- https://ayah-daily.web.app/id
+- https://ayah-daily.web.app/tr
+- https://ayah-daily.web.app/fa
+- https://ayah-daily.web.app/ms
+- https://ayah-daily.web.app/fr
+- https://ayah-daily.web.app/es
+- https://ayah-daily.web.app/hi
+
+Sitemap: https://ayah-daily.web.app/sitemap.xml

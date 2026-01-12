@@ -40,5 +40,18 @@
     "cross-env": "^10.1.0",
     "fast-glob": "^3.3.3",
     "magic-string": "^0.30.19"
+  },
+  "browserslist": {
+    "production": [
+      "last 2 Chrome versions",
+      "last 2 Edge versions",
+      "last 2 Firefox versions",
+      "last 2 Safari versions"
+    ],
+    "development": [
+      "last 1 Chrome version",
+      "last 1 Firefox version",
+      "last 1 Safari version"
+    ]
   }
 }

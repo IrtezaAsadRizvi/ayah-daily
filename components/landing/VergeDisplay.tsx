@@ -16,9 +16,10 @@ type State = LoadingState | ReadyState | ErrorState;
 
 type VergeDisplayProps = {
   initial?: { surah: number; ayah: number; data: VerseResponse } | null;
+  mode?: "daily" | "fixed";
 };
 
-export default function VergeDisplay({ initial }: VergeDisplayProps) {
+export default function VergeDisplay({ initial, mode = "daily" }: VergeDisplayProps) {
   const t = useTranslations("Display");
   const locale = useLocale();
   const dispatch = useAppDispatch();
@@ -33,8 +34,14 @@ export default function VergeDisplay({ initial }: VergeDisplayProps) {
     if (initial?.data) dispatch(setVerse(initial.data));
   }, [dispatch, initial?.data]);
 
+  useEffect(() => {
+    if (mode !== "fixed" || !initial?.data) return;
+    setState({ status: "ready", surah: initial.surah, ayah: initial.ayah, data: initial.data });
+  }, [initial, mode]);
+
   // On mount: load today's verge (persisted pair), mark as viewed once
   useEffect(() => {
+    if (mode === "fixed") return;
     let cancelled = false;
 
     (async () => {
@@ -59,7 +66,12 @@ export default function VergeDisplay({ initial }: VergeDisplayProps) {
     return () => {
       cancelled = true;
     };
-  }, [dispatch, initial]);
+  }, [dispatch, initial, mode]);
+
+  useEffect(() => {
+    if (mode !== "fixed" || !initial) return;
+    markViewed(initial.surah, initial.ayah);
+  }, [initial, mode]);
 
   // If Redux verse changes (e.g., user clicked a history item), show it on-screen only
   useEffect(() => {

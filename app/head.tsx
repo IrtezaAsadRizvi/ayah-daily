@@ -3,15 +3,63 @@ import { META_COPY, OG_LOCALE, SITE_URL } from "@/lib/i18n/meta";
 
 export default function Head() {
   const meta = META_COPY.en;
+  const pageUrl = `${SITE_URL}/en`;
+
+  const org = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${SITE_URL}/#org`,
+    name: "One Verse Daily",
+    description:
+      "Daily Quran verse, Quran tilawat, and reading Quran for Quran education and Islamic education.",
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/favicon.ico`,
+    },
+    sameAs: ["https://github.com/IrtezaAsadRizvi"],
+  };
+
+  const website = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    name: "Ayah Daily",
+    alternateName: "One Verse Daily",
+    url: SITE_URL,
+    inLanguage: "en",
+    description: meta.description,
+    publisher: { "@id": `${SITE_URL}/#org` },
+  };
+
+  const webpage = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: meta.title,
+    description: meta.description,
+    inLanguage: "en",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#org` },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/ayah_daily_og.png`,
+    },
+  };
+
+  const schema = [org, website, webpage];
+
   return (
     <>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
+      <meta name="keywords" content={meta.keywords} />
       <meta property="og:title" content={meta.title} />
       <meta property="og:description" content={meta.description} />
       <meta property="og:site_name" content="Ayah Daily" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`${SITE_URL}/en`} />
+      <meta property="og:url" content={pageUrl} />
       <meta property="og:locale" content={OG_LOCALE.en} />
       <meta property="og:image" content={`${SITE_URL}/ayah_daily_og.png`} />
       <meta property="og:image:width" content="1200" />
@@ -23,7 +71,7 @@ export default function Head() {
       <meta name="twitter:image" content={`${SITE_URL}/ayah_daily_og.png`} />
       <meta name="robots" content="index, follow" />
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <link rel="canonical" href={`${SITE_URL}/en`} />
+      <link rel="canonical" href={pageUrl} />
       {LOCALES.map((l) => (
         <link
           key={l}
@@ -42,6 +90,10 @@ export default function Head() {
         data-key="X1UXlwET7usTWzPvkpBIAw"
         async
       ></script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
     </>
   );
 }

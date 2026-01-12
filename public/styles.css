@@ -39,10 +39,8 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-  -moz-tab-size: 4;
   /* 3 */
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -365,13 +363,6 @@ textarea {
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
 
 input::placeholder,
 textarea::placeholder {
@@ -703,6 +694,10 @@ html.dark body,
   margin-bottom: 2.5rem !important;
 }
 
+.\!mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
 .\!mt-10 {
   margin-top: 2.5rem !important;
 }
@@ -719,8 +714,8 @@ html.dark body,
   margin-top: 0.5rem;
 }
 
-.\!mb-2 {
-  margin-bottom: 0.5rem !important;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .flex {
@@ -758,6 +753,10 @@ html.dark body,
 
 .min-w-\[240px\] {
   min-width: 240px;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .max-w-4xl {
@@ -806,7 +805,6 @@ html.dark body,
 
 .select-none {
   -webkit-user-select: none;
-     -moz-user-select: none;
           user-select: none;
 }
 
@@ -980,6 +978,11 @@ html.dark body,
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1012,11 +1015,6 @@ html.dark body,
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -1057,6 +1055,16 @@ html.dark body,
 
 .text-black\/50 {
   color: rgb(0 0 0 / 0.5);
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-red-700 {

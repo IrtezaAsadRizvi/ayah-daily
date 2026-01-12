@@ -11,8 +11,13 @@ export default function Head({ params }: { params: { locale: string } }) {
     "@type": "Organization",
     "@id": `${SITE_URL}/#org`,
     name: "One Verse Daily",
+    description:
+      "Daily Quran verse, Quran tilawat, and reading Quran for Quran education and Islamic education.",
     url: SITE_URL,
-    logo: `${SITE_URL}/favicon.ico`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/favicon.ico`,
+    },
     sameAs: ["https://github.com/IrtezaAsadRizvi"],
   };
 
@@ -21,8 +26,10 @@ export default function Head({ params }: { params: { locale: string } }) {
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
     name: "Ayah Daily",
+    alternateName: "One Verse Daily",
     url: SITE_URL,
     inLanguage: locale,
+    description: meta.description,
     publisher: { "@id": `${SITE_URL}/#org` },
   };
 
@@ -31,10 +38,15 @@ export default function Head({ params }: { params: { locale: string } }) {
     "@type": "WebPage",
     "@id": `${pageUrl}#webpage`,
     url: pageUrl,
-    name: "Ayah Daily",
+    name: meta.title,
+    description: meta.description,
     inLanguage: locale,
     isPartOf: { "@id": `${SITE_URL}/#website` },
     about: { "@id": `${SITE_URL}/#org` },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/ayah_daily_og.png`,
+    },
   };
 
   const schema = [org, website, webpage];
@@ -43,6 +55,7 @@ export default function Head({ params }: { params: { locale: string } }) {
     <>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
+      <meta name="keywords" content={meta.keywords} />
       <meta property="og:title" content={meta.title} />
       <meta property="og:description" content={meta.description} />
       <meta property="og:site_name" content="Ayah Daily" />

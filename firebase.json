@@ -12,11 +12,17 @@
     "cleanUrls": true,    
     "redirects": [
       { "source": "http://ayah-daily.web.app/**", "destination": "https://ayah-daily.web.app/:splat", "type": 301 },
-      { "source": "https://www.ayah-daily.web.app/**", "destination": "https://ayah-daily.web.app/:splat", "type": 301 },
       { "source": "/en", "destination": "/", "type": 301 },
       { "source": "/en/", "destination": "/", "type": 301 }
     ],
     "headers": [
+      {
+        "source": "/sitemap.xml",
+        "headers": [
+          { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+          { "key": "Cache-Control", "value": "public, max-age=3600" }
+        ]
+      },
       {
         "source": "**/*.@(js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2)",
         "headers": [
