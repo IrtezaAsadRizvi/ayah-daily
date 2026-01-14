@@ -8,7 +8,7 @@
 /* ---------------------------------- */
 :root {
   --body-light: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  --body-dark:  linear-gradient(to top, #02080f 0%, #060f1a 25%, #142743 70%, #162d56 100%);
+  --body-dark:  linear-gradient(to top, #141517 0%, #060f1a 25%, #142743 70%, #162d56 100%);
   --bg-dark-opacity: 0; /* 0 = light, 1 = dark */
 
   --text-light: #212121;
