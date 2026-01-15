@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import VergeDisplay from "@/components/landing/VergeDisplay";
 import VergeActions from "@/components/landing/VergeActions";
 import SeoIntro from "@/components/landing/SeoIntro";
+import SeoHidden from "@/components/landing/SeoHidden";
 import FixedVersePage from "@/components/landing/FixedVersePage";
 import { getServerVerseOfDay } from "@/lib/verse/VerseServer";
 import { LOCALES } from "@/lib/i18n/locales";
@@ -78,6 +79,7 @@ export default async function HomePage({
       <VergeDisplay initial={initial} />
       <VergeActions />
       <SeoIntro />
+      <SeoHidden />
     </section>
   );
 }
