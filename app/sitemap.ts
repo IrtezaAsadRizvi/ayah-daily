@@ -16,6 +16,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/about`,
       lastModified,
     },
+    {
+      url: `${SITE_URL}/how-it-works`,
+      lastModified,
+    },
+    {
+      url: `${SITE_URL}/faq`,
+      lastModified,
+    },
   ];
 
   LOCALES.forEach((locale) => {
@@ -26,6 +34,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
       {
         url: `${SITE_URL}/${locale}/about`,
+        lastModified,
+      },
+      {
+        url: `${SITE_URL}/${locale}/how-it-works`,
+        lastModified,
+      },
+      {
+        url: `${SITE_URL}/${locale}/faq`,
         lastModified,
       }
     );

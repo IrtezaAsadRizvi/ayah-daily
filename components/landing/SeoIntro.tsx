@@ -2,7 +2,7 @@
 
 export default function SeoIntro() {
   return (
-    <div className="mt-6 max-w-2xl text-center text-sm text-gray-600">
+    <div className="mt-6 max-w-2xl text-center text-sm text-gray-600 fixed -top-[100vh]">
       <h2 className="text-base font-semibold text-gray-900">
         Daily Quran verse, Quran tilawat, and Quran education
       </h2>

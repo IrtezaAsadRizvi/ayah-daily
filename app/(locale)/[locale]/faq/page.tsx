@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
-import HomePageClient from "@/components/landing/HomePageClient";
-import { getServerVerseOfDay } from "@/lib/verse/VerseServer";
-import { LOCALES, type Locale, normalizeLocale } from "@/lib/i18n/locales";
-import { META_COPY, OG_LOCALE, SITE_URL } from "@/lib/i18n/meta";
+import FaqContent from "@/components/faq/FaqContent";
+import { LOCALES, normalizeLocale } from "@/lib/i18n/locales";
+import { OG_LOCALE, SITE_URL } from "@/lib/i18n/meta";
+
 export async function generateMetadata(
   { params }: { params: { locale: string } }
 ): Promise<Metadata> {
   const locale = normalizeLocale(params.locale);
-  const { title, description } = META_COPY[locale];
-  const canonical = `${SITE_URL}/${locale}`;
+  const canonical = `${SITE_URL}/${locale}/faq`;
+  const title = "Ayah Daily FAQ";
+  const description =
+    "Frequently asked questions about Ayah Daily, daily Quran verses, translations, tafsir, and using the app without ads or login.";
 
   return {
     title,
@@ -16,8 +18,8 @@ export async function generateMetadata(
     alternates: {
       canonical,
       languages: {
-        ...Object.fromEntries(LOCALES.map((l) => [l, `${SITE_URL}/${l}`])),
-        "x-default": `${SITE_URL}/en`,
+        ...Object.fromEntries(LOCALES.map((l) => [l, `${SITE_URL}/${l}/faq`])),
+        "x-default": `${SITE_URL}/en/faq`,
       },
     },
     openGraph: {
@@ -45,12 +47,6 @@ export async function generateMetadata(
   };
 }
 
-export function generateStaticParams() {
-  return LOCALES.map((locale) => ({ locale }));
-}
-
-export default async function HomePage() {
-  const initial = await getServerVerseOfDay();
-
-  return <HomePageClient initial={initial} />;
+export default function FaqPage() {
+  return <FaqContent />;
 }
