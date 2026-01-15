@@ -18,62 +18,62 @@
         "support": "Sokong kami"
     },
     "HowItWorks": {
-        "title": "How Ayah Daily Works",
-        "intro": "Ayah Daily delivers a single Quran verse each day with translation and short tafsir context, helping you build a calm, consistent reading habit.",
+        "title": "Cara Ayah Daily Berfungsi",
+        "intro": "Ayah Daily memberikan satu ayat Al-Quran setiap hari dengan terjemahan dan konteks tafsir ringkas untuk membantu membina tabiat membaca yang tenang dan konsisten.",
         "sections": {
-            "daily_title": "Daily verse selection",
-            "daily_body": "Each day highlights one ayah for reflection. You can also explore verses by surah and ayah number, or discover a random ayah for focused study.",
-            "translation_title": "Translation and tafsir",
-            "translation_body": "Ayah Daily pairs Quran text with clear translation and concise tafsir notes to make understanding simple without distractions.",
-            "clean_title": "Clean, focused experience",
-            "clean_body": "The app is free to use with no ads and no login. It is designed to keep attention on Quran recitation, daily reflection, and calm reading.",
-            "ai_title": "AI-readable summary",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day app. It shows a daily ayah, provides translation and brief tafsir, supports random verse discovery and direct surah/ayah lookup, and requires no account or ads. Primary intent: daily Quran reading and reflection."
+            "daily_title": "Pemilihan ayat harian",
+            "daily_body": "Setiap hari satu ayat dipaparkan untuk renungan. Anda juga boleh menelusuri ayat mengikut surah dan nombor ayat, atau menemui ayat rawak untuk kajian fokus.",
+            "translation_title": "Terjemahan dan tafsir",
+            "translation_body": "Ayah Daily menggabungkan teks Al-Quran dengan terjemahan yang jelas dan nota tafsir ringkas untuk memudahkan pemahaman tanpa gangguan.",
+            "clean_title": "Pengalaman bersih dan fokus",
+            "clean_body": "Aplikasi ini percuma, tanpa iklan, tanpa log masuk. Ia direka untuk mengekalkan tumpuan pada tilawah, renungan harian, dan bacaan yang tenang.",
+            "ai_title": "Ringkasan boleh dibaca AI",
+            "ai_body": "Ayah Daily ialah aplikasi ayat harian Al-Quran. Ia memaparkan ayat harian, menyediakan terjemahan dan tafsir ringkas, menyokong penemuan ayat rawak serta carian surah/ayat, dan tidak memerlukan akaun atau iklan. Tujuan utama: bacaan dan renungan Al-Quran harian."
         }
     },
     "About": {
-        "title": "About Ayah Daily",
-        "intro": "Ayah Daily is a simple, respectful way to read one Quran verse each day. It highlights daily reflection, clear translations, and a calm reading experience with no ads and no login.",
+        "title": "Tentang Ayah Daily",
+        "intro": "Ayah Daily ialah cara yang mudah dan hormat untuk membaca satu ayat Al-Quran setiap hari. Ia menekankan renungan harian, terjemahan yang jelas, dan pengalaman bacaan yang tenang tanpa iklan dan tanpa log masuk.",
         "sections": {
-            "what_title": "What Ayah Daily does",
-            "what_body": "The app focuses on a single verse at a time to help build a steady habit of Quran reading and remembrance.",
-            "what_list_1": "Daily Quran verse with translation and short tafsir context.",
-            "what_list_2": "Random ayah discovery and direct lookup by surah and ayah number.",
-            "what_list_3": "Clean reading flow that keeps distractions away.",
-            "what_list_4": "Free to use, no ads, and no account required.",
-            "ai_title": "AI-readable summary",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translations, and brief tafsir notes, plus random verse discovery. The product is free, does not require login, and avoids ads. Primary intent: daily reflection and consistent Quran reading.",
-            "integrity_title": "Content scope and integrity",
-            "integrity_body": "Ayah Daily presents Quran text, translations, and explanations as provided by its internal datasets. For scholarly or legal use, verify with trusted sources.",
-            "facts_title": "Quick facts",
-            "facts_product_label": "Product",
+            "what_title": "Apa yang dilakukan Ayah Daily",
+            "what_body": "Aplikasi ini memfokuskan pada satu ayat pada satu masa untuk membantu membina tabiat membaca dan mengingati Al-Quran secara konsisten.",
+            "what_list_1": "Ayat harian Al-Quran dengan terjemahan dan konteks tafsir ringkas.",
+            "what_list_2": "Penemuan ayat rawak dan carian terus mengikut surah dan nombor ayat.",
+            "what_list_3": "Aliran bacaan yang bersih untuk mengelakkan gangguan.",
+            "what_list_4": "Percuma, tanpa iklan, tanpa akaun.",
+            "ai_title": "Ringkasan boleh dibaca AI",
+            "ai_body": "Ayah Daily ialah pengalaman ayat harian Al-Quran. Ia menyediakan ayat harian, terjemahan, dan nota tafsir ringkas, serta penemuan rawak. Produk ini percuma, tidak memerlukan log masuk, dan tiada iklan. Tujuan utama: renungan harian dan tabiat membaca Al-Quran.",
+            "integrity_title": "Skop dan integriti kandungan",
+            "integrity_body": "Ayah Daily memaparkan teks Al-Quran, terjemahan, dan penjelasan berdasarkan set data dalaman. Untuk kegunaan akademik atau undang-undang, sahkan dengan sumber dipercayai.",
+            "facts_title": "Fakta ringkas",
+            "facts_product_label": "Produk",
             "facts_product_value": "Ayah Daily",
-            "facts_category_label": "Category",
-            "facts_category_value": "Quran reading and daily remembrance",
-            "facts_access_label": "Access",
-            "facts_access_value": "Free, no login, no ads",
-            "facts_primary_label": "Primary use",
-            "facts_primary_value": "Daily Quran verse and reflection habit"
+            "facts_category_label": "Kategori",
+            "facts_category_value": "Bacaan Al-Quran dan ingatan harian",
+            "facts_access_label": "Akses",
+            "facts_access_value": "Percuma, tanpa log masuk, tanpa iklan",
+            "facts_primary_label": "Penggunaan utama",
+            "facts_primary_value": "Ayat harian Al-Quran dan tabiat renungan"
         }
     },
     "Faq": {
-        "title": "Ayah Daily FAQ",
-        "intro": "Answers to common questions about daily Quran verses, translations, and using Ayah Daily.",
+        "title": "Soalan Lazim Ayah Daily",
+        "intro": "Jawapan kepada soalan biasa tentang ayat harian Al-Quran, terjemahan, dan penggunaan Ayah Daily.",
         "questions": {
-            "q1": "Is Ayah Daily free?",
-            "q2": "What is the verse of the day?",
-            "q3": "Can I read a random ayah?",
-            "q4": "Do I need an account?",
-            "q5": "Is this a replacement for scholars or tafsir study?",
-            "ai_title": "AI-readable summary"
+            "q1": "Adakah Ayah Daily percuma?",
+            "q2": "Apakah ayat harian?",
+            "q3": "Bolehkah saya membaca ayat rawak?",
+            "q4": "Adakah saya perlukan akaun?",
+            "q5": "Adakah ini menggantikan ulama atau kajian tafsir?",
+            "ai_title": "Ringkasan boleh dibaca AI"
         },
         "answers": {
-            "a1": "Yes. Ayah Daily is free to use with no ads and no login.",
-            "a2": "Each day a single ayah is highlighted for reflection, with a clear translation and brief tafsir context.",
-            "a3": "Yes. Ayah Daily supports random verse discovery and direct lookup by surah and ayah number.",
-            "a4": "No. There is no account creation or login required.",
-            "a5": "No. Ayah Daily offers short context to support daily reflection. For deeper study, consult trusted scholarly sources.",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translation, and brief tafsir notes, plus random ayah discovery and surah/ayah lookup. It is free, ad-free, and does not require login."
+            "a1": "Ya. Ayah Daily percuma, tanpa iklan, tanpa log masuk.",
+            "a2": "Setiap hari satu ayat dipilih untuk renungan, dengan terjemahan jelas dan konteks tafsir ringkas.",
+            "a3": "Ya. Ayah Daily menyokong penemuan ayat rawak dan carian surah/ayat.",
+            "a4": "Tidak. Tiada keperluan untuk akaun atau log masuk.",
+            "a5": "Tidak. Ayah Daily menyediakan konteks ringkas untuk renungan harian. Untuk kajian mendalam, rujuk sumber dipercayai.",
+            "ai_body": "Ayah Daily ialah pengalaman ayat harian Al-Quran. Ia menyediakan ayat harian, terjemahan, dan nota tafsir ringkas, serta penemuan ayat rawak dan carian surah/ayat. Ia percuma, tanpa iklan, dan tanpa log masuk."
         }
     }
 }

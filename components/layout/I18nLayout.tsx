@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import StoreProvider from "@/state/StoreProvider";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import type { Locale } from "@/lib/i18n/locales";
 
 export default function I18nLayout({
   children,
@@ -10,7 +11,7 @@ export default function I18nLayout({
   messages
 }: {
   children: React.ReactNode;
-  locale: "en" | "bn";
+  locale: Locale;
   messages: any;
 }) {
   return (

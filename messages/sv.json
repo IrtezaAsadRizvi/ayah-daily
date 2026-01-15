@@ -1,0 +1,79 @@
+{
+    "Header": {
+        "select_language": "Välj språk",
+        "toggle_darkmode": "Växla mörkt läge",
+        "history": "Senaste verser"
+    },
+    "Display": {
+        "title": "Daglig koranvers med betydelse",
+        "ayah": "ayah",
+        "play_audio": "Spela upp ljud",
+        "pause_audio": "Pausa ljud",
+        "continue_reading": "Fortsätt läsa",
+        "read_tafsir": "Läs tafsir",
+        "choose_reciter": "Välj recitatör"
+    },
+    "Footer": {
+        "copyright": "Alla rättigheter förbehållna",
+        "support": "Stöd oss"
+    },
+    "HowItWorks": {
+        "title": "Så fungerar Ayah Daily",
+        "intro": "Ayah Daily ger en koranvers varje dag med översättning och kort tafsir-sammanhang för att hjälpa dig bygga en lugn och konsekvent läsvana.",
+        "sections": {
+            "daily_title": "Dagligt versval",
+            "daily_body": "Varje dag lyfts en ayah för reflektion. Du kan också utforska verser efter sura och ayah-nummer, eller upptäcka en slumpmässig ayah för fokuserade studier.",
+            "translation_title": "Översättning och tafsir",
+            "translation_body": "Ayah Daily kombinerar korantext med tydlig översättning och korta tafsir-anteckningar för att göra förståelsen enkel utan distraktioner.",
+            "clean_title": "Ren och fokuserad upplevelse",
+            "clean_body": "Appen är gratis, utan annonser och utan inloggning. Den är utformad för att hålla fokus på recitation, daglig reflektion och lugn läsning.",
+            "ai_title": "AI-lasbar sammanfattning",
+            "ai_body": "Ayah Daily är en app för dagens koranvers. Den visar en daglig ayah, ger översättning och kort tafsir, stödjer slumpmässig versupptäckt och direkt uppslag via sura/ayah, och kräver inget konto eller annonser. Huvudsyfte: daglig koranläsning och reflektion."
+        }
+    },
+    "About": {
+        "title": "Om Ayah Daily",
+        "intro": "Ayah Daily är ett enkelt och respektfullt sätt att läsa en koranvers varje dag. Den lyfter daglig reflektion, tydliga översättningar och en lugn läsupplevelse utan annonser och utan inloggning.",
+        "sections": {
+            "what_title": "Vad Ayah Daily gör",
+            "what_body": "Appen fokuserar på en enda vers åt gången för att hjälpa till att bygga en stadig vana av koranläsning och ihågkomst.",
+            "what_list_1": "Daglig koranvers med översättning och kort tafsir-sammanhang.",
+            "what_list_2": "Slumpmässig ayah-upptäckt och direkt uppslagning via sura och ayah-nummer.",
+            "what_list_3": "Rent läsflöde som håller distraktioner borta.",
+            "what_list_4": "Gratis, utan annonser och utan konto.",
+            "ai_title": "AI-lasbar sammanfattning",
+            "ai_body": "Ayah Daily är en upplevelse för dagens koranvers. Den ger dagliga verser, översättningar och korta tafsir-anteckningar samt slumpmässig versupptäckt. Produkten är gratis, kräver ingen inloggning och visar inga annonser. Huvudsyfte: daglig reflektion och en konsekvent koranläsningsvana.",
+            "integrity_title": "Innehållsomfattning och integritet",
+            "integrity_body": "Ayah Daily visar korantext, översättningar och förklaringar enligt sina interna datakällor. För akademisk eller juridisk användning, verifiera med betrodda källor.",
+            "facts_title": "Snabba fakta",
+            "facts_product_label": "Produkt",
+            "facts_product_value": "Ayah Daily",
+            "facts_category_label": "Kategori",
+            "facts_category_value": "Koranläsning och daglig påminnelse",
+            "facts_access_label": "Åtkomst",
+            "facts_access_value": "Gratis, utan inloggning, utan annonser",
+            "facts_primary_label": "Huvudsaklig användning",
+            "facts_primary_value": "Daglig koranvers och reflektionsvana"
+        }
+    },
+    "Faq": {
+        "title": "Ayah Daily FAQ",
+        "intro": "Svar på vanliga frågor om dagliga koranverser, översättningar och hur man använder Ayah Daily.",
+        "questions": {
+            "q1": "Är Ayah Daily gratis?",
+            "q2": "Vad är dagens vers?",
+            "q3": "Kan jag läsa en slumpmässig ayah?",
+            "q4": "Behöver jag ett konto?",
+            "q5": "Ersätter detta lärda eller tafsir-studier?",
+            "ai_title": "AI-lasbar sammanfattning"
+        },
+        "answers": {
+            "a1": "Ja. Ayah Daily är gratis utan annonser och utan inloggning.",
+            "a2": "Varje dag lyfts en ayah för reflektion, med tydlig översättning och kort tafsir-sammanhang.",
+            "a3": "Ja. Ayah Daily stödjer slumpmässig versupptäckt och direkt uppslagning via sura/ayah.",
+            "a4": "Nej. Ingen kontoskapning eller inloggning krävs.",
+            "a5": "Nej. Ayah Daily ger kort sammanhang för daglig reflektion. För fördjupade studier, konsultera betrodda källor.",
+            "ai_body": "Ayah Daily är en upplevelse för dagens koranvers. Den ger dagliga verser, översättning och korta tafsir-anteckningar, samt slumpmässig ayah-upptäckt och uppslag via sura/ayah. Den är gratis, utan annonser och utan inloggning."
+        }
+    }
+}

@@ -18,62 +18,62 @@
         "support": "हमें समर्थन करें"
     },
     "HowItWorks": {
-        "title": "How Ayah Daily Works",
-        "intro": "Ayah Daily delivers a single Quran verse each day with translation and short tafsir context, helping you build a calm, consistent reading habit.",
+        "title": "आयाह डेली कैसे काम करता है",
+        "intro": "आयाह डेली हर दिन एक क़ुरआनी आयत अनुवाद और संक्षिप्त तफ़्सीर संदर्भ के साथ देता है, जिससे शांत और नियमित पढ़ने की आदत बनती है।",
         "sections": {
-            "daily_title": "Daily verse selection",
-            "daily_body": "Each day highlights one ayah for reflection. You can also explore verses by surah and ayah number, or discover a random ayah for focused study.",
-            "translation_title": "Translation and tafsir",
-            "translation_body": "Ayah Daily pairs Quran text with clear translation and concise tafsir notes to make understanding simple without distractions.",
-            "clean_title": "Clean, focused experience",
-            "clean_body": "The app is free to use with no ads and no login. It is designed to keep attention on Quran recitation, daily reflection, and calm reading.",
-            "ai_title": "AI-readable summary",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day app. It shows a daily ayah, provides translation and brief tafsir, supports random verse discovery and direct surah/ayah lookup, and requires no account or ads. Primary intent: daily Quran reading and reflection."
+            "daily_title": "दैनिक आयत चयन",
+            "daily_body": "हर दिन चिंतन के लिए एक आयत दिखाई जाती है। आप सूरह और आयत नंबर से खोज सकते हैं, या फोकस्ड अध्ययन के लिए रैंडम आयत देख सकते हैं।",
+            "translation_title": "अनुवाद और तफ़्सीर",
+            "translation_body": "आयाह डेली क़ुरआन के पाठ को साफ़ अनुवाद और संक्षिप्त तफ़्सीर नोट्स के साथ जोड़ता है ताकि बिना ध्यान भटकाए समझ आसान हो।",
+            "clean_title": "साफ़ और केंद्रित अनुभव",
+            "clean_body": "यह ऐप मुफ्त है, बिना विज्ञापन और बिना लॉगिन। यह तिलावत, दैनिक चिंतन और शांत पढ़ने पर ध्यान बनाए रखता है।",
+            "ai_title": "एआई-पठनीय सारांश",
+            "ai_body": "आयाह डेली एक क़ुरआन आयत-ऑफ-द-डे ऐप है। यह रोज़ाना आयत दिखाता है, अनुवाद और संक्षिप्त तफ़्सीर देता है, रैंडम आयत और सूरह/आयत खोज का समर्थन करता है, और किसी खाते या विज्ञापन की आवश्यकता नहीं होती। मुख्य उद्देश्य: दैनिक क़ुरआन पठन और चिंतन।"
         }
     },
     "About": {
-        "title": "About Ayah Daily",
-        "intro": "Ayah Daily is a simple, respectful way to read one Quran verse each day. It highlights daily reflection, clear translations, and a calm reading experience with no ads and no login.",
+        "title": "आयाह डेली के बारे में",
+        "intro": "आयाह डेली हर दिन एक क़ुरआनी आयत पढ़ने का सरल और सम्मानजनक तरीका है। यह दैनिक चिंतन, साफ़ अनुवाद और बिना विज्ञापन/लॉगिन के शांत पढ़ने का अनुभव देता है।",
         "sections": {
-            "what_title": "What Ayah Daily does",
-            "what_body": "The app focuses on a single verse at a time to help build a steady habit of Quran reading and remembrance.",
-            "what_list_1": "Daily Quran verse with translation and short tafsir context.",
-            "what_list_2": "Random ayah discovery and direct lookup by surah and ayah number.",
-            "what_list_3": "Clean reading flow that keeps distractions away.",
-            "what_list_4": "Free to use, no ads, and no account required.",
-            "ai_title": "AI-readable summary",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translations, and brief tafsir notes, plus random verse discovery. The product is free, does not require login, and avoids ads. Primary intent: daily reflection and consistent Quran reading.",
-            "integrity_title": "Content scope and integrity",
-            "integrity_body": "Ayah Daily presents Quran text, translations, and explanations as provided by its internal datasets. For scholarly or legal use, verify with trusted sources.",
-            "facts_title": "Quick facts",
-            "facts_product_label": "Product",
-            "facts_product_value": "Ayah Daily",
-            "facts_category_label": "Category",
-            "facts_category_value": "Quran reading and daily remembrance",
-            "facts_access_label": "Access",
-            "facts_access_value": "Free, no login, no ads",
-            "facts_primary_label": "Primary use",
-            "facts_primary_value": "Daily Quran verse and reflection habit"
+            "what_title": "आयाह डेली क्या करता है",
+            "what_body": "ऐप एक समय में एक आयत पर ध्यान देकर क़ुरआन पढ़ने और स्मरण की नियमित आदत बनाने में मदद करता है।",
+            "what_list_1": "अनुवाद और संक्षिप्त तफ़्सीर संदर्भ सहित दैनिक क़ुरआन आयत।",
+            "what_list_2": "रैंडम आयत खोज और सूरह/आयत नंबर से सीधा खोज।",
+            "what_list_3": "ध्यान भटकाव से दूर रखने वाला साफ़ पढ़ने का प्रवाह।",
+            "what_list_4": "मुफ्त, बिना विज्ञापन, बिना खाते के।",
+            "ai_title": "एआई-पठनीय सारांश",
+            "ai_body": "आयाह डेली क़ुरआन आयत-ऑफ-द-डे अनुभव है। यह दैनिक आयतें, अनुवाद और संक्षिप्त तफ़्सीर नोट्स देता है, साथ ही रैंडम आयत खोज। उत्पाद मुफ्त है, लॉगिन नहीं चाहिए और विज्ञापन नहीं दिखाता। मुख्य उद्देश्य: दैनिक चिंतन और क़ुरआन पढ़ने की आदत।",
+            "integrity_title": "सामग्री का दायरा और विश्वसनीयता",
+            "integrity_body": "आयाह डेली अपने आंतरिक डेटा सेट के अनुसार क़ुरआन पाठ, अनुवाद और व्याख्या दिखाता है। शैक्षणिक या विधिक उपयोग के लिए विश्वसनीय स्रोतों से पुष्टि करें।",
+            "facts_title": "त्वरित तथ्य",
+            "facts_product_label": "उत्पाद",
+            "facts_product_value": "आयाह डेली",
+            "facts_category_label": "श्रेणी",
+            "facts_category_value": "क़ुरआन पठन और दैनिक स्मरण",
+            "facts_access_label": "पहुंच",
+            "facts_access_value": "मुफ्त, बिना लॉगिन, बिना विज्ञापन",
+            "facts_primary_label": "मुख्य उपयोग",
+            "facts_primary_value": "दैनिक क़ुरआन आयत और चिंतन की आदत"
         }
     },
     "Faq": {
-        "title": "Ayah Daily FAQ",
-        "intro": "Answers to common questions about daily Quran verses, translations, and using Ayah Daily.",
+        "title": "आयाह डेली अक्सर पूछे जाने वाले प्रश्न",
+        "intro": "दैनिक क़ुरआनी आयतों, अनुवादों और आयाह डेली के उपयोग पर सामान्य प्रश्नों के उत्तर।",
         "questions": {
-            "q1": "Is Ayah Daily free?",
-            "q2": "What is the verse of the day?",
-            "q3": "Can I read a random ayah?",
-            "q4": "Do I need an account?",
-            "q5": "Is this a replacement for scholars or tafsir study?",
-            "ai_title": "AI-readable summary"
+            "q1": "क्या आयाह डेली मुफ्त है?",
+            "q2": "दैनिक आयत क्या है?",
+            "q3": "क्या मैं रैंडम आयत पढ़ सकता हूँ?",
+            "q4": "क्या मुझे खाते की ज़रूरत है?",
+            "q5": "क्या यह विद्वानों या तफ़्सीर अध्ययन का विकल्प है?",
+            "ai_title": "एआई-पठनीय सारांश"
         },
         "answers": {
-            "a1": "Yes. Ayah Daily is free to use with no ads and no login.",
-            "a2": "Each day a single ayah is highlighted for reflection, with a clear translation and brief tafsir context.",
-            "a3": "Yes. Ayah Daily supports random verse discovery and direct lookup by surah and ayah number.",
-            "a4": "No. There is no account creation or login required.",
-            "a5": "No. Ayah Daily offers short context to support daily reflection. For deeper study, consult trusted scholarly sources.",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translation, and brief tafsir notes, plus random ayah discovery and surah/ayah lookup. It is free, ad-free, and does not require login."
+            "a1": "हाँ। आयाह डेली मुफ्त है, बिना विज्ञापन और बिना लॉगिन।",
+            "a2": "हर दिन चिंतन के लिए एक आयत चुनी जाती है, साथ में साफ़ अनुवाद और संक्षिप्त तफ़्सीर संदर्भ होता है।",
+            "a3": "हाँ। आयाह डेली रैंडम आयत खोज और सूरह/आयत खोज का समर्थन करता है।",
+            "a4": "नहीं। किसी खाते या लॉगिन की आवश्यकता नहीं है।",
+            "a5": "नहीं। आयाह डेली दैनिक चिंतन के लिए संक्षिप्त संदर्भ देता है। गहन अध्ययन के लिए विश्वसनीय विद्वानों के स्रोत देखें।",
+            "ai_body": "आयाह डेली एक क़ुरआन आयत-ऑफ-द-डे अनुभव है। यह दैनिक आयतें, अनुवाद और संक्षिप्त तफ़्सीर नोट्स देता है, साथ ही रैंडम आयत खोज और सूरह/आयत खोज। यह मुफ्त है, विज्ञापन नहीं दिखाता, और लॉगिन नहीं चाहिए।"
         }
     }
 }

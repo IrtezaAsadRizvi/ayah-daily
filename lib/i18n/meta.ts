@@ -73,6 +73,12 @@ export const META_COPY: Record<
     keywords:
       "daily quran verse, quran tilawat, quran recitation, reading quran, quran education, islamic education, ayah of the day, quran verses, learn quran, islamic learning",
   },
+  sv: {
+    title: "Dagens Ayah - En koranvers varje dag",
+    description: "En koranvers varje dag — enkel och vacker.",
+    keywords:
+      "daily quran verse, quran tilawat, quran recitation, reading quran, quran education, islamic education, ayah of the day, quran verses, learn quran, islamic learning",
+  },
 };
 
 export const OG_LOCALE: Record<Locale, string> = {
@@ -87,4 +93,5 @@ export const OG_LOCALE: Record<Locale, string> = {
   fr: "fr_FR",
   es: "es_ES",
   hi: "hi_IN",
+  sv: "sv_SE",
 };

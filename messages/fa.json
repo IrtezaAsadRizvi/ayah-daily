@@ -18,62 +18,62 @@
         "support": "از ما حمایت کنید"
     },
     "HowItWorks": {
-        "title": "How Ayah Daily Works",
-        "intro": "Ayah Daily delivers a single Quran verse each day with translation and short tafsir context, helping you build a calm, consistent reading habit.",
+        "title": "آیه دیلی چگونه کار می‌کند",
+        "intro": "آیه دیلی هر روز یک آیه از قرآن را همراه با ترجمه و زمینه کوتاه تفسیر ارائه می‌دهد تا به شکل‌گیری عادت خواندن آرام و منظم کمک کند.",
         "sections": {
-            "daily_title": "Daily verse selection",
-            "daily_body": "Each day highlights one ayah for reflection. You can also explore verses by surah and ayah number, or discover a random ayah for focused study.",
-            "translation_title": "Translation and tafsir",
-            "translation_body": "Ayah Daily pairs Quran text with clear translation and concise tafsir notes to make understanding simple without distractions.",
-            "clean_title": "Clean, focused experience",
-            "clean_body": "The app is free to use with no ads and no login. It is designed to keep attention on Quran recitation, daily reflection, and calm reading.",
-            "ai_title": "AI-readable summary",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day app. It shows a daily ayah, provides translation and brief tafsir, supports random verse discovery and direct surah/ayah lookup, and requires no account or ads. Primary intent: daily Quran reading and reflection."
+            "daily_title": "انتخاب آیه روزانه",
+            "daily_body": "هر روز یک آیه برای تأمل برجسته می‌شود. همچنین می‌توانید آیات را بر اساس سوره و شماره آیه جست‌وجو کنید یا یک آیه تصادفی برای مطالعه متمرکز ببینید.",
+            "translation_title": "ترجمه و تفسیر",
+            "translation_body": "آیه دیلی متن قرآن را با ترجمه‌ای روشن و یادداشت‌های کوتاه تفسیر همراه می‌کند تا فهم بدون حواس‌پرتی آسان باشد.",
+            "clean_title": "تجربه‌ای تمیز و متمرکز",
+            "clean_body": "اپ رایگان است، بدون تبلیغات و بدون ورود. برای حفظ تمرکز بر تلاوت، تأمل روزانه و خواندن آرام طراحی شده است.",
+            "ai_title": "خلاصه قابل‌خواندن توسط هوش مصنوعی",
+            "ai_body": "آیه دیلی یک برنامه آیه روز قرآن است. آیه روزانه نمایش می‌دهد، ترجمه و تفسیر کوتاه ارائه می‌کند، کشف آیه تصادفی و جست‌وجوی مستقیم سوره/آیه را پشتیبانی می‌کند و به حساب یا تبلیغات نیاز ندارد. هدف اصلی: خواندن و تأمل روزانه قرآن."
         }
     },
     "About": {
-        "title": "About Ayah Daily",
-        "intro": "Ayah Daily is a simple, respectful way to read one Quran verse each day. It highlights daily reflection, clear translations, and a calm reading experience with no ads and no login.",
+        "title": "درباره آیه دیلی",
+        "intro": "آیه دیلی روشی ساده و محترمانه برای خواندن یک آیه از قرآن در هر روز است. تمرکز آن بر تأمل روزانه، ترجمه‌های روشن و تجربه خواندن آرام بدون تبلیغ و بدون ورود است.",
         "sections": {
-            "what_title": "What Ayah Daily does",
-            "what_body": "The app focuses on a single verse at a time to help build a steady habit of Quran reading and remembrance.",
-            "what_list_1": "Daily Quran verse with translation and short tafsir context.",
-            "what_list_2": "Random ayah discovery and direct lookup by surah and ayah number.",
-            "what_list_3": "Clean reading flow that keeps distractions away.",
-            "what_list_4": "Free to use, no ads, and no account required.",
-            "ai_title": "AI-readable summary",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translations, and brief tafsir notes, plus random verse discovery. The product is free, does not require login, and avoids ads. Primary intent: daily reflection and consistent Quran reading.",
-            "integrity_title": "Content scope and integrity",
-            "integrity_body": "Ayah Daily presents Quran text, translations, and explanations as provided by its internal datasets. For scholarly or legal use, verify with trusted sources.",
-            "facts_title": "Quick facts",
-            "facts_product_label": "Product",
-            "facts_product_value": "Ayah Daily",
-            "facts_category_label": "Category",
-            "facts_category_value": "Quran reading and daily remembrance",
-            "facts_access_label": "Access",
-            "facts_access_value": "Free, no login, no ads",
-            "facts_primary_label": "Primary use",
-            "facts_primary_value": "Daily Quran verse and reflection habit"
+            "what_title": "آیه دیلی چه کار می‌کند",
+            "what_body": "این برنامه روی یک آیه در هر زمان تمرکز می‌کند تا عادت ثابت خواندن و یادکرد قرآن شکل بگیرد.",
+            "what_list_1": "آیه روزانه قرآن همراه با ترجمه و زمینه کوتاه تفسیر.",
+            "what_list_2": "کشف آیه تصادفی و جست‌وجوی مستقیم بر اساس سوره و شماره آیه.",
+            "what_list_3": "جریان خواندن تمیز که حواس‌پرتی را دور نگه می‌دارد.",
+            "what_list_4": "رایگان، بدون تبلیغات و بدون حساب کاربری.",
+            "ai_title": "خلاصه قابل‌خواندن توسط هوش مصنوعی",
+            "ai_body": "آیه دیلی تجربه آیه روز قرآن است. آیات روزانه، ترجمه‌ها و یادداشت‌های کوتاه تفسیر را ارائه می‌دهد و امکان کشف تصادفی را دارد. محصول رایگان است، ورود لازم ندارد و تبلیغات نمایش نمی‌دهد. هدف اصلی: تأمل روزانه و عادت خواندن قرآن.",
+            "integrity_title": "دامنه محتوا و یکپارچگی",
+            "integrity_body": "آیه دیلی متن قرآن، ترجمه‌ها و توضیحات را بر اساس داده‌های داخلی خود ارائه می‌کند. برای استفاده علمی یا حقوقی، با منابع معتبر تطبیق دهید.",
+            "facts_title": "اطلاعات سریع",
+            "facts_product_label": "محصول",
+            "facts_product_value": "آیه دیلی",
+            "facts_category_label": "دسته‌بندی",
+            "facts_category_value": "خواندن قرآن و یادکرد روزانه",
+            "facts_access_label": "دسترسی",
+            "facts_access_value": "رایگان، بدون ورود، بدون تبلیغ",
+            "facts_primary_label": "کاربرد اصلی",
+            "facts_primary_value": "آیه روزانه قرآن و عادت تأمل"
         }
     },
     "Faq": {
-        "title": "Ayah Daily FAQ",
-        "intro": "Answers to common questions about daily Quran verses, translations, and using Ayah Daily.",
+        "title": "سوالات متداول آیه دیلی",
+        "intro": "پاسخ به پرسش‌های رایج درباره آیات روزانه قرآن، ترجمه‌ها و استفاده از آیه دیلی.",
         "questions": {
-            "q1": "Is Ayah Daily free?",
-            "q2": "What is the verse of the day?",
-            "q3": "Can I read a random ayah?",
-            "q4": "Do I need an account?",
-            "q5": "Is this a replacement for scholars or tafsir study?",
-            "ai_title": "AI-readable summary"
+            "q1": "آیا آیه دیلی رایگان است؟",
+            "q2": "آیه روز چیست؟",
+            "q3": "آیا می‌توانم یک آیه تصادفی بخوانم؟",
+            "q4": "آیا به حساب کاربری نیاز دارم؟",
+            "q5": "آیا جایگزین علما یا مطالعه تفسیر است؟",
+            "ai_title": "خلاصه قابل‌خواندن توسط هوش مصنوعی"
         },
         "answers": {
-            "a1": "Yes. Ayah Daily is free to use with no ads and no login.",
-            "a2": "Each day a single ayah is highlighted for reflection, with a clear translation and brief tafsir context.",
-            "a3": "Yes. Ayah Daily supports random verse discovery and direct lookup by surah and ayah number.",
-            "a4": "No. There is no account creation or login required.",
-            "a5": "No. Ayah Daily offers short context to support daily reflection. For deeper study, consult trusted scholarly sources.",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translation, and brief tafsir notes, plus random ayah discovery and surah/ayah lookup. It is free, ad-free, and does not require login."
+            "a1": "بله. آیه دیلی رایگان است و تبلیغ و ورود ندارد.",
+            "a2": "هر روز یک آیه برای تأمل انتخاب می‌شود و ترجمه روشن و زمینه کوتاه تفسیر دارد.",
+            "a3": "بله. آیه دیلی کشف آیه تصادفی و جست‌وجوی سوره/آیه را پشتیبانی می‌کند.",
+            "a4": "خیر. نیازی به ساخت حساب یا ورود نیست.",
+            "a5": "خیر. آیه دیلی زمینه کوتاهی برای تأمل روزانه ارائه می‌دهد. برای مطالعه عمیق، به منابع معتبر مراجعه کنید.",
+            "ai_body": "آیه دیلی تجربه آیه روز قرآن است. آیات روزانه، ترجمه و یادداشت‌های کوتاه تفسیر ارائه می‌دهد، همراه با کشف تصادفی و جست‌وجوی سوره/آیه. رایگان است، بدون تبلیغ و بدون ورود."
         }
     }
 }

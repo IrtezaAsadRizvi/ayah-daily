@@ -10,6 +10,7 @@ export const LOCALES = [
   "fr",
   "es",
   "hi",
+  "sv",
 ] as const;
 
 export type Locale = (typeof LOCALES)[number];

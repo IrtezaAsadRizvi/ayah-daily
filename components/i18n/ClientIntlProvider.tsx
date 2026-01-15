@@ -13,9 +13,10 @@ import ms from "@/messages/ms.json";
 import fr from "@/messages/fr.json";
 import es from "@/messages/es.json";
 import hi from "@/messages/hi.json";
+import sv from "@/messages/sv.json";
 import { DEFAULT_LOCALE, normalizeLocale } from "@/lib/i18n/locales";
 
-const MESSAGES: Record<string, any> = { en, bn, ar, ur, id, tr, fa, ms, fr, es, hi };
+const MESSAGES: Record<string, any> = { en, bn, ar, ur, id, tr, fa, ms, fr, es, hi, sv };
 
 export default function ClientIntlProvider({ children }: { children: React.ReactNode }) {
     const pathname = usePathname() || "/";

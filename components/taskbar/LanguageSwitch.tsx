@@ -35,6 +35,7 @@ export default function LanguageSwitch() {
       { text: "Français", value: "fr" },
       { text: "Español", value: "es" },
       { text: "हिन्दी", value: "hi" },
+      { text: "Svenska", value: "sv" },
     ],
     []
   );
