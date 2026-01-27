@@ -1,4 +1,4 @@
-![Ayah Daily cover](https://i.ibb.co.com/FLJQTBBG/ayah-daily-git-cover.jpg)
+![Ayah Daily cover](https://i.ibb.co/FLJQTBBG/ayah-daily-git-cover.jpg)
 
 # Ayah Daily — A Minimal Quran Ayah of the Day App
 
