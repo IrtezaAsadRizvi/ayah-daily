@@ -10,9 +10,8 @@
     "copy:vendor": "mkdir -p public/vendor && cp node_modules/react-tooltip/dist/react-tooltip.css public/vendor/react-tooltip.css || true",
     "build:assets": "npm run build:css && npm run copy:vendor",
     "prebuild": "npm run build:assets",
-    "build": "next build && next export",
-    "postexport": "node scripts/defang-css-links.mjs",
-    "deploy": "npm run prebuild && npm run build && npm run postexport && firebase deploy",
+    "build": "next build",
+    "deploy": "npm run prebuild && npm run build && firebase deploy",
     "start": "next start",
     "lint": "next lint"
   },

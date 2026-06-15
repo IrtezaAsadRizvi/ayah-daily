@@ -2,7 +2,11 @@
     "Header": {
         "select_language": "Select Language",
         "toggle_darkmode": "Toggle Darkmode",
-        "history": "Recent verses"
+        "history": "Recent verses",
+        "home": "Home",
+        "about": "About",
+        "how_it_works": "How it works",
+        "faq": "FAQ"
     },
     "Display": {
         "title": "Daily Quran Ayah with Meaning",
@@ -16,6 +20,18 @@
     "Footer": {
         "copyright": "All rights reserved",
         "support": "Support Us"
+    },
+    "Home": {
+        "h1": "Daily Quran verse with translation and short tafsir",
+        "intro_title": "Daily Quran verse, Quran tilawat, and Quran education",
+        "intro_body": "Ayah Daily shares one Quran verse a day with clear reading, Quran tilawat, and Islamic education to build a calm, consistent habit of Quran learning.",
+        "seo_h2_a": "Daily Quran Ayah",
+        "seo_p_a": "Ayah Daily delivers one Quran verse each day with accurate translation and concise tafsir so anyone can reflect, learn, and build a steady Quran habit.",
+        "seo_h3_a": "Random Ayah and verse discovery",
+        "seo_p_b": "Explore a random ayah, browse Quran verses by surah and ayah number, and return to the verse of the day for daily tilawat without distractions.",
+        "seo_h3_b": "Clean, respectful experience",
+        "seo_p_c": "No ads, no login, and no paywall. Just a simple Quran reading experience focused on remembrance, reflection, and consistent recitation.",
+        "seo_p_d": "Use Ayah Daily for Quran memorization, daily reminders, and learning authentic meanings in clear language."
     },
     "HowItWorks": {
         "title": "How Ayah Daily Works",

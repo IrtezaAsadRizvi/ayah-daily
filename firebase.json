@@ -6,14 +6,16 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "frameworksBackend": {
-      "region": "us-east1"
-    },
-    "cleanUrls": true,    
+    "cleanUrls": true,
     "redirects": [
       { "source": "http://ayah-daily.web.app/**", "destination": "https://ayah-daily.web.app/:splat", "type": 301 },
-      { "source": "/en", "destination": "/", "type": 301 },
-      { "source": "/en/", "destination": "/", "type": 301 }
+      { "source": "/", "destination": "/en", "type": 301 },
+      { "source": "/about", "destination": "/en/about", "type": 301 },
+      { "source": "/about/", "destination": "/en/about", "type": 301 },
+      { "source": "/faq", "destination": "/en/faq", "type": 301 },
+      { "source": "/faq/", "destination": "/en/faq", "type": 301 },
+      { "source": "/how-it-works", "destination": "/en/how-it-works", "type": 301 },
+      { "source": "/how-it-works/", "destination": "/en/how-it-works", "type": 301 }
     ],
     "headers": [
       {
@@ -38,8 +40,7 @@
     ],
     "rewrites": [
       { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
-      { "source": "/robots.txt", "destination": "/robots.txt" },
-      { "source": "**", "destination": "/index.html" }
+      { "source": "/robots.txt", "destination": "/robots.txt" }
     ]
   }
 }

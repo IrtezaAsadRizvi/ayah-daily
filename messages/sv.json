@@ -2,7 +2,11 @@
     "Header": {
         "select_language": "Välj språk",
         "toggle_darkmode": "Växla mörkt läge",
-        "history": "Senaste verser"
+        "history": "Senaste verser",
+        "home": "Hem",
+        "about": "Om",
+        "how_it_works": "Så fungerar det",
+        "faq": "Vanliga frågor"
     },
     "Display": {
         "title": "Daglig koranvers med betydelse",
@@ -16,6 +20,18 @@
     "Footer": {
         "copyright": "Alla rättigheter förbehållna",
         "support": "Stöd oss"
+    },
+    "Home": {
+        "h1": "Daglig koranvers med översättning och kort tafsir",
+        "intro_title": "Daglig koranvers, tilawah och koranundervisning",
+        "intro_body": "Dagens Ayah delar varje dag en koranvers med tydlig läsning och kort sammanhang för att bygga en lugn och stadig vana att lära Koranen.",
+        "seo_h2_a": "Daglig koranvers",
+        "seo_p_a": "Dagens Ayah presenterar varje dag en vers med korrekt översättning och kort tafsir, så att reflektion, lärande och en stadig koranvana blir möjlig.",
+        "seo_h3_a": "Slumpmässig vers och utforskning",
+        "seo_p_b": "Se en slumpmässig vers, bläddra i verser efter sura och vers, och återgå till dagens vers för daglig tilawah utan distraktioner.",
+        "seo_h3_b": "Ren, respektfull upplevelse",
+        "seo_p_c": "Inga annonser, ingen inloggning, ingen betalvägg — bara en enkel koranläsning fokuserad på åminnelse, reflektion och regelbunden recitation.",
+        "seo_p_d": "Använd Dagens Ayah för memorering, dagliga påminnelser och att lära autentiska betydelser i tydligt språk."
     },
     "HowItWorks": {
         "title": "Så fungerar Ayah Daily",

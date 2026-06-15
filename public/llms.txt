@@ -15,5 +15,11 @@ Primary URLs:
 - https://ayah-daily.web.app/fr
 - https://ayah-daily.web.app/es
 - https://ayah-daily.web.app/hi
+- https://ayah-daily.web.app/sv
+
+Key Pages:
+- https://ayah-daily.web.app/en/about
+- https://ayah-daily.web.app/en/how-it-works
+- https://ayah-daily.web.app/en/faq
 
 Sitemap: https://ayah-daily.web.app/sitemap.xml

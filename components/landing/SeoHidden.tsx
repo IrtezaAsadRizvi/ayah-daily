@@ -1,26 +1,30 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function SeoHidden() {
+  const t = useTranslations("Home");
   return (
-    <section className="sr-only" aria-label="Ayah Daily SEO content">
-      <h2>Daily Quran Ayah</h2>
-      <p>
-        Ayah Daily delivers one Quran verse each day with accurate translation
-        and concise tafsir so Muslims can reflect, learn, and build a steady
-        Quran habit.
-      </p>
-      <h3>Random Ayah and Verse Discovery</h3>
-      <p>
-        Explore random ayah, browse Quran verses by surah and ayah number, and
-        return to the verse of the day for daily tilawat without distractions.
-      </p>
-      <h3>Clean, Respectful Experience</h3>
-      <p>
-        No ads, no login, and no paywall. Just a simple Quran reading experience
-        focused on remembrance, reflection, and consistent recitation.
-      </p>
-      <p>
-        Use Ayah Daily for Quran memorization, daily reminders, and learning
-        authentic meanings in clear language.
-      </p>
+    <section className="mt-12 mb-8 max-w-2xl mx-auto px-4 text-center text-slate-600 dark:text-slate-400">
+      <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+        {t("h1")}
+      </h2>
+
+      <h2 className="mt-8 text-base font-semibold text-slate-900 dark:text-slate-100">
+        {t("seo_h2_a")}
+      </h2>
+      <p className="mt-3 text-sm leading-relaxed">{t("seo_p_a")}</p>
+
+      <h3 className="mt-6 text-base font-semibold text-slate-900 dark:text-slate-100">
+        {t("seo_h3_a")}
+      </h3>
+      <p className="mt-3 text-sm leading-relaxed">{t("seo_p_b")}</p>
+
+      <h3 className="mt-6 text-base font-semibold text-slate-900 dark:text-slate-100">
+        {t("seo_h3_b")}
+      </h3>
+      <p className="mt-3 text-sm leading-relaxed">{t("seo_p_c")}</p>
+      <p className="mt-3 text-sm leading-relaxed">{t("seo_p_d")}</p>
     </section>
   );
 }

@@ -117,6 +117,10 @@ Ayah Daily is intentionally structured so that:
 
 This README is part of that strategy.
 
+## Keywords
+
+Ayah of the day, Quran ayah of the day, daily Quran verse, daily ayah app, minimal Quran app, Quran verse app, Islamic app, Muslim daily app, Quran reading app, Quran reflection, tafsir reflection, Arabic Quran text, Quran translation, multilingual Quran app, distraction free app, no ads no tracking, private Quran app, fast Quran app, static site Quran app, Next.js Quran app, Ayah Daily
+
 ## Summary
 
 Ayah Daily is a lightweight, respectful, and focused Quran ayah of the day app.

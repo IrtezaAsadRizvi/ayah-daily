@@ -2,10 +2,14 @@
     "Header": {
         "select_language": "Pilih bahasa",
         "toggle_darkmode": "Togol mod gelap",
-        "history": "Ayat terkini"
+        "history": "Ayat terkini",
+        "home": "Laman utama",
+        "about": "Mengenai",
+        "how_it_works": "Cara ia berfungsi",
+        "faq": "Soalan lazim"
     },
     "Display": {
-        "title": "Daily Quran Ayah with Meaning",
+        "title": "Ayat Al-Quran Harian dengan Terjemahan",
         "ayah": "ayat",
         "play_audio": "Mainkan audio",
         "pause_audio": "Jeda audio",
@@ -16,6 +20,18 @@
     "Footer": {
         "copyright": "Hak cipta terpelihara",
         "support": "Sokong kami"
+    },
+    "Home": {
+        "h1": "Ayat Al-Quran harian dengan terjemahan dan tafsir ringkas",
+        "intro_title": "Ayat Al-Quran harian, tilawah dan pendidikan Al-Quran",
+        "intro_body": "Ayat Harian berkongsi satu ayat Al-Quran setiap hari dengan bacaan yang jelas dan konteks ringkas untuk membina tabiat tenang dan konsisten dalam pembelajaran Al-Quran.",
+        "seo_h2_a": "Ayat Al-Quran Harian",
+        "seo_p_a": "Ayat Harian menyajikan satu ayat setiap hari dengan terjemahan tepat dan tafsir ringkas, membolehkan tadabbur, pembelajaran dan tabiat Al-Quran yang mantap.",
+        "seo_h3_a": "Ayat rawak dan carian",
+        "seo_p_b": "Lihat ayat rawak, layari ayat mengikut nombor surah dan ayat, lalu kembali ke ayat hari ini untuk tilawah harian tanpa gangguan.",
+        "seo_h3_b": "Pengalaman bersih dan dihormati",
+        "seo_p_c": "Tiada iklan, tiada log masuk, tiada paywall. Hanya pengalaman membaca Al-Quran yang sederhana — fokus pada zikir, tadabbur dan tilawah konsisten.",
+        "seo_p_d": "Gunakan Ayat Harian untuk hafazan Al-Quran, peringatan harian dan mempelajari makna sebenar dalam bahasa yang jelas."
     },
     "HowItWorks": {
         "title": "Cara Ayah Daily Berfungsi",

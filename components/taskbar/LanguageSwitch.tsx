@@ -45,7 +45,7 @@ export default function LanguageSwitch() {
     if (!newLocale || newLocale === locale) return;
 
     const basePath = stripLocalePrefix(pathname);
-    const target = newLocale === "en" ? basePath : `/${newLocale}${basePath}`;
+    const target = `/${newLocale}${basePath === "/" ? "" : basePath}`;
     router.replace(target);
   };
 

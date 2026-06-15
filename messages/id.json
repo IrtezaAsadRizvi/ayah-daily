@@ -2,10 +2,14 @@
     "Header": {
         "select_language": "Pilih bahasa",
         "toggle_darkmode": "Alihkan mode gelap",
-        "history": "Ayat terbaru"
+        "history": "Ayat terbaru",
+        "home": "Beranda",
+        "about": "Tentang",
+        "how_it_works": "Cara kerja",
+        "faq": "Tanya jawab"
     },
     "Display": {
-        "title": "Daily Quran Ayah with Meaning",
+        "title": "Ayat Al-Qur'an Harian dengan Terjemahan",
         "ayah": "ayat",
         "play_audio": "Putar audio",
         "pause_audio": "Jeda audio",
@@ -16,6 +20,18 @@
     "Footer": {
         "copyright": "Hak cipta dilindungi",
         "support": "Dukung kami"
+    },
+    "Home": {
+        "h1": "Ayat Al-Qur'an harian dengan terjemahan dan tafsir singkat",
+        "intro_title": "Ayat Al-Qur'an harian, tilawah, dan pembelajaran Al-Qur'an",
+        "intro_body": "Ayat Harian membagikan satu ayat Al-Qur'an setiap hari dengan bacaan yang jelas dan konteks singkat untuk membangun kebiasaan belajar Al-Qur'an yang tenang dan konsisten.",
+        "seo_h2_a": "Ayat Al-Qur'an Harian",
+        "seo_p_a": "Ayat Harian menyajikan satu ayat Al-Qur'an setiap hari dengan terjemahan akurat dan tafsir ringkas agar siapa pun dapat merenung, belajar, dan membangun kebiasaan Al-Qur'an yang mantap.",
+        "seo_h3_a": "Ayat acak dan penelusuran",
+        "seo_p_b": "Telusuri ayat acak, jelajahi ayat berdasarkan nomor surah dan ayat, lalu kembali ke ayat hari ini untuk tilawah harian tanpa gangguan.",
+        "seo_h3_b": "Pengalaman bersih dan tenang",
+        "seo_p_c": "Tanpa iklan, tanpa login, dan tanpa paywall. Hanya pengalaman membaca Al-Qur'an yang sederhana — fokus pada zikir, perenungan, dan tilawah yang konsisten.",
+        "seo_p_d": "Gunakan Ayat Harian untuk hafalan Al-Qur'an, pengingat harian, dan mempelajari makna otentik dengan bahasa yang jelas."
     },
     "HowItWorks": {
         "title": "Cara Kerja Ayah Daily",

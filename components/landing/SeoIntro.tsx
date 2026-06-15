@@ -1,16 +1,15 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function SeoIntro() {
+  const t = useTranslations("Home");
   return (
-    <div className="mt-6 max-w-2xl text-center text-sm text-gray-600 fixed -top-[100vh]">
-      <h2 className="text-base font-semibold text-gray-900">
-        Daily Quran verse, Quran tilawat, and Quran education
+    <div className="mt-10 max-w-2xl mx-auto px-4 text-center text-slate-600 dark:text-slate-400">
+      <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+        {t("intro_title")}
       </h2>
-      <p className="mt-2">
-        Ayah Daily shares one Quran verse a day with clear reading Quran
-        experiences, Quran tilawat, and Islamic education to build a calm,
-        consistent habit of Quran learning.
-      </p>
+      <p className="mt-3 text-sm leading-relaxed">{t("intro_body")}</p>
     </div>
   );
 }

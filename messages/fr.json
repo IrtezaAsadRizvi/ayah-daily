@@ -2,10 +2,14 @@
     "Header": {
         "select_language": "Choisir la langue",
         "toggle_darkmode": "Basculer le mode sombre",
-        "history": "Versets récents"
+        "history": "Versets récents",
+        "home": "Accueil",
+        "about": "À propos",
+        "how_it_works": "Comment ça marche",
+        "faq": "FAQ"
     },
     "Display": {
-        "title": "Daily Quran Ayah with Meaning",
+        "title": "Verset quotidien du Coran avec sens",
         "ayah": "verset",
         "play_audio": "Lire l'audio",
         "pause_audio": "Mettre l'audio en pause",
@@ -16,6 +20,18 @@
     "Footer": {
         "copyright": "Tous droits réservés",
         "support": "Soutenez-nous"
+    },
+    "Home": {
+        "h1": "Verset quotidien du Coran avec traduction et court tafsir",
+        "intro_title": "Verset quotidien du Coran, tilawa et apprentissage",
+        "intro_body": "Verset Quotidien partage chaque jour un verset du Coran avec une lecture claire et un bref contexte pour construire une habitude calme et régulière d'apprentissage du Coran.",
+        "seo_h2_a": "Verset quotidien du Coran",
+        "seo_p_a": "Verset Quotidien propose chaque jour un verset avec une traduction précise et un tafsir concis, pour méditer, apprendre et bâtir une habitude coranique stable.",
+        "seo_h3_a": "Verset aléatoire et exploration",
+        "seo_p_b": "Découvrez un verset aléatoire, parcourez les versets par numéro de sourate et d'ayat, puis revenez au verset du jour pour une tilawa sans distraction.",
+        "seo_h3_b": "Expérience propre et respectueuse",
+        "seo_p_c": "Pas de publicité, pas de connexion, pas de paywall. Juste une lecture du Coran simple, centrée sur le rappel, la méditation et la récitation régulière.",
+        "seo_p_d": "Utilisez Verset Quotidien pour la mémorisation, les rappels quotidiens et l'apprentissage des sens authentiques en langage clair."
     },
     "HowItWorks": {
         "title": "Comment fonctionne Ayah Daily",

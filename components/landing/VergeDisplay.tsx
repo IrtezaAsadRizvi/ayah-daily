@@ -104,10 +104,24 @@ export default function VergeDisplay({ initial, mode = "daily" }: VergeDisplayPr
 
   const { data } = state;
 
-  // Choose translation based on locale
-  const isBn = (locale || "").toLowerCase() === "bn";
-  const displayText = isBn && data.bengali ? data.bengali : data.english;
-  const displayLang = isBn && data.bengali ? "bn" : "en";
+  // Choose translation based on locale.
+  // We only have real per-locale verse data for Bengali (bn) and Urdu (ur).
+  // Every other locale (fr/es/tr/etc) honestly falls back to English until
+  // real per-locale verse translation data is available. We never fabricate
+  // translations for locales we don't have data for.
+  const normalizedLocale = (locale || "").toLowerCase();
+  let displayText = data.english;
+  let displayLang = "en";
+  let displayDir: "ltr" | "rtl" = "ltr";
+
+  if (normalizedLocale === "bn" && data.bengali) {
+    displayText = data.bengali;
+    displayLang = "bn";
+  } else if (normalizedLocale === "ur" && data.urdu) {
+    displayText = data.urdu;
+    displayLang = "ur";
+    displayDir = "rtl";
+  }
 
   return (
     <section className="space-y-2 text-center flex-grow flex justify-center items-center flex-col max-w-4xl p-4">
@@ -127,7 +141,7 @@ export default function VergeDisplay({ initial, mode = "daily" }: VergeDisplayPr
         </p>
       )}
 
-      <p className="text-2xl leading-relaxed font-spectral font-medium" lang={displayLang}>
+      <p className="text-2xl leading-relaxed font-spectral font-medium" lang={displayLang} dir={displayDir}>
         {displayText}
       </p>
 

@@ -2,10 +2,14 @@
     "Header": {
         "select_language": "Seleccionar idioma",
         "toggle_darkmode": "Alternar modo oscuro",
-        "history": "Versículos recientes"
+        "history": "Versículos recientes",
+        "home": "Inicio",
+        "about": "Acerca de",
+        "how_it_works": "Cómo funciona",
+        "faq": "Preguntas frecuentes"
     },
     "Display": {
-        "title": "Daily Quran Ayah with Meaning",
+        "title": "Versículo diario del Corán con significado",
         "ayah": "versículo",
         "play_audio": "Reproducir audio",
         "pause_audio": "Pausar audio",
@@ -16,6 +20,18 @@
     "Footer": {
         "copyright": "Todos los derechos reservados",
         "support": "Apóyanos"
+    },
+    "Home": {
+        "h1": "Versículo diario del Corán con traducción y breve tafsir",
+        "intro_title": "Versículo diario del Corán, tilawa y aprendizaje",
+        "intro_body": "Versículo Diario comparte cada día un versículo del Corán con lectura clara y un breve contexto para crear un hábito calmado y constante de aprendizaje del Corán.",
+        "seo_h2_a": "Versículo diario del Corán",
+        "seo_p_a": "Versículo Diario ofrece cada día un versículo con traducción precisa y tafsir conciso, para reflexionar, aprender y mantener un hábito firme con el Corán.",
+        "seo_h3_a": "Versículo aleatorio y exploración",
+        "seo_p_b": "Descubre un versículo aleatorio, recorre los versículos por número de sura y aleya, y vuelve al versículo del día para una tilawa diaria sin distracciones.",
+        "seo_h3_b": "Experiencia limpia y respetuosa",
+        "seo_p_c": "Sin publicidad, sin inicio de sesión y sin muro de pago. Solo una lectura sencilla del Corán enfocada en el recuerdo, la reflexión y la recitación constante.",
+        "seo_p_d": "Usa Versículo Diario para memorización, recordatorios diarios y aprender significados auténticos en un lenguaje claro."
     },
     "HowItWorks": {
         "title": "Cómo funciona Ayah Daily",

@@ -2,49 +2,21 @@ import type { MetadataRoute } from "next";
 import { LOCALES } from "@/lib/i18n/locales";
 
 const SITE_URL = "https://ayah-daily.web.app";
+const SUBPATHS = ["", "/about", "/how-it-works", "/faq"] as const;
 
 export const dynamic = "force-static";
 
+// Note: per-locale hreflang alternates are emitted via <link rel="alternate">
+// in the document <head> (generateMetadata.alternates.languages). Next 13.4's
+// MetadataRoute.Sitemap only renders <loc>, so changeFrequency/priority/
+// alternates are intentionally omitted here — they would be dropped silently.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
-  const entries: MetadataRoute.Sitemap = [
-    {
-      url: SITE_URL,
-      lastModified,
-    },
-    {
-      url: `${SITE_URL}/about`,
-      lastModified,
-    },
-    {
-      url: `${SITE_URL}/how-it-works`,
-      lastModified,
-    },
-    {
-      url: `${SITE_URL}/faq`,
-      lastModified,
-    },
-  ];
+  const entries: MetadataRoute.Sitemap = [];
 
   LOCALES.forEach((locale) => {
-    entries.push(
-      {
-        url: `${SITE_URL}/${locale}`,
-        lastModified,
-      },
-      {
-        url: `${SITE_URL}/${locale}/about`,
-        lastModified,
-      },
-      {
-        url: `${SITE_URL}/${locale}/how-it-works`,
-        lastModified,
-      },
-      {
-        url: `${SITE_URL}/${locale}/faq`,
-        lastModified,
-      }
-    );
+    SUBPATHS.forEach((sub) => {
+      entries.push({ url: `${SITE_URL}/${locale}${sub}` });
+    });
   });
 
   return entries;

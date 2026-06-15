@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import VergeDisplay from "@/components/landing/VergeDisplay";
 import VergeActions from "@/components/landing/VergeActions";
@@ -22,15 +23,17 @@ function validateRange(surah: number, ayah: number): boolean {
   return true;
 }
 
-export default function HomePageClient({ initial }: { initial: VergeOfDay }) {
+function FixedVerseFromQuery() {
   const searchParams = useSearchParams();
   const surah = parseParam(searchParams.get("surah"));
   const ayah = parseParam(searchParams.get("ayah"));
-
   if (surah && ayah && validateRange(surah, ayah)) {
     return <FixedVersePage surah={surah} ayah={ayah} />;
   }
+  return null;
+}
 
+function DefaultHome({ initial }: { initial: VergeOfDay }) {
   return (
     <section className="h-full w-full flex flex-col justify-center items-center">
       <VergeDisplay initial={initial} />
@@ -39,4 +42,17 @@ export default function HomePageClient({ initial }: { initial: VergeOfDay }) {
       <SeoHidden />
     </section>
   );
+}
+
+export default function HomePageClient({ initial }: { initial: VergeOfDay }) {
+  return (
+    <Suspense fallback={<DefaultHome initial={initial} />}>
+      <FixedVerseOrDefault initial={initial} />
+    </Suspense>
+  );
+}
+
+function FixedVerseOrDefault({ initial }: { initial: VergeOfDay }) {
+  const fixed = FixedVerseFromQuery();
+  return fixed ?? <DefaultHome initial={initial} />;
 }
