@@ -1,0 +1,44 @@
+name: Deploy to Firebase Hosting
+
+# Build the static site and deploy it to the live channel on every push to main.
+on:
+  push:
+    branches: [main]
+
+# Never deploy two pushes on top of each other; the newest push wins.
+concurrency:
+  group: firebase-hosting-live
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Node 22 LTS — matches the version the project deploys with locally and
+      # avoids the Node 25 `SlowBuffer` issue.
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Runs `prebuild` then `next build` (static export) → produces ./out
+      - name: Build static site
+        run: npm run build
+
+      - name: Deploy to Firebase Hosting (live)
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_AYAH_DAILY }}
+          projectId: ayah-daily
+          channelId: live
