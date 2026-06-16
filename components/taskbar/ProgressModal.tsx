@@ -7,10 +7,13 @@ import { useDispatch } from "react-redux";
 import { setVerse } from "@/state/verseSlice";
 import { fetchVerseDirect } from "@/lib/verse/VerseLoader";
 import { TOTAL_AYAHS } from "@/lib/verse/constants";
+import { computeStreak } from "@/lib/streak";
+import { getBookmarks, toggleBookmark, type Bookmark } from "@/lib/bookmarks";
 
 type ViewedEntry = { surah: string; verse: string; date: string };
 type SurahMeta = { surahName: string; surahNameArabic?: string };
 type RecentItem = { surah: string; verse: string; date: string; title: string; ar: string };
+type BookmarkItem = { surah: string; verse: string; date: string; title: string; ar: string };
 
 function readViewedList(): ViewedEntry[] {
   if (typeof window === "undefined") return [];
@@ -39,24 +42,48 @@ export default function ProgressModal({
 }) {
   const t = useTranslations("Progress");
   const tDisplay = useTranslations("Display");
+  const tTools = useTranslations("Tools");
   const dispatch = useDispatch();
 
   const [readCount, setReadCount] = useState(0);
   const [recent, setRecent] = useState<RecentItem[]>([]);
+  const [streak, setStreak] = useState(0);
+  const [bookmarks, setBookmarks] = useState<BookmarkItem[]>([]);
 
-  // Read progress + recent 5 from localStorage each time the modal opens.
+  const decorate = (
+    list: { surah: string; verse: string; date: string }[],
+    surahs: SurahMeta[]
+  ): BookmarkItem[] =>
+    list.map((v) => {
+      const meta = surahs[Number(v.surah) - 1];
+      return {
+        surah: v.surah,
+        verse: v.verse,
+        date: v.date,
+        title: meta?.surahName ?? `Surah ${v.surah}`,
+        ar: meta?.surahNameArabic ?? "",
+      };
+    });
+
+  // Read progress + recent 5 + streak + bookmarks each time the modal opens.
   useEffect(() => {
     if (!open) return;
     const viewed = readViewedList();
     setReadCount(viewed.length);
+    setStreak(computeStreak());
 
     const recent5 = viewed
       .slice()
       .sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
       .slice(0, 5);
 
-    if (recent5.length === 0) {
+    const savedBookmarks = getBookmarks()
+      .slice()
+      .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+
+    if (recent5.length === 0 && savedBookmarks.length === 0) {
       setRecent([]);
+      setBookmarks([]);
       return;
     }
 
@@ -70,18 +97,8 @@ export default function ProgressModal({
         // surah names are optional — fall back to "Surah N"
       }
       if (!alive) return;
-      setRecent(
-        recent5.map((v) => {
-          const meta = surahs[Number(v.surah) - 1];
-          return {
-            surah: v.surah,
-            verse: v.verse,
-            date: v.date,
-            title: meta?.surahName ?? `Surah ${v.surah}`,
-            ar: meta?.surahNameArabic ?? "",
-          };
-        })
-      );
+      setRecent(decorate(recent5, surahs));
+      setBookmarks(decorate(savedBookmarks, surahs));
     })();
     return () => {
       alive = false;
@@ -118,6 +135,11 @@ export default function ProgressModal({
     },
     [dispatch, onClose]
   );
+
+  const removeBookmark = useCallback((s: string, a: string) => {
+    toggleBookmark(s, a);
+    setBookmarks((prev) => prev.filter((b) => !(b.surah === s && b.verse === a)));
+  }, []);
 
   if (!open) return null;
 
@@ -160,13 +182,20 @@ export default function ProgressModal({
               style={{ width: `${barWidth}%` }}
             />
           </div>
-          <p className="mt-2 text-sm text-white/80">
-            {t("ayahs_read", {
-              read: readCount.toLocaleString(),
-              total: TOTAL_AYAHS.toLocaleString(),
-            })}
-            <span className="opacity-70"> · {pctLabel}%</span>
-          </p>
+          <div className="mt-2 flex items-center justify-between gap-2">
+            <p className="text-sm text-white/80">
+              {t("ayahs_read", {
+                read: readCount.toLocaleString(),
+                total: TOTAL_AYAHS.toLocaleString(),
+              })}
+              <span className="opacity-70"> · {pctLabel}%</span>
+            </p>
+            {streak > 0 && (
+              <span className="shrink-0 rounded-full border border-white/20 bg-white/10 px-2.5 py-1 text-xs font-medium">
+                {tTools("streak", { days: streak })}
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Recent 5 ayahs */}
@@ -196,6 +225,51 @@ export default function ProgressModal({
                       </span>
                       <span>{new Date(r.date).toLocaleDateString()}</span>
                     </div>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+
+        {/* Bookmarks */}
+        <div className="mt-6">
+          <h3 className="text-xs font-semibold uppercase tracking-wide opacity-60">
+            {tTools("bookmarks")}
+          </h3>
+          {bookmarks.length === 0 ? (
+            <p className="mt-3 text-sm opacity-70">{tTools("no_bookmarks")}</p>
+          ) : (
+            <ul className="mt-2 divide-y divide-white/15">
+              {bookmarks.map((b, i) => (
+                <li
+                  key={`${b.surah}/${b.verse}/${i}`}
+                  className="flex items-center gap-1"
+                >
+                  <button
+                    type="button"
+                    onClick={() => loadAndShow(b.surah, b.verse)}
+                    className="flex-1 text-left py-2.5 px-1 rounded-lg
+                               hover:bg-white/10 focus:outline-none focus:bg-white/10"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="font-bold font-spectral">{b.title}</span>
+                      {b.ar ? <span className="text-lg opacity-70">{b.ar}</span> : null}
+                    </div>
+                    <div className="mt-0.5 text-[11px] opacity-60">
+                      <span className="capitalize">
+                        {tDisplay("ayah")} {b.verse}
+                      </span>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    aria-label={tTools("remove")}
+                    title={tTools("remove")}
+                    className="icon-button shrink-0 text-white/70 hover:text-white"
+                    onClick={() => removeBookmark(b.surah, b.verse)}
+                  >
+                    <X size={16} />
                   </button>
                 </li>
               ))}

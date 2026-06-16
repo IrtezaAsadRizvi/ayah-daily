@@ -97,5 +97,46 @@
     "ayahs_read": "{read} of {total} ayahs read",
     "recent": "Recently read",
     "empty": "No verses read yet"
+  },
+  "Surah": {
+    "surahs": "Surahs",
+    "browse_title": "Browse the Quran",
+    "browse_intro": "Read all 114 surahs with translation — choose a surah to read its verses.",
+    "verses": "verses",
+    "meccan": "Meccan",
+    "medinan": "Medinan",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "Glossary": {
+    "title": "Quran glossary",
+    "intro": "Key terms for reading and understanding the Quran.",
+    "terms": {
+      "ayah": "Ayah",
+      "ayah_def": "A verse of the Quran. The Quran contains 6,236 ayahs across 114 surahs.",
+      "surah": "Surah",
+      "surah_def": "A chapter of the Quran. There are 114 surahs, ranging from a few verses to nearly 300.",
+      "tafsir": "Tafsir",
+      "tafsir_def": "Scholarly explanation and interpretation of the meaning of Quranic verses.",
+      "tilawat": "Tilawat",
+      "tilawat_def": "Reciting the Quran aloud following the rules of tajwid.",
+      "juz": "Juz",
+      "juz_def": "One of the 30 roughly equal parts the Quran is divided into, often read one per day.",
+      "quran": "Quran",
+      "quran_def": "The holy book of Islam: the words of Allah revealed to Prophet Muhammad over 23 years."
+    }
+  },
+  "Tools": {
+    "search": "Search",
+    "search_placeholder": "Search surahs…",
+    "jump_hint": "Tip: type a surah name, or \"39:10\" to jump to a verse",
+    "no_results": "No matching surahs",
+    "bookmarks": "Bookmarks",
+    "no_bookmarks": "No saved verses yet",
+    "save": "Save verse",
+    "saved": "Saved",
+    "remove": "Remove",
+    "share": "Share",
+    "streak": "{days} day streak"
   }
 }

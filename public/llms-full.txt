@@ -1,0 +1,49 @@
+# Ayah Daily — Full Overview
+
+## What it is
+Ayah Daily (also known as "One Verse Daily") is a free web app that presents one
+Quran verse (ayah) each day with a clear translation and brief tafsir context.
+It is built for calm, consistent Quran reading, reflection, and Islamic
+education. Site: https://ayah-daily.web.app
+
+## Core principles
+- Free to use.
+- No ads.
+- No account or login required.
+- Works in 12 languages.
+
+## Features
+- Daily verse: a single ayah highlighted each day for reflection.
+- Translations: clear, readable translation of each verse.
+- Brief tafsir: short context notes to aid understanding (not a substitute for
+  scholarly study).
+- Recitation / audio: Quran tilawat so verses can be heard as well as read.
+- Random ayah discovery: surface a random verse on demand.
+- Surah and ayah lookup: navigate directly to any surah and verse.
+- 114-surah browser: browse the complete list of all 114 surahs.
+- Glossary: plain-language definitions of key Quran terms.
+- Progress tracking: keep track of daily reading habit.
+- 12 languages: English (en), Bengali (bn), Arabic (ar), Urdu (ur), Indonesian
+  (id), Turkish (tr), Persian/Farsi (fa), Malay (ms), French (fr), Spanish (es),
+  Hindi (hi), Swedish (sv).
+
+## URL structure
+All content is served under a locale prefix. Replace {locale} with one of:
+en, bn, ar, ur, id, tr, fa, ms, fr, es, hi, sv.
+
+- Home (daily verse): https://ayah-daily.web.app/{locale}
+- Surah browser (all surahs): https://ayah-daily.web.app/{locale}/surahs
+- Individual surah (id 1-114): https://ayah-daily.web.app/{locale}/surah/{id}
+- Glossary: https://ayah-daily.web.app/{locale}/glossary
+- About: https://ayah-daily.web.app/{locale}/about
+- How it works: https://ayah-daily.web.app/{locale}/how-it-works
+- FAQ: https://ayah-daily.web.app/{locale}/faq
+
+## Glossary terms
+The glossary defines core terms used across the app, including: ayah (verse),
+surah (chapter), tafsir (exegesis/commentary), tilawat (recitation), juz (one of
+the 30 parts of the Quran), and Quran (the scripture itself).
+
+## Discovery
+- Sitemap: https://ayah-daily.web.app/sitemap.xml
+- Short index for LLMs: https://ayah-daily.web.app/llms.txt

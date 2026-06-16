@@ -97,5 +97,46 @@
     "ayahs_read": "{read} de {total} versículos leídos",
     "recent": "Leídos recientemente",
     "empty": "Aún no se ha leído ningún versículo"
+  },
+  "Surah": {
+    "surahs": "Suras",
+    "browse_title": "Explorar el Corán",
+    "browse_intro": "Lee las 114 suras con traducción — elige una sura para leer sus versículos.",
+    "verses": "versículos",
+    "meccan": "Mecana",
+    "medinan": "Medinense",
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "Glossary": {
+    "title": "Glosario del Corán",
+    "intro": "Términos clave para leer y comprender el Corán.",
+    "terms": {
+      "ayah": "Aleya",
+      "ayah_def": "Un versículo del Corán. El Corán contiene 6236 aleyas distribuidas en 114 suras.",
+      "surah": "Sura",
+      "surah_def": "Un capítulo del Corán. Hay 114 suras, que van desde unos pocos versículos hasta casi 300.",
+      "tafsir": "Tafsir",
+      "tafsir_def": "Explicación e interpretación erudita del significado de los versículos coránicos.",
+      "tilawat": "Tilawa",
+      "tilawat_def": "Recitar el Corán en voz alta siguiendo las reglas del tajwid.",
+      "juz": "Yuz",
+      "juz_def": "Una de las 30 partes aproximadamente iguales en que se divide el Corán, a menudo leída una por día.",
+      "quran": "Corán",
+      "quran_def": "El libro sagrado del islam: las palabras de Alá reveladas al Profeta Muhammad a lo largo de 23 años."
+    }
+  },
+  "Tools": {
+    "search": "Buscar",
+    "search_placeholder": "Buscar suras…",
+    "jump_hint": "Consejo: escribe el nombre de una sura, o «39:10» para ir a un versículo",
+    "no_results": "No hay suras coincidentes",
+    "bookmarks": "Marcadores",
+    "no_bookmarks": "Aún no hay versículos guardados",
+    "save": "Guardar versículo",
+    "saved": "Guardado",
+    "remove": "Eliminar",
+    "share": "Compartir",
+    "streak": "Racha de {days} días"
   }
 }

@@ -97,5 +97,46 @@
     "ayahs_read": "{read} daripada {total} ayat telah dibaca",
     "recent": "Baru dibaca",
     "empty": "Belum ada ayat yang dibaca"
+  },
+  "Surah": {
+    "surahs": "Surah",
+    "browse_title": "Layari Al-Quran",
+    "browse_intro": "Baca kesemua 114 surah dengan terjemahan — pilih sebuah surah untuk membaca ayat-ayatnya.",
+    "verses": "ayat",
+    "meccan": "Makkiyah",
+    "medinan": "Madaniyah",
+    "previous": "Sebelumnya",
+    "next": "Seterusnya"
+  },
+  "Glossary": {
+    "title": "Glosari Al-Quran",
+    "intro": "Istilah penting untuk membaca dan memahami Al-Quran.",
+    "terms": {
+      "ayah": "Ayat",
+      "ayah_def": "Satu ayat Al-Quran. Al-Quran mengandungi 6,236 ayat dalam 114 surah.",
+      "surah": "Surah",
+      "surah_def": "Satu bab Al-Quran. Terdapat 114 surah, daripada beberapa ayat hingga hampir 300 ayat.",
+      "tafsir": "Tafsir",
+      "tafsir_def": "Penjelasan dan tafsiran ilmiah tentang makna ayat-ayat Al-Quran.",
+      "tilawat": "Tilawah",
+      "tilawat_def": "Membaca Al-Quran dengan suara mengikut hukum tajwid.",
+      "juz": "Juzuk",
+      "juz_def": "Salah satu daripada 30 bahagian yang lebih kurang sama yang membahagikan Al-Quran, sering dibaca satu juzuk sehari.",
+      "quran": "Al-Quran",
+      "quran_def": "Kitab suci Islam: firman Allah yang diturunkan kepada Nabi Muhammad selama 23 tahun."
+    }
+  },
+  "Tools": {
+    "search": "Cari",
+    "search_placeholder": "Cari surah…",
+    "jump_hint": "Petua: taip nama surah, atau \"39:10\" untuk melompat ke sesuatu ayat",
+    "no_results": "Tiada surah yang sepadan",
+    "bookmarks": "Penanda buku",
+    "no_bookmarks": "Belum ada ayat yang disimpan",
+    "save": "Simpan ayat",
+    "saved": "Disimpan",
+    "remove": "Buang",
+    "share": "Kongsi",
+    "streak": "Rentetan {days} hari"
   }
 }

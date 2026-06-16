@@ -1,6 +1,7 @@
 # Ayah Daily (One Verse Daily)
-Ayah Daily provides a daily Quran verse with simple reading, Quran tilawat, and
-Quran education for Islamic education and reflection.
+Ayah Daily provides a daily Quran verse with clear translation, brief tafsir,
+and Quran tilawat (recitation/audio) for Islamic education and reflection. It is
+free, ad-free, and requires no login. Available in 12 languages.
 
 Primary URLs:
 - https://ayah-daily.web.app/
@@ -17,9 +18,15 @@ Primary URLs:
 - https://ayah-daily.web.app/hi
 - https://ayah-daily.web.app/sv
 
+Sections (replace {locale} with one of: en, bn, ar, ur, id, tr, fa, ms, fr, es, hi, sv):
+- Surah browser (all 114 surahs): https://ayah-daily.web.app/{locale}/surahs
+- Individual surah (id 1-114): https://ayah-daily.web.app/{locale}/surah/{id}
+- Glossary (key Quran terms): https://ayah-daily.web.app/{locale}/glossary
+
 Key Pages:
 - https://ayah-daily.web.app/en/about
 - https://ayah-daily.web.app/en/how-it-works
 - https://ayah-daily.web.app/en/faq
 
+Full overview for LLMs: https://ayah-daily.web.app/llms-full.txt
 Sitemap: https://ayah-daily.web.app/sitemap.xml

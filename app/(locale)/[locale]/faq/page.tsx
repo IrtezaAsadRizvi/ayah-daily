@@ -2,6 +2,28 @@ import type { Metadata } from "next";
 import FaqContent from "@/components/faq/FaqContent";
 import { LOCALES, normalizeLocale } from "@/lib/i18n/locales";
 import { OG_LOCALE, SITE_URL } from "@/lib/i18n/meta";
+import en from "@/messages/en.json";
+
+const FAQ_KEYS = ["q1", "q2", "q3", "q4", "q5"] as const;
+
+function buildFaqJsonLd() {
+  const { questions, answers } = en.Faq;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQ_KEYS.map((qKey) => {
+      const aKey = `a${qKey.slice(1)}` as keyof typeof answers;
+      return {
+        "@type": "Question",
+        name: questions[qKey],
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: answers[aKey],
+        },
+      };
+    }),
+  };
+}
 
 export async function generateMetadata(
   { params }: { params: { locale: string } }
@@ -48,5 +70,14 @@ export async function generateMetadata(
 }
 
 export default function FaqPage() {
-  return <FaqContent />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFaqJsonLd()) }}
+      />
+      <FaqContent />
+    </>
+  );
 }

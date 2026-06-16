@@ -13,6 +13,7 @@ import ClientIntlProvider from "@/components/i18n/ClientIntlProvider";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import GAClient from "@/app/ga-client";
+import RegisterSW from "@/components/pwa/RegisterSW";
 import { GA_ID } from "@/lib/ga";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { META_COPY, SITE_URL } from "@/lib/i18n/meta";
@@ -22,6 +23,7 @@ const ANALYTICS_GA_ID = GA_ID || "G-RPGYNG9Q5R";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  themeColor: "#ace0f9",
   robots: { index: true, follow: true },
   verification: { google: "p21olxSwB19NCND1OiQ9My_xGGfGAO9cbjxow4SGhic" },
   icons: { icon: [{ url: "/favicon.ico", sizes: "any" }] },
@@ -134,6 +136,8 @@ export default function LocaleLayout({
         <Suspense fallback={null}>
           <GAClient />
         </Suspense>
+
+        <RegisterSW />
 
         <StoreProvider>
           <ClientIntlProvider>

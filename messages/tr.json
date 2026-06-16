@@ -97,5 +97,46 @@
     "ayahs_read": "{total} ayetten {read} tanesi okundu",
     "recent": "Son okunanlar",
     "empty": "Henüz ayet okunmadı"
+  },
+  "Surah": {
+    "surahs": "Sureler",
+    "browse_title": "Kur'an'a göz at",
+    "browse_intro": "114 surenin tamamını mealiyle okuyun — ayetlerini okumak için bir sure seçin.",
+    "verses": "ayet",
+    "meccan": "Mekki",
+    "medinan": "Medeni",
+    "previous": "Önceki",
+    "next": "Sonraki"
+  },
+  "Glossary": {
+    "title": "Kur'an sözlüğü",
+    "intro": "Kur'an'ı okumak ve anlamak için temel terimler.",
+    "terms": {
+      "ayah": "Ayet",
+      "ayah_def": "Kur'an'ın bir ayeti. Kur'an, 114 sure içinde 6.236 ayet barındırır.",
+      "surah": "Sure",
+      "surah_def": "Kur'an'ın bir bölümü. Birkaç ayetten yaklaşık 300 ayete kadar uzanan 114 sure vardır.",
+      "tafsir": "Tefsir",
+      "tafsir_def": "Kur'an ayetlerinin anlamına dair ilmî açıklama ve yorum.",
+      "tilawat": "Tilavet",
+      "tilawat_def": "Tecvid kurallarına uyarak Kur'an'ı sesli okumak.",
+      "juz": "Cüz",
+      "juz_def": "Kur'an'ın bölündüğü, yaklaşık eşit 30 parçadan biri; çoğu zaman günde bir cüz okunur.",
+      "quran": "Kur'an",
+      "quran_def": "İslam'ın kutsal kitabı: Allah'ın, Peygamber Muhammed'e 23 yıl boyunca indirdiği sözler."
+    }
+  },
+  "Tools": {
+    "search": "Ara",
+    "search_placeholder": "Sure ara…",
+    "jump_hint": "İpucu: bir sure adı yazın veya bir ayete gitmek için \"39:10\" yazın",
+    "no_results": "Eşleşen sure yok",
+    "bookmarks": "Yer imleri",
+    "no_bookmarks": "Henüz kaydedilmiş ayet yok",
+    "save": "Ayeti kaydet",
+    "saved": "Kaydedildi",
+    "remove": "Kaldır",
+    "share": "Paylaş",
+    "streak": "{days} günlük seri"
   }
 }

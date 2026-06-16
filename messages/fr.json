@@ -97,5 +97,46 @@
     "ayahs_read": "{read} versets lus sur {total}",
     "recent": "Lus récemment",
     "empty": "Aucun verset lu pour le moment"
+  },
+  "Surah": {
+    "surahs": "Sourates",
+    "browse_title": "Parcourir le Coran",
+    "browse_intro": "Lisez les 114 sourates avec traduction — choisissez une sourate pour lire ses versets.",
+    "verses": "versets",
+    "meccan": "Mecquoise",
+    "medinan": "Médinoise",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "Glossary": {
+    "title": "Glossaire du Coran",
+    "intro": "Termes clés pour lire et comprendre le Coran.",
+    "terms": {
+      "ayah": "Ayah",
+      "ayah_def": "Un verset du Coran. Le Coran contient 6 236 ayahs répartis sur 114 sourates.",
+      "surah": "Sourate",
+      "surah_def": "Un chapitre du Coran. Il y a 114 sourates, allant de quelques versets à près de 300.",
+      "tafsir": "Tafsir",
+      "tafsir_def": "Explication et interprétation savantes du sens des versets coraniques.",
+      "tilawat": "Tilawa",
+      "tilawat_def": "Réciter le Coran à voix haute en suivant les règles du tajwid.",
+      "juz": "Juz",
+      "juz_def": "L'une des 30 parties à peu près égales en lesquelles le Coran est divisé, souvent lue à raison d'une par jour.",
+      "quran": "Coran",
+      "quran_def": "Le livre saint de l'islam : les paroles d'Allah révélées au Prophète Muhammad sur 23 ans."
+    }
+  },
+  "Tools": {
+    "search": "Rechercher",
+    "search_placeholder": "Rechercher des sourates…",
+    "jump_hint": "Astuce : tapez un nom de sourate, ou « 39:10 » pour aller à un verset",
+    "no_results": "Aucune sourate correspondante",
+    "bookmarks": "Favoris",
+    "no_bookmarks": "Aucun verset enregistré pour le moment",
+    "save": "Enregistrer le verset",
+    "saved": "Enregistré",
+    "remove": "Supprimer",
+    "share": "Partager",
+    "streak": "Série de {days} jours"
   }
 }

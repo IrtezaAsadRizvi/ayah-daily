@@ -2,7 +2,15 @@ import type { MetadataRoute } from "next";
 import { LOCALES } from "@/lib/i18n/locales";
 
 const SITE_URL = "https://ayah-daily.web.app";
-const SUBPATHS = ["", "/about", "/how-it-works", "/faq"] as const;
+const SUBPATHS = [
+  "",
+  "/about",
+  "/how-it-works",
+  "/faq",
+  "/surahs",
+  "/glossary",
+] as const;
+const SURAH_COUNT = 114;
 
 export const dynamic = "force-static";
 
@@ -17,6 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     SUBPATHS.forEach((sub) => {
       entries.push({ url: `${SITE_URL}/${locale}${sub}` });
     });
+    for (let id = 1; id <= SURAH_COUNT; id += 1) {
+      entries.push({ url: `${SITE_URL}/${locale}/surah/${id}` });
+    }
   });
 
   return entries;

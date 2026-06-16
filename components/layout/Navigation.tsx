@@ -2,6 +2,7 @@
 import LanguageSwitch from "../taskbar/LanguageSwitch";
 import DarkModeSwitch from "../taskbar/DarkModeSwitch";
 import VerseHistory from "../taskbar/VerseHistory";
+import SearchButton from "../taskbar/SearchButton";
 import Logo from "../common/Logo";
 
 const Navigation: React.FC = () => {
@@ -12,6 +13,7 @@ const Navigation: React.FC = () => {
           <Logo />
         </div>
         <div className="flex">
+          <SearchButton />
           <VerseHistory />
           <LanguageSwitch />
           <DarkModeSwitch />

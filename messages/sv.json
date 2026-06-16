@@ -97,5 +97,46 @@
     "ayahs_read": "{read} av {total} ayah lästa",
     "recent": "Nyligen lästa",
     "empty": "Inga verser lästa ännu"
+  },
+  "Surah": {
+    "surahs": "Suror",
+    "browse_title": "Bläddra i Koranen",
+    "browse_intro": "Läs alla 114 suror med översättning — välj en sura för att läsa dess verser.",
+    "verses": "verser",
+    "meccan": "Mekkansk",
+    "medinan": "Medinsk",
+    "previous": "Föregående",
+    "next": "Nästa"
+  },
+  "Glossary": {
+    "title": "Koranordlista",
+    "intro": "Viktiga termer för att läsa och förstå Koranen.",
+    "terms": {
+      "ayah": "Ayah",
+      "ayah_def": "En vers i Koranen. Koranen innehåller 6 236 ayah fördelade på 114 suror.",
+      "surah": "Sura",
+      "surah_def": "Ett kapitel i Koranen. Det finns 114 suror, från några få verser till nästan 300.",
+      "tafsir": "Tafsir",
+      "tafsir_def": "Lärd förklaring och tolkning av betydelsen i Koranens verser.",
+      "tilawat": "Tilawah",
+      "tilawat_def": "Att recitera Koranen högt enligt tajwid-reglerna.",
+      "juz": "Juz",
+      "juz_def": "En av de 30 ungefär lika stora delar som Koranen delas in i, ofta läst en per dag.",
+      "quran": "Koranen",
+      "quran_def": "Islams heliga bok: Allahs ord uppenbarade för profeten Muhammed under 23 år."
+    }
+  },
+  "Tools": {
+    "search": "Sök",
+    "search_placeholder": "Sök suror…",
+    "jump_hint": "Tips: skriv ett suranamn, eller \"39:10\" för att hoppa till en vers",
+    "no_results": "Inga matchande suror",
+    "bookmarks": "Bokmärken",
+    "no_bookmarks": "Inga sparade verser ännu",
+    "save": "Spara vers",
+    "saved": "Sparad",
+    "remove": "Ta bort",
+    "share": "Dela",
+    "streak": "{days} dagars svit"
   }
 }

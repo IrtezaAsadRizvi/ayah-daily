@@ -7,10 +7,12 @@ const Footer: React.FC = () => {
     const year = new Date().getFullYear();
     const t = useTranslations("Footer");
     const tHeader = useTranslations("Header");
+    const tSurah = useTranslations("Surah");
     const locale = useLocale();
 
     const links = [
         { href: `/${locale}`, label: tHeader("home") },
+        { href: `/${locale}/surahs`, label: tSurah("surahs") },
         { href: `/${locale}/about`, label: tHeader("about") },
         { href: `/${locale}/how-it-works`, label: tHeader("how_it_works") },
         { href: `/${locale}/faq`, label: tHeader("faq") },
