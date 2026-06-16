@@ -1,7 +1,7 @@
 // components/landing/VergeDisplay.tsx
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { loadVergeOfToday, markViewed, VerseResponse } from "@/lib/verse/VerseLoader";
 import { useTranslations, useLocale } from "next-intl";
 import { useAppSelector, useAppDispatch } from "@/state/hooks";
@@ -29,6 +29,10 @@ export default function VergeDisplay({ initial, mode = "daily" }: VergeDisplayPr
 
   // Verse selected elsewhere (e.g., from history dropdown) lives in Redux
   const storeVerse = useAppSelector((s) => s.verse.data);
+
+  // Refs for fit-to-viewport sizing
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (initial?.data) dispatch(setVerse(initial.data));
@@ -85,6 +89,37 @@ export default function VergeDisplay({ initial, mode = "daily" }: VergeDisplayPr
     });
   }, [storeVerse]);
 
+  // Fit the verse block to the available height: shrink a --verse-scale custom
+  // property (which all verse type sizes multiply by) until the content fits.
+  // Re-runs on verse change, viewport resize, and once web fonts have loaded.
+  useEffect(() => {
+    const box = sectionRef.current;
+    const content = contentRef.current;
+    if (!box || !content) return;
+
+    const fit = () => {
+      content.style.setProperty("--verse-scale", "1");
+      const available = box.clientHeight - 16; // small breathing buffer
+      if (available <= 0) return;
+      let scale = 1;
+      let guard = 0;
+      // Step down until it fits (or we hit a readable floor).
+      while (content.scrollHeight > available && scale > 0.6 && guard < 24) {
+        scale = Math.max(0.6, scale - 0.04);
+        content.style.setProperty("--verse-scale", String(scale));
+        guard++;
+      }
+    };
+
+    fit();
+
+    const ro = new ResizeObserver(fit);
+    ro.observe(box);
+    (document as any).fonts?.ready?.then(fit).catch(() => {});
+
+    return () => ro.disconnect();
+  }, [state]);
+
   if (state.status !== "ready") {
     if (state.status === "error") {
       return (
@@ -123,10 +158,18 @@ export default function VergeDisplay({ initial, mode = "daily" }: VergeDisplayPr
     displayDir = "rtl";
   }
 
+  // Type sizes scale with viewport width (clamp) and the fit factor (--verse-scale).
+  const surahNameSize = "calc(clamp(1.5rem, 5vw, 2.25rem) * var(--verse-scale, 1))";
+  const arabicSize = "calc(clamp(1.4rem, 6vw, 2.75rem) * var(--verse-scale, 1))";
+  const translationSize = "calc(clamp(1rem, 3.4vw, 1.5rem) * var(--verse-scale, 1))";
+
   return (
-    <section className="flex-grow w-full flex flex-col justify-center items-center text-center px-6 py-8">
-      {/* key re-triggers the staggered entrance whenever the verse changes */}
-      <div key={`${state.surah}/${state.ayah}`} className="w-full max-w-3xl mx-auto">
+    <section
+      ref={sectionRef}
+      className="flex-grow w-full flex flex-col justify-center items-center text-center px-6"
+    >
+      {/* key re-triggers the staggered entrance + refit whenever the verse changes */}
+      <div key={`${state.surah}/${state.ayah}`} ref={contentRef} className="w-full max-w-3xl mx-auto">
         {/* Eyebrow / kicker — the page's single h1, framing rather than competing */}
         <h1
           className="animate-verse-rise text-[11px] sm:text-xs font-medium uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400"
@@ -145,16 +188,16 @@ export default function VergeDisplay({ initial, mode = "daily" }: VergeDisplayPr
         )}
 
         <h2
-          className="animate-verse-rise mt-1 font-spectral font-semibold text-3xl sm:text-4xl"
-          style={{ animationDelay: "140ms" }}
+          className="animate-verse-rise mt-1 font-spectral font-semibold leading-tight"
+          style={{ animationDelay: "140ms", fontSize: surahNameSize }}
         >
           {data.surahName}
         </h2>
 
         {data.arabic1 && (
           <p
-            className="animate-verse-rise mt-10 font-arabic text-3xl sm:text-[2.6rem] leading-[1.9] text-slate-900 dark:text-white"
-            style={{ animationDelay: "240ms" }}
+            className="animate-verse-rise mt-10 font-arabic leading-[1.9] text-slate-900 dark:text-white"
+            style={{ animationDelay: "240ms", fontSize: arabicSize }}
             lang="ar"
             dir="rtl"
           >
@@ -163,8 +206,8 @@ export default function VergeDisplay({ initial, mode = "daily" }: VergeDisplayPr
         )}
 
         <p
-          className="animate-verse-rise mt-7 mx-auto max-w-2xl font-spectral text-xl sm:text-2xl leading-relaxed text-slate-700 dark:text-slate-200"
-          style={{ animationDelay: "340ms" }}
+          className="animate-verse-rise mt-7 mx-auto max-w-2xl font-spectral leading-relaxed text-slate-700 dark:text-slate-200"
+          style={{ animationDelay: "340ms", fontSize: translationSize }}
           lang={displayLang}
           dir={displayDir}
         >
