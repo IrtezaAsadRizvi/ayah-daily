@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import VergeDisplay from "@/components/landing/VergeDisplay";
 import VergeActions from "@/components/landing/VergeActions";
-import SeoIntro from "@/components/landing/SeoIntro";
 import { fetchVerseDirect, VerseResponse } from "@/lib/verse/VerseLoader";
 
 type FixedVersePageProps = {
@@ -48,7 +47,6 @@ export default function FixedVersePage({ surah, ayah }: FixedVersePageProps) {
     <section className="h-full w-full flex flex-col justify-center items-center">
       <VergeDisplay initial={initial} mode="fixed" />
       <VergeActions />
-      <SeoIntro />
     </section>
   );
 }

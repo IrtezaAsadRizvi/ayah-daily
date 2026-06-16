@@ -4,6 +4,10 @@ import { useTranslations } from "next-intl";
 
 export default function HowItWorksContent() {
   const t = useTranslations("HowItWorks");
+  // Reuses the already-translated "Random Ayah / verse discovery" strings that
+  // used to live on the home page (Home namespace) — moved here so the feature
+  // stays documented and indexable without re-translating across all locales.
+  const tHome = useTranslations("Home");
 
   return (
     <section className="mx-auto w-full max-w-4xl px-6 py-10 text-center">
@@ -30,6 +34,15 @@ export default function HowItWorksContent() {
           </h2>
           <p className="mt-2 text-sm text-gray-600">
             {t("sections.translation_body")}
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-gray-900">
+            {tHome("seo_h3_a")}
+          </h2>
+          <p className="mt-2 text-sm text-gray-600">
+            {tHome("seo_p_b")}
           </p>
         </section>
 

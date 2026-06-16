@@ -4,8 +4,6 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import VergeDisplay from "@/components/landing/VergeDisplay";
 import VergeActions from "@/components/landing/VergeActions";
-import SeoIntro from "@/components/landing/SeoIntro";
-import SeoHidden from "@/components/landing/SeoHidden";
 import FixedVersePage from "@/components/landing/FixedVersePage";
 import type { VergeOfDay } from "@/lib/verse/VerseLoader";
 import { AYAH_COUNTS, SURAH_COUNT } from "@/lib/verse/constants";
@@ -38,8 +36,6 @@ function DefaultHome({ initial }: { initial: VergeOfDay }) {
     <section className="h-full w-full flex flex-col justify-center items-center">
       <VergeDisplay initial={initial} />
       <VergeActions />
-      <SeoIntro />
-      <SeoHidden />
     </section>
   );
 }
