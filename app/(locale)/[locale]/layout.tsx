@@ -139,7 +139,7 @@ export default function LocaleLayout({
           <ClientIntlProvider>
             <main className="h-[100dvh] w-[100dvw] flex flex-col">
               <Navigation />
-              <section className="flex-grow">{children}</section>
+              <section className="flex-grow min-h-0 overflow-y-auto">{children}</section>
               <Footer />
             </main>
           </ClientIntlProvider>
