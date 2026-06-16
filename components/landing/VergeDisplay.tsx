@@ -124,34 +124,66 @@ export default function VergeDisplay({ initial, mode = "daily" }: VergeDisplayPr
   }
 
   return (
-    <section className="space-y-2 text-center flex-grow flex justify-center items-center flex-col max-w-4xl p-4">
-      <h1 className="font-semibold font-spectral text-3xl sm:text-4xl !mb-2">
-        {t("title")}
-      </h1>
+    <section className="flex-grow w-full flex flex-col justify-center items-center text-center px-6 py-8">
+      {/* key re-triggers the staggered entrance whenever the verse changes */}
+      <div key={`${state.surah}/${state.ayah}`} className="w-full max-w-3xl mx-auto">
+        {/* Eyebrow / kicker — the page's single h1, framing rather than competing */}
+        <h1
+          className="animate-verse-rise text-[11px] sm:text-xs font-medium uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400"
+          style={{ animationDelay: "0ms" }}
+        >
+          {t("title")}
+        </h1>
 
-      {data.surahNameTranslation && (
-        <p className="text-slate-600 dark:text-slate-400 font-medium">{data.surahNameTranslation}</p>
-      )}
+        {data.surahNameTranslation && (
+          <p
+            className="animate-verse-rise mt-5 text-sm font-medium text-slate-500 dark:text-slate-400"
+            style={{ animationDelay: "80ms" }}
+          >
+            {data.surahNameTranslation}
+          </p>
+        )}
 
-      <h2 className="font-semibold font-spectral text-4xl !mb-10">{data.surahName}</h2>
+        <h2
+          className="animate-verse-rise mt-1 font-spectral font-semibold text-3xl sm:text-4xl"
+          style={{ animationDelay: "140ms" }}
+        >
+          {data.surahName}
+        </h2>
 
-      {data.arabic1 && (
-        <p className="text-2xl leading-relaxed font-arabic" lang="ar" dir="rtl">
-          {data.arabic1}
+        {data.arabic1 && (
+          <p
+            className="animate-verse-rise mt-10 font-arabic text-3xl sm:text-[2.6rem] leading-[1.9] text-slate-900 dark:text-white"
+            style={{ animationDelay: "240ms" }}
+            lang="ar"
+            dir="rtl"
+          >
+            {data.arabic1}
+          </p>
+        )}
+
+        <p
+          className="animate-verse-rise mt-7 mx-auto max-w-2xl font-spectral text-xl sm:text-2xl leading-relaxed text-slate-700 dark:text-slate-200"
+          style={{ animationDelay: "340ms" }}
+          lang={displayLang}
+          dir={displayDir}
+        >
+          {displayText}
         </p>
-      )}
 
-      <p className="text-2xl leading-relaxed font-spectral font-medium" lang={displayLang} dir={displayDir}>
-        {displayText}
-      </p>
+        {data.ayahNo && (
+          <p
+            className="animate-verse-rise mt-6 text-sm font-medium font-spectral text-slate-500 dark:text-slate-400"
+            style={{ animationDelay: "420ms" }}
+          >
+            <span className="capitalize">{t("ayah")}</span> {data.ayahNo}
+          </p>
+        )}
 
-      {data.ayahNo && (
-        <p className="text text-slate-600 dark:text-slate-400 font-medium font-spectral">
-          <span className="capitalize">{t("ayah")}</span> {data.ayahNo}
-        </p>
-      )}
-
-      <VergeInfo />
+        <div className="animate-verse-rise" style={{ animationDelay: "500ms" }}>
+          <VergeInfo />
+        </div>
+      </div>
     </section>
   );
 }

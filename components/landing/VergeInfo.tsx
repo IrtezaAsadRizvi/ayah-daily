@@ -3,7 +3,6 @@
 
 import React, { useMemo } from "react";
 import { useSelector } from "react-redux";
-import { Dot } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const STORAGE_KEY = "verge_of_the_day"; // "s/a", e.g. "2/7"
@@ -40,31 +39,28 @@ export default function VergeInfo() {
             ? `https://quran.com/${surah}/${ayah}/tafsirs`
             : undefined;
 
+    const linkClass =
+        "font-spectral hover:text-slate-900 dark:hover:text-white hover:underline underline-offset-4 transition-colors";
+
     return (
-        <div className="!mt-10 flex flex-wrap items-center justify-center text-slate-600 dark:text-slate-400">
-            <Dot />
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm text-slate-500 dark:text-slate-400">
             {continueUrl && (
-                <a
-                    href={continueUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline font-spectral"
-                >
-                    {t('continue_reading')}
+                <a href={continueUrl} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                    {t("continue_reading")}
                 </a>
             )}
-            <Dot />
+
+            {continueUrl && tafsirUrl && (
+                <span aria-hidden className="select-none opacity-40">
+                    &middot;
+                </span>
+            )}
+
             {tafsirUrl && (
-                <a
-                    href={tafsirUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline font-spectral"
-                >
-                    {t('read_tafsir')}
+                <a href={tafsirUrl} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                    {t("read_tafsir")}
                 </a>
             )}
-            <Dot />
         </div>
     );
 }
