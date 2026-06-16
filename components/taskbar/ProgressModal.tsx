@@ -128,34 +128,39 @@ export default function ProgressModal({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/30 backdrop-blur-md"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/45 backdrop-blur-md"
       role="dialog"
       aria-modal="true"
       aria-label={t("title")}
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-2xl border border-white/20 dark:border-white/10
-                   bg-white/10 dark:bg-white/10 backdrop-blur-2xl shadow-2xl
-                   text-slate-800 dark:text-slate-100 p-5"
+        className="w-full max-w-md rounded-2xl border border-white/20
+                   bg-white/10 backdrop-blur-2xl shadow-2xl
+                   text-white p-5"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between">
           <h2 className="font-spectral font-semibold text-lg">{t("title")}</h2>
-          <button type="button" aria-label="Close" className="icon-button" onClick={onClose}>
+          <button
+            type="button"
+            aria-label="Close"
+            className="icon-button text-white/70 hover:text-white"
+            onClick={onClose}
+          >
             <X size={20} />
           </button>
         </div>
 
         {/* Overall Quran progress */}
         <div className="mt-4">
-          <div className="h-2.5 w-full overflow-hidden rounded-full bg-slate-500/20 dark:bg-white/10">
+          <div className="h-2.5 w-full overflow-hidden rounded-full bg-white/15">
             <div
               className="h-full rounded-full bg-[#9261fb] transition-[width] duration-500"
               style={{ width: `${barWidth}%` }}
             />
           </div>
-          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+          <p className="mt-2 text-sm text-white/80">
             {t("ayahs_read", {
               read: readCount.toLocaleString(),
               total: TOTAL_AYAHS.toLocaleString(),
@@ -172,15 +177,14 @@ export default function ProgressModal({
           {recent.length === 0 ? (
             <p className="mt-3 text-sm opacity-70">{t("empty")}</p>
           ) : (
-            <ul className="mt-2 divide-y divide-slate-500/20 dark:divide-white/10">
+            <ul className="mt-2 divide-y divide-white/15">
               {recent.map((r, i) => (
                 <li key={`${r.surah}/${r.verse}/${i}`}>
                   <button
                     type="button"
                     onClick={() => loadAndShow(r.surah, r.verse)}
                     className="w-full text-left py-2.5 px-1 rounded-lg
-                               hover:bg-[--action-hover-light] dark:hover:bg-[--action-hover-dark]
-                               focus:outline-none focus:bg-[--action-hover-light] dark:focus:bg-[--action-hover-dark]"
+                               hover:bg-white/10 focus:outline-none focus:bg-white/10"
                   >
                     <div className="flex items-center justify-between">
                       <span className="font-bold font-spectral">{r.title}</span>
