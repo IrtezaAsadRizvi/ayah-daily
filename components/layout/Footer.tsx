@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
     return (
         <footer className="border-t border-black dark:border-slate-500">
             <div className="mx-auto flex flex-col gap-4 max-w-[1280px] px-4 py-6 text-sm text-slate-600 dark:text-slate-400">
-                <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 justify-center md:justify-start">
+                <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 justify-center">
                     {links.map(({ href, label }) => (
                         <li key={href}>
                             <Link href={href} className="hover:underline">
