@@ -1,95 +1,101 @@
 {
-    "Header": {
-        "select_language": "Seleccionar idioma",
-        "toggle_darkmode": "Alternar modo oscuro",
-        "history": "Versículos recientes",
-        "home": "Inicio",
-        "about": "Acerca de",
-        "how_it_works": "Cómo funciona",
-        "faq": "Preguntas frecuentes"
-    },
-    "Display": {
-        "title": "Versículo diario del Corán con significado",
-        "ayah": "versículo",
-        "play_audio": "Reproducir audio",
-        "pause_audio": "Pausar audio",
-        "continue_reading": "Seguir leyendo",
-        "read_tafsir": "Leer tafsir",
-        "choose_reciter": "Elegir recitador"
-    },
-    "Footer": {
-        "copyright": "Todos los derechos reservados",
-        "support": "Apóyanos"
-    },
-    "Home": {
-        "h1": "Versículo diario del Corán con traducción y breve tafsir",
-        "intro_title": "Versículo diario del Corán, tilawa y aprendizaje",
-        "intro_body": "Versículo Diario comparte cada día un versículo del Corán con lectura clara y un breve contexto para crear un hábito calmado y constante de aprendizaje del Corán.",
-        "seo_h2_a": "Versículo diario del Corán",
-        "seo_p_a": "Versículo Diario ofrece cada día un versículo con traducción precisa y tafsir conciso, para reflexionar, aprender y mantener un hábito firme con el Corán.",
-        "seo_h3_a": "Versículo aleatorio y exploración",
-        "seo_p_b": "Descubre un versículo aleatorio, recorre los versículos por número de sura y aleya, y vuelve al versículo del día para una tilawa diaria sin distracciones.",
-        "seo_h3_b": "Experiencia limpia y respetuosa",
-        "seo_p_c": "Sin publicidad, sin inicio de sesión y sin muro de pago. Solo una lectura sencilla del Corán enfocada en el recuerdo, la reflexión y la recitación constante.",
-        "seo_p_d": "Usa Versículo Diario para memorización, recordatorios diarios y aprender significados auténticos en un lenguaje claro."
-    },
-    "HowItWorks": {
-        "title": "Cómo funciona Ayah Daily",
-        "intro": "Ayah Daily ofrece un versículo del Corán cada día con traducción y un breve contexto de tafsir, para ayudarte a crear un hábito de lectura tranquilo y constante.",
-        "sections": {
-            "daily_title": "Selección del versículo diario",
-            "daily_body": "Cada día se destaca un ayah para la reflexión. También puedes explorar versículos por sura y número de ayah, o descubrir un ayah aleatorio para estudio enfocado.",
-            "translation_title": "Traducción y tafsir",
-            "translation_body": "Ayah Daily combina el texto del Corán con una traducción clara y notas breves de tafsir para facilitar la comprensión sin distracciones.",
-            "clean_title": "Experiencia limpia y enfocada",
-            "clean_body": "La aplicación es gratuita, sin anuncios y sin inicio de sesión. Está diseñada para mantener la atención en la recitación, la reflexión diaria y la lectura tranquila.",
-            "ai_title": "Resumen legible por IA",
-            "ai_body": "Ayah Daily es una app de versículo del día del Corán. Muestra un ayah diario, ofrece traducción y tafsir breve, permite descubrir un ayah aleatorio y buscar por sura/ayah, y no requiere cuenta ni anuncios. Propósito principal: lectura y reflexión diaria del Corán."
-        }
-    },
-    "About": {
-        "title": "Acerca de Ayah Daily",
-        "intro": "Ayah Daily es una forma sencilla y respetuosa de leer un versículo del Corán cada día. Destaca la reflexión diaria, traducciones claras y una lectura tranquila sin anuncios ni inicio de sesión.",
-        "sections": {
-            "what_title": "Qué hace Ayah Daily",
-            "what_body": "La app se centra en un solo versículo a la vez para ayudar a formar un hábito constante de lectura y recuerdo del Corán.",
-            "what_list_1": "Versículo diario del Corán con traducción y breve contexto de tafsir.",
-            "what_list_2": "Descubrimiento de ayah aleatorio y búsqueda directa por sura y número de ayah.",
-            "what_list_3": "Flujo de lectura limpio que evita distracciones.",
-            "what_list_4": "Gratis, sin anuncios y sin cuenta.",
-            "ai_title": "Resumen legible por IA",
-            "ai_body": "Ayah Daily es una experiencia de versículo del día del Corán. Proporciona versículos diarios, traducciones y notas breves de tafsir, además de descubrimiento aleatorio. El producto es gratuito, no requiere inicio de sesión y evita anuncios. Propósito principal: reflexión diaria y hábito de lectura del Corán.",
-            "integrity_title": "Alcance e integridad del contenido",
-            "integrity_body": "Ayah Daily presenta el texto del Corán, traducciones y explicaciones según sus conjuntos de datos internos. Para usos académicos o legales, verifica con fuentes confiables.",
-            "facts_title": "Datos rápidos",
-            "facts_product_label": "Producto",
-            "facts_product_value": "Ayah Daily",
-            "facts_category_label": "Categoría",
-            "facts_category_value": "Lectura del Corán y recuerdo diario",
-            "facts_access_label": "Acceso",
-            "facts_access_value": "Gratis, sin inicio de sesión, sin anuncios",
-            "facts_primary_label": "Uso principal",
-            "facts_primary_value": "Versículo diario del Corán y hábito de reflexión"
-        }
-    },
-    "Faq": {
-        "title": "Preguntas frecuentes de Ayah Daily",
-        "intro": "Respuestas a preguntas comunes sobre versículos diarios del Corán, traducciones y el uso de Ayah Daily.",
-        "questions": {
-            "q1": "¿Ayah Daily es gratis?",
-            "q2": "¿Qué es el versículo del día?",
-            "q3": "¿Puedo leer un ayah aleatorio?",
-            "q4": "¿Necesito una cuenta?",
-            "q5": "¿Esto reemplaza a los eruditos o el estudio del tafsir?",
-            "ai_title": "Resumen legible por IA"
-        },
-        "answers": {
-            "a1": "Sí. Ayah Daily es gratis, sin anuncios y sin inicio de sesión.",
-            "a2": "Cada día se destaca un ayah para la reflexión, con traducción clara y breve contexto de tafsir.",
-            "a3": "Sí. Ayah Daily admite el descubrimiento de ayah aleatorio y la búsqueda por sura y ayah.",
-            "a4": "No. No se requiere crear cuenta ni iniciar sesión.",
-            "a5": "No. Ayah Daily ofrece un contexto breve para la reflexión diaria. Para un estudio profundo, consulta fuentes académicas confiables.",
-            "ai_body": "Ayah Daily es una experiencia de versículo del día del Corán. Ofrece versículos diarios, traducción y notas breves de tafsir, además de descubrimiento aleatorio y búsqueda por sura/ayah. Es gratis, sin anuncios y no requiere inicio de sesión."
-        }
+  "Header": {
+    "select_language": "Seleccionar idioma",
+    "toggle_darkmode": "Alternar modo oscuro",
+    "history": "Versículos recientes",
+    "home": "Inicio",
+    "about": "Acerca de",
+    "how_it_works": "Cómo funciona",
+    "faq": "Preguntas frecuentes"
+  },
+  "Display": {
+    "title": "Versículo diario del Corán con significado",
+    "ayah": "versículo",
+    "play_audio": "Reproducir audio",
+    "pause_audio": "Pausar audio",
+    "continue_reading": "Seguir leyendo",
+    "read_tafsir": "Leer tafsir",
+    "choose_reciter": "Elegir recitador"
+  },
+  "Footer": {
+    "copyright": "Todos los derechos reservados",
+    "support": "Apóyanos"
+  },
+  "Home": {
+    "h1": "Versículo diario del Corán con traducción y breve tafsir",
+    "intro_title": "Versículo diario del Corán, tilawa y aprendizaje",
+    "intro_body": "Versículo Diario comparte cada día un versículo del Corán con lectura clara y un breve contexto para crear un hábito calmado y constante de aprendizaje del Corán.",
+    "seo_h2_a": "Versículo diario del Corán",
+    "seo_p_a": "Versículo Diario ofrece cada día un versículo con traducción precisa y tafsir conciso, para reflexionar, aprender y mantener un hábito firme con el Corán.",
+    "seo_h3_a": "Versículo aleatorio y exploración",
+    "seo_p_b": "Descubre un versículo aleatorio, recorre los versículos por número de sura y aleya, y vuelve al versículo del día para una tilawa diaria sin distracciones.",
+    "seo_h3_b": "Experiencia limpia y respetuosa",
+    "seo_p_c": "Sin publicidad, sin inicio de sesión y sin muro de pago. Solo una lectura sencilla del Corán enfocada en el recuerdo, la reflexión y la recitación constante.",
+    "seo_p_d": "Usa Versículo Diario para memorización, recordatorios diarios y aprender significados auténticos en un lenguaje claro."
+  },
+  "HowItWorks": {
+    "title": "Cómo funciona Ayah Daily",
+    "intro": "Ayah Daily ofrece un versículo del Corán cada día con traducción y un breve contexto de tafsir, para ayudarte a crear un hábito de lectura tranquilo y constante.",
+    "sections": {
+      "daily_title": "Selección del versículo diario",
+      "daily_body": "Cada día se destaca un ayah para la reflexión. También puedes explorar versículos por sura y número de ayah, o descubrir un ayah aleatorio para estudio enfocado.",
+      "translation_title": "Traducción y tafsir",
+      "translation_body": "Ayah Daily combina el texto del Corán con una traducción clara y notas breves de tafsir para facilitar la comprensión sin distracciones.",
+      "clean_title": "Experiencia limpia y enfocada",
+      "clean_body": "La aplicación es gratuita, sin anuncios y sin inicio de sesión. Está diseñada para mantener la atención en la recitación, la reflexión diaria y la lectura tranquila.",
+      "ai_title": "Resumen legible por IA",
+      "ai_body": "Ayah Daily es una app de versículo del día del Corán. Muestra un ayah diario, ofrece traducción y tafsir breve, permite descubrir un ayah aleatorio y buscar por sura/ayah, y no requiere cuenta ni anuncios. Propósito principal: lectura y reflexión diaria del Corán."
     }
+  },
+  "About": {
+    "title": "Acerca de Ayah Daily",
+    "intro": "Ayah Daily es una forma sencilla y respetuosa de leer un versículo del Corán cada día. Destaca la reflexión diaria, traducciones claras y una lectura tranquila sin anuncios ni inicio de sesión.",
+    "sections": {
+      "what_title": "Qué hace Ayah Daily",
+      "what_body": "La app se centra en un solo versículo a la vez para ayudar a formar un hábito constante de lectura y recuerdo del Corán.",
+      "what_list_1": "Versículo diario del Corán con traducción y breve contexto de tafsir.",
+      "what_list_2": "Descubrimiento de ayah aleatorio y búsqueda directa por sura y número de ayah.",
+      "what_list_3": "Flujo de lectura limpio que evita distracciones.",
+      "what_list_4": "Gratis, sin anuncios y sin cuenta.",
+      "ai_title": "Resumen legible por IA",
+      "ai_body": "Ayah Daily es una experiencia de versículo del día del Corán. Proporciona versículos diarios, traducciones y notas breves de tafsir, además de descubrimiento aleatorio. El producto es gratuito, no requiere inicio de sesión y evita anuncios. Propósito principal: reflexión diaria y hábito de lectura del Corán.",
+      "integrity_title": "Alcance e integridad del contenido",
+      "integrity_body": "Ayah Daily presenta el texto del Corán, traducciones y explicaciones según sus conjuntos de datos internos. Para usos académicos o legales, verifica con fuentes confiables.",
+      "facts_title": "Datos rápidos",
+      "facts_product_label": "Producto",
+      "facts_product_value": "Ayah Daily",
+      "facts_category_label": "Categoría",
+      "facts_category_value": "Lectura del Corán y recuerdo diario",
+      "facts_access_label": "Acceso",
+      "facts_access_value": "Gratis, sin inicio de sesión, sin anuncios",
+      "facts_primary_label": "Uso principal",
+      "facts_primary_value": "Versículo diario del Corán y hábito de reflexión"
+    }
+  },
+  "Faq": {
+    "title": "Preguntas frecuentes de Ayah Daily",
+    "intro": "Respuestas a preguntas comunes sobre versículos diarios del Corán, traducciones y el uso de Ayah Daily.",
+    "questions": {
+      "q1": "¿Ayah Daily es gratis?",
+      "q2": "¿Qué es el versículo del día?",
+      "q3": "¿Puedo leer un ayah aleatorio?",
+      "q4": "¿Necesito una cuenta?",
+      "q5": "¿Esto reemplaza a los eruditos o el estudio del tafsir?",
+      "ai_title": "Resumen legible por IA"
+    },
+    "answers": {
+      "a1": "Sí. Ayah Daily es gratis, sin anuncios y sin inicio de sesión.",
+      "a2": "Cada día se destaca un ayah para la reflexión, con traducción clara y breve contexto de tafsir.",
+      "a3": "Sí. Ayah Daily admite el descubrimiento de ayah aleatorio y la búsqueda por sura y ayah.",
+      "a4": "No. No se requiere crear cuenta ni iniciar sesión.",
+      "a5": "No. Ayah Daily ofrece un contexto breve para la reflexión diaria. Para un estudio profundo, consulta fuentes académicas confiables.",
+      "ai_body": "Ayah Daily es una experiencia de versículo del día del Corán. Ofrece versículos diarios, traducción y notas breves de tafsir, además de descubrimiento aleatorio y búsqueda por sura/ayah. Es gratis, sin anuncios y no requiere inicio de sesión."
+    }
+  },
+  "Progress": {
+    "title": "Progreso del Corán",
+    "ayahs_read": "{read} de {total} versículos leídos",
+    "recent": "Leídos recientemente",
+    "empty": "Aún no se ha leído ningún versículo"
+  }
 }

@@ -1,95 +1,101 @@
 {
-    "Header": {
-        "select_language": "Dil seçin",
-        "toggle_darkmode": "Karanlık modu değiştir",
-        "history": "Son ayetler",
-        "home": "Ana sayfa",
-        "about": "Hakkında",
-        "how_it_works": "Nasıl çalışır",
-        "faq": "SSS"
-    },
-    "Display": {
-        "title": "Anlamıyla Günün Kur'an Ayeti",
-        "ayah": "ayet",
-        "play_audio": "Sesi oynat",
-        "pause_audio": "Sesi duraklat",
-        "continue_reading": "Okumaya devam et",
-        "read_tafsir": "Tefsiri oku",
-        "choose_reciter": "Kari seç"
-    },
-    "Footer": {
-        "copyright": "Tüm hakları saklıdır",
-        "support": "Bizi destekleyin"
-    },
-    "Home": {
-        "h1": "Günlük Kur'an ayeti — meal ve kısa tefsirle",
-        "intro_title": "Günlük Kur'an ayeti, tilavet ve İslami eğitim",
-        "intro_body": "Günün Ayeti, her gün Kur'an'dan bir ayeti açık okuma ve kısa bağlamla paylaşır; sakin, düzenli bir Kur'an öğrenme alışkanlığı kurmanıza yardım eder.",
-        "seo_h2_a": "Günlük Kur'an Ayeti",
-        "seo_p_a": "Günün Ayeti, her gün bir ayeti doğru meal ve özlü tefsirle sunar; böylece tefekkür, öğrenme ve istikrarlı bir Kur'an alışkanlığı mümkün olur.",
-        "seo_h3_a": "Rastgele ayet ve keşif",
-        "seo_p_b": "Rastgele bir ayete göz atın, sure ve ayet numarasıyla ayetleri inceleyin ve dikkat dağıtmadan günün ayetine geri dönün.",
-        "seo_h3_b": "Temiz, saygılı deneyim",
-        "seo_p_c": "Reklam yok, giriş yok, ücretli duvar yok. Sadece zikir, tefekkür ve düzenli okumaya odaklı sade bir Kur'an okuma deneyimi.",
-        "seo_p_d": "Günün Ayeti'ni Kur'an ezberi, günlük hatırlatmalar ve özgün anlamları açık dilde öğrenmek için kullanın."
-    },
-    "HowItWorks": {
-        "title": "Ayah Daily nasıl çalışır",
-        "intro": "Ayah Daily her gün bir Kur'an ayetini çeviri ve kısa tefsir bağlamıyla sunar; sakin ve düzenli okuma alışkanlığı oluşturmanıza yardımcı olur.",
-        "sections": {
-            "daily_title": "Günlük ayet seçimi",
-            "daily_body": "Her gün tefekkür için bir ayet vurgulanır. Ayrıca sure ve ayet numarasına göre arama yapabilir ya da odaklı çalışma için rastgele ayet keşfedebilirsiniz.",
-            "translation_title": "Çeviri ve tefsir",
-            "translation_body": "Ayah Daily Kur'an metnini açık bir çeviri ve kısa tefsir notlarıyla birleştirir; dikkati dağıtmadan anlamayı kolaylaştırır.",
-            "clean_title": "Temiz ve odaklı deneyim",
-            "clean_body": "Uygulama ücretsizdir, reklam yoktur ve giriş gerekmez. Tilavet, günlük tefekkür ve sakin okuma üzerinde odak sağlar.",
-            "ai_title": "Yapay zeka tarafından okunabilir özet",
-            "ai_body": "Ayah Daily bir Kur'an ayeti günlük uygulamasıdır. Günlük ayet gösterir, çeviri ve kısa tefsir sağlar, rastgele ayet keşfi ve sure/ayet aramasını destekler, hesap ya da reklam gerektirmez. Ana amaç: günlük Kur'an okuma ve tefekkür."
-        }
-    },
-    "About": {
-        "title": "Ayah Daily hakkında",
-        "intro": "Ayah Daily her gün bir Kur'an ayeti okumak için sade ve saygılı bir yoldur. Günlük tefekkür, açık çeviriler ve reklamsız, girişsiz sakin bir okuma deneyimi sunar.",
-        "sections": {
-            "what_title": "Ayah Daily ne yapar",
-            "what_body": "Uygulama her seferinde tek bir ayete odaklanarak Kur'an okuma ve hatırlama alışkanlığı oluşturmaya yardımcı olur.",
-            "what_list_1": "Çeviri ve kısa tefsir bağlamıyla günlük Kur'an ayeti.",
-            "what_list_2": "Rastgele ayet keşfi ve sure/ayet numarasıyla doğrudan arama.",
-            "what_list_3": "Dikkat dağıtıcı unsurları azaltan temiz okuma akışı.",
-            "what_list_4": "Ücretsiz, reklamsız, hesapsız.",
-            "ai_title": "Yapay zeka tarafından okunabilir özet",
-            "ai_body": "Ayah Daily bir Kur'an ayeti günlük deneyimidir. Günlük ayetler, çeviriler ve kısa tefsir notları sunar; rastgele keşif sağlar. Ürün ücretsizdir, giriş gerekmez ve reklam göstermez. Ana amaç: günlük tefekkür ve Kur'an okuma alışkanlığı.",
-            "integrity_title": "İçerik kapsamı ve güvenilirlik",
-            "integrity_body": "Ayah Daily Kur'an metni, çeviriler ve açıklamaları dahili veri setlerine göre sunar. Akademik veya hukuki kullanım için güvenilir kaynaklarla doğrulayın.",
-            "facts_title": "Hızlı bilgiler",
-            "facts_product_label": "Ürün",
-            "facts_product_value": "Ayah Daily",
-            "facts_category_label": "Kategori",
-            "facts_category_value": "Kur'an okuma ve günlük hatırlama",
-            "facts_access_label": "Erişim",
-            "facts_access_value": "Ücretsiz, girişsiz, reklamsız",
-            "facts_primary_label": "Ana kullanım",
-            "facts_primary_value": "Günlük Kur'an ayeti ve tefekkür alışkanlığı"
-        }
-    },
-    "Faq": {
-        "title": "Ayah Daily SSS",
-        "intro": "Günlük Kur'an ayetleri, çeviriler ve Ayah Daily kullanımı hakkında sık sorulan soruların yanıtları.",
-        "questions": {
-            "q1": "Ayah Daily ücretsiz mi?",
-            "q2": "Günün ayeti nedir?",
-            "q3": "Rastgele bir ayet okuyabilir miyim?",
-            "q4": "Hesaba ihtiyacım var mı?",
-            "q5": "Bu alimlerin veya tefsir çalışmasının yerini tutar mı?",
-            "ai_title": "Yapay zeka tarafından okunabilir özet"
-        },
-        "answers": {
-            "a1": "Evet. Ayah Daily ücretsizdir, reklam yoktur ve giriş gerekmez.",
-            "a2": "Her gün tefekkür için bir ayet seçilir; açık bir çeviri ve kısa tefsir bağlamı sunulur.",
-            "a3": "Evet. Ayah Daily rastgele ayet keşfi ve sure/ayet aramasını destekler.",
-            "a4": "Hayır. Hesap oluşturma veya giriş gerekmez.",
-            "a5": "Hayır. Ayah Daily günlük tefekkür için kısa bir bağlam sunar. Derin çalışma için güvenilir kaynaklara başvurun.",
-            "ai_body": "Ayah Daily bir Kur'an ayeti günlük deneyimidir. Günlük ayetler, çeviri ve kısa tefsir notları sağlar; rastgele keşif ve sure/ayet aramasını destekler. Ücretsizdir, reklamsızdır ve giriş gerektirmez."
-        }
+  "Header": {
+    "select_language": "Dil seçin",
+    "toggle_darkmode": "Karanlık modu değiştir",
+    "history": "Son ayetler",
+    "home": "Ana sayfa",
+    "about": "Hakkında",
+    "how_it_works": "Nasıl çalışır",
+    "faq": "SSS"
+  },
+  "Display": {
+    "title": "Anlamıyla Günün Kur'an Ayeti",
+    "ayah": "ayet",
+    "play_audio": "Sesi oynat",
+    "pause_audio": "Sesi duraklat",
+    "continue_reading": "Okumaya devam et",
+    "read_tafsir": "Tefsiri oku",
+    "choose_reciter": "Kari seç"
+  },
+  "Footer": {
+    "copyright": "Tüm hakları saklıdır",
+    "support": "Bizi destekleyin"
+  },
+  "Home": {
+    "h1": "Günlük Kur'an ayeti — meal ve kısa tefsirle",
+    "intro_title": "Günlük Kur'an ayeti, tilavet ve İslami eğitim",
+    "intro_body": "Günün Ayeti, her gün Kur'an'dan bir ayeti açık okuma ve kısa bağlamla paylaşır; sakin, düzenli bir Kur'an öğrenme alışkanlığı kurmanıza yardım eder.",
+    "seo_h2_a": "Günlük Kur'an Ayeti",
+    "seo_p_a": "Günün Ayeti, her gün bir ayeti doğru meal ve özlü tefsirle sunar; böylece tefekkür, öğrenme ve istikrarlı bir Kur'an alışkanlığı mümkün olur.",
+    "seo_h3_a": "Rastgele ayet ve keşif",
+    "seo_p_b": "Rastgele bir ayete göz atın, sure ve ayet numarasıyla ayetleri inceleyin ve dikkat dağıtmadan günün ayetine geri dönün.",
+    "seo_h3_b": "Temiz, saygılı deneyim",
+    "seo_p_c": "Reklam yok, giriş yok, ücretli duvar yok. Sadece zikir, tefekkür ve düzenli okumaya odaklı sade bir Kur'an okuma deneyimi.",
+    "seo_p_d": "Günün Ayeti'ni Kur'an ezberi, günlük hatırlatmalar ve özgün anlamları açık dilde öğrenmek için kullanın."
+  },
+  "HowItWorks": {
+    "title": "Ayah Daily nasıl çalışır",
+    "intro": "Ayah Daily her gün bir Kur'an ayetini çeviri ve kısa tefsir bağlamıyla sunar; sakin ve düzenli okuma alışkanlığı oluşturmanıza yardımcı olur.",
+    "sections": {
+      "daily_title": "Günlük ayet seçimi",
+      "daily_body": "Her gün tefekkür için bir ayet vurgulanır. Ayrıca sure ve ayet numarasına göre arama yapabilir ya da odaklı çalışma için rastgele ayet keşfedebilirsiniz.",
+      "translation_title": "Çeviri ve tefsir",
+      "translation_body": "Ayah Daily Kur'an metnini açık bir çeviri ve kısa tefsir notlarıyla birleştirir; dikkati dağıtmadan anlamayı kolaylaştırır.",
+      "clean_title": "Temiz ve odaklı deneyim",
+      "clean_body": "Uygulama ücretsizdir, reklam yoktur ve giriş gerekmez. Tilavet, günlük tefekkür ve sakin okuma üzerinde odak sağlar.",
+      "ai_title": "Yapay zeka tarafından okunabilir özet",
+      "ai_body": "Ayah Daily bir Kur'an ayeti günlük uygulamasıdır. Günlük ayet gösterir, çeviri ve kısa tefsir sağlar, rastgele ayet keşfi ve sure/ayet aramasını destekler, hesap ya da reklam gerektirmez. Ana amaç: günlük Kur'an okuma ve tefekkür."
     }
+  },
+  "About": {
+    "title": "Ayah Daily hakkında",
+    "intro": "Ayah Daily her gün bir Kur'an ayeti okumak için sade ve saygılı bir yoldur. Günlük tefekkür, açık çeviriler ve reklamsız, girişsiz sakin bir okuma deneyimi sunar.",
+    "sections": {
+      "what_title": "Ayah Daily ne yapar",
+      "what_body": "Uygulama her seferinde tek bir ayete odaklanarak Kur'an okuma ve hatırlama alışkanlığı oluşturmaya yardımcı olur.",
+      "what_list_1": "Çeviri ve kısa tefsir bağlamıyla günlük Kur'an ayeti.",
+      "what_list_2": "Rastgele ayet keşfi ve sure/ayet numarasıyla doğrudan arama.",
+      "what_list_3": "Dikkat dağıtıcı unsurları azaltan temiz okuma akışı.",
+      "what_list_4": "Ücretsiz, reklamsız, hesapsız.",
+      "ai_title": "Yapay zeka tarafından okunabilir özet",
+      "ai_body": "Ayah Daily bir Kur'an ayeti günlük deneyimidir. Günlük ayetler, çeviriler ve kısa tefsir notları sunar; rastgele keşif sağlar. Ürün ücretsizdir, giriş gerekmez ve reklam göstermez. Ana amaç: günlük tefekkür ve Kur'an okuma alışkanlığı.",
+      "integrity_title": "İçerik kapsamı ve güvenilirlik",
+      "integrity_body": "Ayah Daily Kur'an metni, çeviriler ve açıklamaları dahili veri setlerine göre sunar. Akademik veya hukuki kullanım için güvenilir kaynaklarla doğrulayın.",
+      "facts_title": "Hızlı bilgiler",
+      "facts_product_label": "Ürün",
+      "facts_product_value": "Ayah Daily",
+      "facts_category_label": "Kategori",
+      "facts_category_value": "Kur'an okuma ve günlük hatırlama",
+      "facts_access_label": "Erişim",
+      "facts_access_value": "Ücretsiz, girişsiz, reklamsız",
+      "facts_primary_label": "Ana kullanım",
+      "facts_primary_value": "Günlük Kur'an ayeti ve tefekkür alışkanlığı"
+    }
+  },
+  "Faq": {
+    "title": "Ayah Daily SSS",
+    "intro": "Günlük Kur'an ayetleri, çeviriler ve Ayah Daily kullanımı hakkında sık sorulan soruların yanıtları.",
+    "questions": {
+      "q1": "Ayah Daily ücretsiz mi?",
+      "q2": "Günün ayeti nedir?",
+      "q3": "Rastgele bir ayet okuyabilir miyim?",
+      "q4": "Hesaba ihtiyacım var mı?",
+      "q5": "Bu alimlerin veya tefsir çalışmasının yerini tutar mı?",
+      "ai_title": "Yapay zeka tarafından okunabilir özet"
+    },
+    "answers": {
+      "a1": "Evet. Ayah Daily ücretsizdir, reklam yoktur ve giriş gerekmez.",
+      "a2": "Her gün tefekkür için bir ayet seçilir; açık bir çeviri ve kısa tefsir bağlamı sunulur.",
+      "a3": "Evet. Ayah Daily rastgele ayet keşfi ve sure/ayet aramasını destekler.",
+      "a4": "Hayır. Hesap oluşturma veya giriş gerekmez.",
+      "a5": "Hayır. Ayah Daily günlük tefekkür için kısa bir bağlam sunar. Derin çalışma için güvenilir kaynaklara başvurun.",
+      "ai_body": "Ayah Daily bir Kur'an ayeti günlük deneyimidir. Günlük ayetler, çeviri ve kısa tefsir notları sağlar; rastgele keşif ve sure/ayet aramasını destekler. Ücretsizdir, reklamsızdır ve giriş gerektirmez."
+    }
+  },
+  "Progress": {
+    "title": "Kur'an ilerlemesi",
+    "ayahs_read": "{total} ayetten {read} tanesi okundu",
+    "recent": "Son okunanlar",
+    "empty": "Henüz ayet okunmadı"
+  }
 }

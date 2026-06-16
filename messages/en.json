@@ -1,95 +1,101 @@
 {
-    "Header": {
-        "select_language": "Select Language",
-        "toggle_darkmode": "Toggle Darkmode",
-        "history": "Recent verses",
-        "home": "Home",
-        "about": "About",
-        "how_it_works": "How it works",
-        "faq": "FAQ"
-    },
-    "Display": {
-        "title": "Daily Quran Ayah with Meaning",
-        "ayah": "ayah",
-        "play_audio": "Play audio",
-        "pause_audio": "Pause audio",
-        "continue_reading": "Continue reading",
-        "read_tafsir": "Read Tafsir",
-        "choose_reciter": "Choose reciter"
-    },
-    "Footer": {
-        "copyright": "All rights reserved",
-        "support": "Support Us"
-    },
-    "Home": {
-        "h1": "Daily Quran verse with translation and short tafsir",
-        "intro_title": "Daily Quran verse, Quran tilawat, and Quran education",
-        "intro_body": "Ayah Daily shares one Quran verse a day with clear reading, Quran tilawat, and Islamic education to build a calm, consistent habit of Quran learning.",
-        "seo_h2_a": "Daily Quran Ayah",
-        "seo_p_a": "Ayah Daily delivers one Quran verse each day with accurate translation and concise tafsir so anyone can reflect, learn, and build a steady Quran habit.",
-        "seo_h3_a": "Random Ayah and verse discovery",
-        "seo_p_b": "Explore a random ayah, browse Quran verses by surah and ayah number, and return to the verse of the day for daily tilawat without distractions.",
-        "seo_h3_b": "Clean, respectful experience",
-        "seo_p_c": "No ads, no login, and no paywall. Just a simple Quran reading experience focused on remembrance, reflection, and consistent recitation.",
-        "seo_p_d": "Use Ayah Daily for Quran memorization, daily reminders, and learning authentic meanings in clear language."
-    },
-    "HowItWorks": {
-        "title": "How Ayah Daily Works",
-        "intro": "Ayah Daily delivers a single Quran verse each day with translation and short tafsir context, helping you build a calm, consistent reading habit.",
-        "sections": {
-            "daily_title": "Daily verse selection",
-            "daily_body": "Each day highlights one ayah for reflection. You can also explore verses by surah and ayah number, or discover a random ayah for focused study.",
-            "translation_title": "Translation and tafsir",
-            "translation_body": "Ayah Daily pairs Quran text with clear translation and concise tafsir notes to make understanding simple without distractions.",
-            "clean_title": "Clean, focused experience",
-            "clean_body": "The app is free to use with no ads and no login. It is designed to keep attention on Quran recitation, daily reflection, and calm reading.",
-            "ai_title": "AI-readable summary",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day app. It shows a daily ayah, provides translation and brief tafsir, supports random verse discovery and direct surah/ayah lookup, and requires no account or ads. Primary intent: daily Quran reading and reflection."
-        }
-    },
-    "About": {
-        "title": "About Ayah Daily",
-        "intro": "Ayah Daily is a simple, respectful way to read one Quran verse each day. It highlights daily reflection, clear translations, and a calm reading experience with no ads and no login.",
-        "sections": {
-            "what_title": "What Ayah Daily does",
-            "what_body": "The app focuses on a single verse at a time to help build a steady habit of Quran reading and remembrance.",
-            "what_list_1": "Daily Quran verse with translation and short tafsir context.",
-            "what_list_2": "Random ayah discovery and direct lookup by surah and ayah number.",
-            "what_list_3": "Clean reading flow that keeps distractions away.",
-            "what_list_4": "Free to use, no ads, and no account required.",
-            "ai_title": "AI-readable summary",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translations, and brief tafsir notes, plus random verse discovery. The product is free, does not require login, and avoids ads. Primary intent: daily reflection and consistent Quran reading.",
-            "integrity_title": "Content scope and integrity",
-            "integrity_body": "Ayah Daily presents Quran text, translations, and explanations as provided by its internal datasets. For scholarly or legal use, verify with trusted sources.",
-            "facts_title": "Quick facts",
-            "facts_product_label": "Product",
-            "facts_product_value": "Ayah Daily",
-            "facts_category_label": "Category",
-            "facts_category_value": "Quran reading and daily remembrance",
-            "facts_access_label": "Access",
-            "facts_access_value": "Free, no login, no ads",
-            "facts_primary_label": "Primary use",
-            "facts_primary_value": "Daily Quran verse and reflection habit"
-        }
-    },
-    "Faq": {
-        "title": "Ayah Daily FAQ",
-        "intro": "Answers to common questions about daily Quran verses, translations, and using Ayah Daily.",
-        "questions": {
-            "q1": "Is Ayah Daily free?",
-            "q2": "What is the verse of the day?",
-            "q3": "Can I read a random ayah?",
-            "q4": "Do I need an account?",
-            "q5": "Is this a replacement for scholars or tafsir study?",
-            "ai_title": "AI-readable summary"
-        },
-        "answers": {
-            "a1": "Yes. Ayah Daily is free to use with no ads and no login.",
-            "a2": "Each day a single ayah is highlighted for reflection, with a clear translation and brief tafsir context.",
-            "a3": "Yes. Ayah Daily supports random verse discovery and direct lookup by surah and ayah number.",
-            "a4": "No. There is no account creation or login required.",
-            "a5": "No. Ayah Daily offers short context to support daily reflection. For deeper study, consult trusted scholarly sources.",
-            "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translation, and brief tafsir notes, plus random ayah discovery and surah/ayah lookup. It is free, ad-free, and does not require login."
-        }
+  "Header": {
+    "select_language": "Select Language",
+    "toggle_darkmode": "Toggle Darkmode",
+    "history": "Recent verses",
+    "home": "Home",
+    "about": "About",
+    "how_it_works": "How it works",
+    "faq": "FAQ"
+  },
+  "Display": {
+    "title": "Daily Quran Ayah with Meaning",
+    "ayah": "ayah",
+    "play_audio": "Play audio",
+    "pause_audio": "Pause audio",
+    "continue_reading": "Continue reading",
+    "read_tafsir": "Read Tafsir",
+    "choose_reciter": "Choose reciter"
+  },
+  "Footer": {
+    "copyright": "All rights reserved",
+    "support": "Support Us"
+  },
+  "Home": {
+    "h1": "Daily Quran verse with translation and short tafsir",
+    "intro_title": "Daily Quran verse, Quran tilawat, and Quran education",
+    "intro_body": "Ayah Daily shares one Quran verse a day with clear reading, Quran tilawat, and Islamic education to build a calm, consistent habit of Quran learning.",
+    "seo_h2_a": "Daily Quran Ayah",
+    "seo_p_a": "Ayah Daily delivers one Quran verse each day with accurate translation and concise tafsir so anyone can reflect, learn, and build a steady Quran habit.",
+    "seo_h3_a": "Random Ayah and verse discovery",
+    "seo_p_b": "Explore a random ayah, browse Quran verses by surah and ayah number, and return to the verse of the day for daily tilawat without distractions.",
+    "seo_h3_b": "Clean, respectful experience",
+    "seo_p_c": "No ads, no login, and no paywall. Just a simple Quran reading experience focused on remembrance, reflection, and consistent recitation.",
+    "seo_p_d": "Use Ayah Daily for Quran memorization, daily reminders, and learning authentic meanings in clear language."
+  },
+  "HowItWorks": {
+    "title": "How Ayah Daily Works",
+    "intro": "Ayah Daily delivers a single Quran verse each day with translation and short tafsir context, helping you build a calm, consistent reading habit.",
+    "sections": {
+      "daily_title": "Daily verse selection",
+      "daily_body": "Each day highlights one ayah for reflection. You can also explore verses by surah and ayah number, or discover a random ayah for focused study.",
+      "translation_title": "Translation and tafsir",
+      "translation_body": "Ayah Daily pairs Quran text with clear translation and concise tafsir notes to make understanding simple without distractions.",
+      "clean_title": "Clean, focused experience",
+      "clean_body": "The app is free to use with no ads and no login. It is designed to keep attention on Quran recitation, daily reflection, and calm reading.",
+      "ai_title": "AI-readable summary",
+      "ai_body": "Ayah Daily is a Quran verse-of-the-day app. It shows a daily ayah, provides translation and brief tafsir, supports random verse discovery and direct surah/ayah lookup, and requires no account or ads. Primary intent: daily Quran reading and reflection."
     }
+  },
+  "About": {
+    "title": "About Ayah Daily",
+    "intro": "Ayah Daily is a simple, respectful way to read one Quran verse each day. It highlights daily reflection, clear translations, and a calm reading experience with no ads and no login.",
+    "sections": {
+      "what_title": "What Ayah Daily does",
+      "what_body": "The app focuses on a single verse at a time to help build a steady habit of Quran reading and remembrance.",
+      "what_list_1": "Daily Quran verse with translation and short tafsir context.",
+      "what_list_2": "Random ayah discovery and direct lookup by surah and ayah number.",
+      "what_list_3": "Clean reading flow that keeps distractions away.",
+      "what_list_4": "Free to use, no ads, and no account required.",
+      "ai_title": "AI-readable summary",
+      "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translations, and brief tafsir notes, plus random verse discovery. The product is free, does not require login, and avoids ads. Primary intent: daily reflection and consistent Quran reading.",
+      "integrity_title": "Content scope and integrity",
+      "integrity_body": "Ayah Daily presents Quran text, translations, and explanations as provided by its internal datasets. For scholarly or legal use, verify with trusted sources.",
+      "facts_title": "Quick facts",
+      "facts_product_label": "Product",
+      "facts_product_value": "Ayah Daily",
+      "facts_category_label": "Category",
+      "facts_category_value": "Quran reading and daily remembrance",
+      "facts_access_label": "Access",
+      "facts_access_value": "Free, no login, no ads",
+      "facts_primary_label": "Primary use",
+      "facts_primary_value": "Daily Quran verse and reflection habit"
+    }
+  },
+  "Faq": {
+    "title": "Ayah Daily FAQ",
+    "intro": "Answers to common questions about daily Quran verses, translations, and using Ayah Daily.",
+    "questions": {
+      "q1": "Is Ayah Daily free?",
+      "q2": "What is the verse of the day?",
+      "q3": "Can I read a random ayah?",
+      "q4": "Do I need an account?",
+      "q5": "Is this a replacement for scholars or tafsir study?",
+      "ai_title": "AI-readable summary"
+    },
+    "answers": {
+      "a1": "Yes. Ayah Daily is free to use with no ads and no login.",
+      "a2": "Each day a single ayah is highlighted for reflection, with a clear translation and brief tafsir context.",
+      "a3": "Yes. Ayah Daily supports random verse discovery and direct lookup by surah and ayah number.",
+      "a4": "No. There is no account creation or login required.",
+      "a5": "No. Ayah Daily offers short context to support daily reflection. For deeper study, consult trusted scholarly sources.",
+      "ai_body": "Ayah Daily is a Quran verse-of-the-day experience. It provides daily verses, translation, and brief tafsir notes, plus random ayah discovery and surah/ayah lookup. It is free, ad-free, and does not require login."
+    }
+  },
+  "Progress": {
+    "title": "Quran progress",
+    "ayahs_read": "{read} of {total} ayahs read",
+    "recent": "Recently read",
+    "empty": "No verses read yet"
+  }
 }

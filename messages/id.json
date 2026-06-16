@@ -1,95 +1,101 @@
 {
-    "Header": {
-        "select_language": "Pilih bahasa",
-        "toggle_darkmode": "Alihkan mode gelap",
-        "history": "Ayat terbaru",
-        "home": "Beranda",
-        "about": "Tentang",
-        "how_it_works": "Cara kerja",
-        "faq": "Tanya jawab"
-    },
-    "Display": {
-        "title": "Ayat Al-Qur'an Harian dengan Terjemahan",
-        "ayah": "ayat",
-        "play_audio": "Putar audio",
-        "pause_audio": "Jeda audio",
-        "continue_reading": "Lanjutkan membaca",
-        "read_tafsir": "Baca tafsir",
-        "choose_reciter": "Pilih qari"
-    },
-    "Footer": {
-        "copyright": "Hak cipta dilindungi",
-        "support": "Dukung kami"
-    },
-    "Home": {
-        "h1": "Ayat Al-Qur'an harian dengan terjemahan dan tafsir singkat",
-        "intro_title": "Ayat Al-Qur'an harian, tilawah, dan pembelajaran Al-Qur'an",
-        "intro_body": "Ayat Harian membagikan satu ayat Al-Qur'an setiap hari dengan bacaan yang jelas dan konteks singkat untuk membangun kebiasaan belajar Al-Qur'an yang tenang dan konsisten.",
-        "seo_h2_a": "Ayat Al-Qur'an Harian",
-        "seo_p_a": "Ayat Harian menyajikan satu ayat Al-Qur'an setiap hari dengan terjemahan akurat dan tafsir ringkas agar siapa pun dapat merenung, belajar, dan membangun kebiasaan Al-Qur'an yang mantap.",
-        "seo_h3_a": "Ayat acak dan penelusuran",
-        "seo_p_b": "Telusuri ayat acak, jelajahi ayat berdasarkan nomor surah dan ayat, lalu kembali ke ayat hari ini untuk tilawah harian tanpa gangguan.",
-        "seo_h3_b": "Pengalaman bersih dan tenang",
-        "seo_p_c": "Tanpa iklan, tanpa login, dan tanpa paywall. Hanya pengalaman membaca Al-Qur'an yang sederhana — fokus pada zikir, perenungan, dan tilawah yang konsisten.",
-        "seo_p_d": "Gunakan Ayat Harian untuk hafalan Al-Qur'an, pengingat harian, dan mempelajari makna otentik dengan bahasa yang jelas."
-    },
-    "HowItWorks": {
-        "title": "Cara Kerja Ayah Daily",
-        "intro": "Ayah Daily memberikan satu ayat Al-Qur'an setiap hari dengan terjemahan dan konteks tafsir singkat untuk membantu membangun kebiasaan membaca yang tenang dan konsisten.",
-        "sections": {
-            "daily_title": "Pemilihan ayat harian",
-            "daily_body": "Setiap hari satu ayat ditampilkan untuk refleksi. Anda juga bisa menelusuri ayat berdasarkan surah dan nomor ayat, atau menemukan ayat acak untuk studi terfokus.",
-            "translation_title": "Terjemahan dan tafsir",
-            "translation_body": "Ayah Daily memadukan teks Al-Qur'an dengan terjemahan yang jelas dan catatan tafsir singkat agar mudah dipahami tanpa gangguan.",
-            "clean_title": "Pengalaman bersih dan fokus",
-            "clean_body": "Aplikasi ini gratis, tanpa iklan, tanpa login. Dirancang untuk menjaga fokus pada tilawah, refleksi harian, dan membaca dengan tenang.",
-            "ai_title": "Ringkasan mudah dibaca AI",
-            "ai_body": "Ayah Daily adalah aplikasi ayat harian Al-Qur'an. Menampilkan ayat harian, menyediakan terjemahan dan tafsir singkat, mendukung penemuan ayat acak serta pencarian surah/ayat, dan tidak memerlukan akun atau iklan. Tujuan utama: membaca dan refleksi Al-Qur'an setiap hari."
-        }
-    },
-    "About": {
-        "title": "Tentang Ayah Daily",
-        "intro": "Ayah Daily adalah cara sederhana dan penuh hormat untuk membaca satu ayat Al-Qur'an setiap hari. Menonjolkan refleksi harian, terjemahan yang jelas, serta pengalaman membaca yang tenang tanpa iklan dan tanpa login.",
-        "sections": {
-            "what_title": "Apa yang dilakukan Ayah Daily",
-            "what_body": "Aplikasi ini berfokus pada satu ayat pada satu waktu untuk membantu membangun kebiasaan membaca dan mengingat Al-Qur'an secara konsisten.",
-            "what_list_1": "Ayat harian Al-Qur'an dengan terjemahan dan konteks tafsir singkat.",
-            "what_list_2": "Penemuan ayat acak dan pencarian langsung berdasarkan surah dan nomor ayat.",
-            "what_list_3": "Alur membaca yang bersih untuk menghindari gangguan.",
-            "what_list_4": "Gratis, tanpa iklan, tanpa akun.",
-            "ai_title": "Ringkasan mudah dibaca AI",
-            "ai_body": "Ayah Daily adalah pengalaman ayat harian Al-Qur'an. Menyediakan ayat harian, terjemahan, dan catatan tafsir singkat, serta penemuan acak. Produk ini gratis, tidak memerlukan login, dan tanpa iklan. Tujuan utama: refleksi harian dan kebiasaan membaca Al-Qur'an.",
-            "integrity_title": "Ruang lingkup dan integritas konten",
-            "integrity_body": "Ayah Daily menampilkan teks Al-Qur'an, terjemahan, dan penjelasan berdasarkan data internalnya. Untuk penggunaan akademik atau hukum, verifikasi dengan sumber tepercaya.",
-            "facts_title": "Fakta singkat",
-            "facts_product_label": "Produk",
-            "facts_product_value": "Ayah Daily",
-            "facts_category_label": "Kategori",
-            "facts_category_value": "Membaca Al-Qur'an dan pengingat harian",
-            "facts_access_label": "Akses",
-            "facts_access_value": "Gratis, tanpa login, tanpa iklan",
-            "facts_primary_label": "Penggunaan utama",
-            "facts_primary_value": "Ayat harian Al-Qur'an dan kebiasaan refleksi"
-        }
-    },
-    "Faq": {
-        "title": "FAQ Ayah Daily",
-        "intro": "Jawaban atas pertanyaan umum tentang ayat harian Al-Qur'an, terjemahan, dan penggunaan Ayah Daily.",
-        "questions": {
-            "q1": "Apakah Ayah Daily gratis?",
-            "q2": "Apa itu ayat harian?",
-            "q3": "Bisakah saya membaca ayat acak?",
-            "q4": "Apakah saya perlu akun?",
-            "q5": "Apakah ini menggantikan ulama atau studi tafsir?",
-            "ai_title": "Ringkasan mudah dibaca AI"
-        },
-        "answers": {
-            "a1": "Ya. Ayah Daily gratis, tanpa iklan, tanpa login.",
-            "a2": "Setiap hari satu ayat dipilih untuk refleksi, dengan terjemahan jelas dan konteks tafsir singkat.",
-            "a3": "Ya. Ayah Daily mendukung penemuan ayat acak dan pencarian surah/ayat.",
-            "a4": "Tidak. Tidak perlu membuat akun atau login.",
-            "a5": "Tidak. Ayah Daily memberikan konteks singkat untuk refleksi harian. Untuk studi mendalam, rujuk sumber tepercaya.",
-            "ai_body": "Ayah Daily adalah pengalaman ayat harian Al-Qur'an. Menyediakan ayat harian, terjemahan, dan catatan tafsir singkat, serta penemuan ayat acak dan pencarian surah/ayat. Gratis, tanpa iklan, dan tanpa login."
-        }
+  "Header": {
+    "select_language": "Pilih bahasa",
+    "toggle_darkmode": "Alihkan mode gelap",
+    "history": "Ayat terbaru",
+    "home": "Beranda",
+    "about": "Tentang",
+    "how_it_works": "Cara kerja",
+    "faq": "Tanya jawab"
+  },
+  "Display": {
+    "title": "Ayat Al-Qur'an Harian dengan Terjemahan",
+    "ayah": "ayat",
+    "play_audio": "Putar audio",
+    "pause_audio": "Jeda audio",
+    "continue_reading": "Lanjutkan membaca",
+    "read_tafsir": "Baca tafsir",
+    "choose_reciter": "Pilih qari"
+  },
+  "Footer": {
+    "copyright": "Hak cipta dilindungi",
+    "support": "Dukung kami"
+  },
+  "Home": {
+    "h1": "Ayat Al-Qur'an harian dengan terjemahan dan tafsir singkat",
+    "intro_title": "Ayat Al-Qur'an harian, tilawah, dan pembelajaran Al-Qur'an",
+    "intro_body": "Ayat Harian membagikan satu ayat Al-Qur'an setiap hari dengan bacaan yang jelas dan konteks singkat untuk membangun kebiasaan belajar Al-Qur'an yang tenang dan konsisten.",
+    "seo_h2_a": "Ayat Al-Qur'an Harian",
+    "seo_p_a": "Ayat Harian menyajikan satu ayat Al-Qur'an setiap hari dengan terjemahan akurat dan tafsir ringkas agar siapa pun dapat merenung, belajar, dan membangun kebiasaan Al-Qur'an yang mantap.",
+    "seo_h3_a": "Ayat acak dan penelusuran",
+    "seo_p_b": "Telusuri ayat acak, jelajahi ayat berdasarkan nomor surah dan ayat, lalu kembali ke ayat hari ini untuk tilawah harian tanpa gangguan.",
+    "seo_h3_b": "Pengalaman bersih dan tenang",
+    "seo_p_c": "Tanpa iklan, tanpa login, dan tanpa paywall. Hanya pengalaman membaca Al-Qur'an yang sederhana — fokus pada zikir, perenungan, dan tilawah yang konsisten.",
+    "seo_p_d": "Gunakan Ayat Harian untuk hafalan Al-Qur'an, pengingat harian, dan mempelajari makna otentik dengan bahasa yang jelas."
+  },
+  "HowItWorks": {
+    "title": "Cara Kerja Ayah Daily",
+    "intro": "Ayah Daily memberikan satu ayat Al-Qur'an setiap hari dengan terjemahan dan konteks tafsir singkat untuk membantu membangun kebiasaan membaca yang tenang dan konsisten.",
+    "sections": {
+      "daily_title": "Pemilihan ayat harian",
+      "daily_body": "Setiap hari satu ayat ditampilkan untuk refleksi. Anda juga bisa menelusuri ayat berdasarkan surah dan nomor ayat, atau menemukan ayat acak untuk studi terfokus.",
+      "translation_title": "Terjemahan dan tafsir",
+      "translation_body": "Ayah Daily memadukan teks Al-Qur'an dengan terjemahan yang jelas dan catatan tafsir singkat agar mudah dipahami tanpa gangguan.",
+      "clean_title": "Pengalaman bersih dan fokus",
+      "clean_body": "Aplikasi ini gratis, tanpa iklan, tanpa login. Dirancang untuk menjaga fokus pada tilawah, refleksi harian, dan membaca dengan tenang.",
+      "ai_title": "Ringkasan mudah dibaca AI",
+      "ai_body": "Ayah Daily adalah aplikasi ayat harian Al-Qur'an. Menampilkan ayat harian, menyediakan terjemahan dan tafsir singkat, mendukung penemuan ayat acak serta pencarian surah/ayat, dan tidak memerlukan akun atau iklan. Tujuan utama: membaca dan refleksi Al-Qur'an setiap hari."
     }
+  },
+  "About": {
+    "title": "Tentang Ayah Daily",
+    "intro": "Ayah Daily adalah cara sederhana dan penuh hormat untuk membaca satu ayat Al-Qur'an setiap hari. Menonjolkan refleksi harian, terjemahan yang jelas, serta pengalaman membaca yang tenang tanpa iklan dan tanpa login.",
+    "sections": {
+      "what_title": "Apa yang dilakukan Ayah Daily",
+      "what_body": "Aplikasi ini berfokus pada satu ayat pada satu waktu untuk membantu membangun kebiasaan membaca dan mengingat Al-Qur'an secara konsisten.",
+      "what_list_1": "Ayat harian Al-Qur'an dengan terjemahan dan konteks tafsir singkat.",
+      "what_list_2": "Penemuan ayat acak dan pencarian langsung berdasarkan surah dan nomor ayat.",
+      "what_list_3": "Alur membaca yang bersih untuk menghindari gangguan.",
+      "what_list_4": "Gratis, tanpa iklan, tanpa akun.",
+      "ai_title": "Ringkasan mudah dibaca AI",
+      "ai_body": "Ayah Daily adalah pengalaman ayat harian Al-Qur'an. Menyediakan ayat harian, terjemahan, dan catatan tafsir singkat, serta penemuan acak. Produk ini gratis, tidak memerlukan login, dan tanpa iklan. Tujuan utama: refleksi harian dan kebiasaan membaca Al-Qur'an.",
+      "integrity_title": "Ruang lingkup dan integritas konten",
+      "integrity_body": "Ayah Daily menampilkan teks Al-Qur'an, terjemahan, dan penjelasan berdasarkan data internalnya. Untuk penggunaan akademik atau hukum, verifikasi dengan sumber tepercaya.",
+      "facts_title": "Fakta singkat",
+      "facts_product_label": "Produk",
+      "facts_product_value": "Ayah Daily",
+      "facts_category_label": "Kategori",
+      "facts_category_value": "Membaca Al-Qur'an dan pengingat harian",
+      "facts_access_label": "Akses",
+      "facts_access_value": "Gratis, tanpa login, tanpa iklan",
+      "facts_primary_label": "Penggunaan utama",
+      "facts_primary_value": "Ayat harian Al-Qur'an dan kebiasaan refleksi"
+    }
+  },
+  "Faq": {
+    "title": "FAQ Ayah Daily",
+    "intro": "Jawaban atas pertanyaan umum tentang ayat harian Al-Qur'an, terjemahan, dan penggunaan Ayah Daily.",
+    "questions": {
+      "q1": "Apakah Ayah Daily gratis?",
+      "q2": "Apa itu ayat harian?",
+      "q3": "Bisakah saya membaca ayat acak?",
+      "q4": "Apakah saya perlu akun?",
+      "q5": "Apakah ini menggantikan ulama atau studi tafsir?",
+      "ai_title": "Ringkasan mudah dibaca AI"
+    },
+    "answers": {
+      "a1": "Ya. Ayah Daily gratis, tanpa iklan, tanpa login.",
+      "a2": "Setiap hari satu ayat dipilih untuk refleksi, dengan terjemahan jelas dan konteks tafsir singkat.",
+      "a3": "Ya. Ayah Daily mendukung penemuan ayat acak dan pencarian surah/ayat.",
+      "a4": "Tidak. Tidak perlu membuat akun atau login.",
+      "a5": "Tidak. Ayah Daily memberikan konteks singkat untuk refleksi harian. Untuk studi mendalam, rujuk sumber tepercaya.",
+      "ai_body": "Ayah Daily adalah pengalaman ayat harian Al-Qur'an. Menyediakan ayat harian, terjemahan, dan catatan tafsir singkat, serta penemuan ayat acak dan pencarian surah/ayat. Gratis, tanpa iklan, dan tanpa login."
+    }
+  },
+  "Progress": {
+    "title": "Kemajuan Al-Qur'an",
+    "ayahs_read": "{read} dari {total} ayat telah dibaca",
+    "recent": "Baru dibaca",
+    "empty": "Belum ada ayat yang dibaca"
+  }
 }

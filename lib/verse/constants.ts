@@ -11,3 +11,6 @@ export const AYAH_COUNTS: number[] = [
   29, 19, 36, 25, 22, 17, 19, 26, 30, 20, 15, 21, 11, 8, 8, 19, 5, 8, 8, 11,
   11, 8, 3, 9, 5, 4, 7, 3, 6, 3, 5, 4, 5, 6,
 ];
+
+// Total number of ayahs in the Quran (sum of AYAH_COUNTS) — 6236.
+export const TOTAL_AYAHS = AYAH_COUNTS.reduce((sum, n) => sum + n, 0);
